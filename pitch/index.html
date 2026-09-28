@@ -1,0 +1,182 @@
+<title>ELY Shop Upgrade</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500&family=Figtree:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#F5F4F2; --surface:#FFFFFF; --ink:#1E1A1C; --muted:#655F63; --line:#DDD8D5;
+  --accent:#6A1F31; --accent-soft:#F3E6E9;
+  --serif:"Newsreader", Georgia, serif; --sans:"Figtree", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --bg:#161314; --surface:#1F1B1D; --ink:#EEE9E6; --muted:#A79FA3; --line:#3A3437;
+    --accent:#D98A9B; --accent-soft:#3A2228;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --bg:#161314; --surface:#1F1B1D; --ink:#EEE9E6; --muted:#A79FA3; --line:#3A3437;
+  --accent:#D98A9B; --accent-soft:#3A2228;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--sans);padding-inline:16px;padding-block:36px 80px}
+main{max-width:760px;margin:0 auto;display:grid;gap:40px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;text-wrap:balance;margin:0}
+h1{font-size:clamp(34px,6vw,50px);line-height:1.04}
+h2{font-size:27px;line-height:1.15}
+h3{font-size:19px;font-weight:500}
+p{margin:0}
+a{color:var(--accent)}
+.eyebrow{font:500 11px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.lede{font-size:18px;color:var(--muted);max-width:60ch}
+section{display:grid;gap:14px}
+.num{font-variant-numeric:tabular-nums}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:14px 16px;display:grid;gap:4px;align-content:start}
+.fact b{font:400 34px/1 var(--serif)}
+.fact span{font-size:14px;color:var(--muted)}
+.flow{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:18px}
+.flow .src{border:1px solid var(--accent);background:var(--accent-soft);border-radius:3px;padding:12px 14px;display:grid;gap:4px}
+.flow .src b{font-weight:600}
+.flow .src span{font-size:13.5px;color:var(--muted)}
+.flow .arrow{font-size:22px;color:var(--muted)}
+.flow ul{margin:0;padding:0;list-style:none;display:grid;gap:6px}
+.flow li{border:1px solid var(--line);border-radius:3px;padding:7px 12px;font-size:14px}
+.part{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:20px 22px;display:grid;gap:12px}
+.part .top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 14px;align-items:baseline}
+.part .n{font:600 11px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.part ul{margin:0;padding-left:20px;display:grid;gap:5px}
+.pill{font:600 11px var(--sans);letter-spacing:.06em;color:var(--accent);background:var(--accent-soft);padding:3px 8px;border-radius:2px;white-space:nowrap}
+.gets{border-top:1px solid var(--line);padding-top:10px;font-size:15px}
+.gets b{font-weight:600}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:4px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:520px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 11px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+tr:last-child td{border-bottom:0}
+.small{font-size:13.5px;color:var(--muted)}
+ol.steps{margin:0;padding-left:22px;display:grid;gap:6px}
+@media (max-width:620px){
+  .facts{grid-template-columns:1fr}
+  .flow{grid-template-columns:1fr}
+  .flow .arrow{transform:rotate(90deg);justify-self:center}
+}
+</style>
+
+<main>
+  <header style="display:grid;gap:14px">
+    <span class="eyebrow">Proposal for ELY Wine · Sideforge</span>
+    <h1>ELY Shop Upgrade</h1>
+    <p class="lede">Make the online shop accurate now, and keep it accurate with less work each time a new bottle arrives.</p>
+  </header>
+
+  <section>
+    <h2>What we found</h2>
+    <div class="facts">
+      <div class="fact"><b class="num">28 / 92</b><span>wine listings show another wine's photo or a different vintage</span></div>
+      <div class="fact"><b class="num">86 / 179</b><span>filter links open an empty page</span></div>
+      <div class="fact"><b class="num">5</b><span>filter collections to update by hand for each new bottle, on average</span></div>
+    </div>
+    <p>The range, the tasting notes and the team's knowledge are excellent. The shop does not keep up with them, and the cause is the same for all three numbers.</p>
+  </section>
+
+  <section>
+    <h2>Why it drifts</h2>
+    <p>Today each wine fact lives in several places: in the title, in the description text, and in the hand-kept collections that drive the filters. Nothing connects them, so every change has to be made several times, and they drift apart.</p>
+    <p>The fix is to store each fact once, as a field on the product: type, country, region, grapes, vintage, farming, size. The filters, collections and wine pages all read from those fields. Change a fact once, and the shop updates everywhere.</p>
+    <div class="flow" role="img" aria-label="Wine fields feed the filters, collections, wine page and checks">
+      <div class="src"><b>Wine fields on each product</b><span>Type · country · region · grapes · vintage · farming · size</span></div>
+      <span class="arrow" aria-hidden="true">→</span>
+      <ul>
+        <li>Filters: only values with stock</li>
+        <li>Collections: fill themselves</li>
+        <li>Wine page: facts panel</li>
+        <li>Checks: catch mistakes early</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Three parts</h2>
+
+    <div class="part">
+      <div class="top"><span class="n">Part 1 · One-off</span><span class="pill">3–5 days</span></div>
+      <h3>Clean the data</h3>
+      <ul>
+        <li>Move the wine facts for all 92 wines into fields. A script reads today's titles, descriptions and collections. Staff confirm the few it is unsure of.</li>
+        <li>Fix the 28 wrong photos. Put 87 photos on one studio standard. Make studio shots for the other 5 with Nano Banana.</li>
+        <li>Fix the placeholder products and the typo on the home page.</li>
+        <li>Correct the web addresses that name the wrong wine or vintage, or still contain "copy". Add redirects so old links and Google results still work.</li>
+      </ul>
+      <p class="gets"><b>ELY gets:</b> a shop that is correct today.</p>
+    </div>
+
+    <div class="part">
+      <div class="top"><span class="n">Part 2 · Theme</span><span class="pill">5–10 days</span></div>
+      <h3>Move to a current Shopify theme</h3>
+      <p>The shop runs on "Luxywine" 1.0, a theme bought from ThemeForest, not from Shopify's Theme Store. It uses Shopify's older "vintage" theme design, from before 2021. On a vintage theme, Shopify's own filters, wine facts on product pages and app features all need custom code.</p>
+      <ul>
+        <li>Filters built from the wine fields. Only values with stock show, so no empty pages.</li>
+        <li>A wine facts panel on every product page, filled from the fields, with no code.</li>
+        <li>Pages that staff can rearrange in the Shopify editor, and that load faster on phones.</li>
+        <li>A theme that Shopify and its maker keep up to date.</li>
+      </ul>
+      <p class="gets"><b>ELY gets:</b> filters and pages that stay accurate without extra work.</p>
+    </div>
+
+    <div class="part">
+      <div class="top"><span class="n">Part 3 · Custom app</span><span class="pill">10–15 days</span></div>
+      <h3>A listing app inside Shopify</h3>
+      <p>A small app for ELY staff. It opens in the Shopify admin and in the Shopify phone app, so there is no new login.</p>
+      <ol class="steps">
+        <li>Take one photo of the bottle.</li>
+        <li>The app reads the label and fills in the wine fields. Anything it is unsure of is marked for staff to confirm.</li>
+        <li>It makes a studio shot in the ELY style, then checks that the label on the new image matches the listing.</li>
+        <li>It saves a draft product. Staff add the price and approve.</li>
+      </ol>
+      <p>Once a week it also checks the whole shop and flags problems: shared photos, a missing vintage, a wine with no filters.</p>
+      <p class="gets"><b>ELY gets:</b> a new bottle listed in minutes, correct from the start.</p>
+    </div>
+    <p class="small">Day counts are first estimates, to be confirmed after we see the store's admin and the apps it uses.</p>
+  </section>
+
+  <section>
+    <h2>The demo</h2>
+    <p>Before any work on the live shop, we build all three parts on a separate demo store:</p>
+    <ul style="margin:0;padding-left:20px;display:grid;gap:5px">
+      <li>about 20 real ELY wines, cleaned and on the studio standard;</li>
+      <li>the new theme, with working filters and wine pages;</li>
+      <li>the listing app, adding a new bottle live from a phone.</li>
+    </ul>
+    <p>ELY sees the result before deciding. The live shop does not change.</p>
+  </section>
+
+  <section>
+    <h2>Running costs</h2>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Item</th><th>Cost</th></tr></thead>
+      <tbody>
+        <tr><td>Shopify Search &amp; Discovery app (filters)</td><td>Free</td></tr>
+        <tr><td>Studio shots with Nano Banana</td><td class="num">About €0.05–0.15 per image</td></tr>
+        <tr><td>Hosting for the listing app</td><td class="num">A few euro a month</td></tr>
+        <tr><td>New theme</td><td>Free Shopify theme, or a one-off fee for a paid Theme Store theme</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>What we need from ELY</h2>
+    <ul style="margin:0;padding-left:20px;display:grid;gap:5px">
+      <li>Collaborator access to the Shopify store.</li>
+      <li>A list of the apps in use: tastings, gift vouchers, deliveries. The new theme must support each one.</li>
+      <li>One person to approve changes, and about an hour of Erik's time to confirm facts the script is unsure of.</li>
+    </ul>
+  </section>
+
+  <footer class="small" style="display:grid;gap:4px">
+    <span>Figures from shop.elywinebar.ie, read 28 September 2026.</span>
+    <span>Full review: <a href="https://claude.ai/artifact/Bjpbn6ErnwPNtiKiDQq9GB">ELY Shop Review</a></span>
+  </footer>
+</main>
