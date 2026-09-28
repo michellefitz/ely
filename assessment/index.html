@@ -77,9 +77,10 @@ a{color:var(--accent)}
     <span class="eyebrow">In short</span>
     <ol>
       <li>The range and the writing are strong. The shop does not show them well.</li>
-      <li>The image problem is bigger than inconsistency. At least five listings show the wrong vintage or the wrong wine.</li>
-      <li>AI studio shots are feasible and cheap (a few cents per image). The risk is that the model changes label text. A check step solves it.</li>
-      <li>The real win is a one-photo "add a bottle" flow. It fixes images, data and the slow listing rate together.</li>
+      <li>The image problem is bigger than inconsistency. 28 of 92 wine listings show another wine's photo or a different vintage.</li>
+      <li>Most photos do not need AI. A simple script puts 87 of 92 on one studio standard. Only 5 need a reshoot or an AI studio shot.</li>
+      <li>The main cause of the "faff" is the filters. Every filter is a collection kept by hand, and 86 of the 179 filter links open an empty page.</li>
+      <li>The real win is a one-photo "add a bottle" flow into Shopify, with filters built from wine data. It fixes images, data and the slow listing rate together.</li>
     </ol>
   </div>
 
@@ -99,7 +100,15 @@ a{color:var(--accent)}
     <div>
       <div class="issue"><span class="sev high">High</span><div class="body">
         <h3>Images show the wrong vintage or the wrong wine</h3>
-        <p>Buon Consiglio 2016 (Grumello) shows an Inferno Sesto Canto 2009 label. Rocce Rosse 2018 shows a 2009 label. Il Pettirosso 2023 shows a 2017 label. Nuova Regina 2013, 2016 and 2018 share one image. Both Fiamme Antiche vintages share one image. A buyer of a €129 bottle notices. It is also a consumer-law risk.</p>
+        <p>28 of 92 listings. Buon Consiglio 2016 and both Sant Antonio vintages show an Inferno Sesto Canto 2009 label. Ultimi Raggi and all three Rocce Rosse listings share one photo with a 2009 label. Stella Retica shares the Fiamme Antiche photo. Salia and La Rosa have swapped photos. The Telmo Rodriguez 2020 wines show 2017 labels. Il Pettirosso 2023 shows 2017. A buyer of a €129 bottle notices. It is also a consumer-law risk.</p>
+      </div></div>
+      <div class="issue"><span class="sev high">High</span><div class="body">
+        <h3>Filters are 179 hand-kept collections, and 86 are empty</h3>
+        <p>Each grape, country, region and vintage filter is its own collection. Adding one bottle means adding it to five or more collections by hand. 86 links open an empty page: Australia, Germany, Riesling, Chablis, 2014 and others. 11 wines are in no Red / White / Sparkling collection, so those filters miss them.</p>
+      </div></div>
+      <div class="issue"><span class="sev med">Medium</span><div class="body">
+        <h3>The theme is from 2021 and pre-dates Online Store 2.0</h3>
+        <p>The theme is "Luxywine" 1.0, a third-party theme. It cannot show metafields or use Search &amp; Discovery filters without code changes. Budget for theme work, or move to a current Shopify theme.</p>
       </div></div>
       <div class="issue"><span class="sev high">High</span><div class="body">
         <h3>Homepage shows placeholder products</h3>
@@ -119,7 +128,7 @@ a{color:var(--accent)}
       </div></div>
       <div class="issue"><span class="sev low">Low</span><div class="body">
         <h3>Titles follow no pattern</h3>
-        <p>"ArPePe" and "Arpepe". Some titles have the vintage, some do not (Finca Sandoval La Rosa, Mas Alta Artigas). Some add the appellation, some do not.</p>
+        <p>"ArPePe" and "Arpepe". Some titles have the vintage, some do not (Finca Sandoval La Rosa, Mas Alta Artigas). Some add the appellation, some do not. Rocce Rosse 2016 is listed twice. One Zarate listing gives its vintage as "20121". Two Le Piane descriptions open with "For multiorders please contact us here."</p>
       </div></div>
       <div class="issue"><span class="sev low">Low</span><div class="body">
         <h3>Wine is mixed with deli and gifts</h3>
@@ -146,25 +155,26 @@ a{color:var(--accent)}
 
   <section>
     <h2>AI bottle images: feasibility</h2>
-    <p>Yes, it is feasible. Cost per image is small. Label accuracy is the one hard problem. In your app a changed label is a small flaw. In a shop the image is a promise about the product, so the bar is higher.</p>
+    <p>Yes, it is feasible. Cost per image is small. Label accuracy is the one hard problem. In your app a changed label is a small flaw. In a shop the image is a promise about the product, so the bar is higher. The scrape also shows that most of the catalogue does not need AI at all.</p>
     <div class="opts">
       <div class="opt">
-        <div class="head"><h3>A. Shopify Magic, in the admin</h3><span class="src">Free</span></div>
-        <p>Removes the background and sets a flat colour or a generated scene. One image at a time. It does not fix angle, glare or light. Good for a quick clean-up this week.</p>
-      </div>
-      <div class="opt">
-        <div class="head"><h3>B. Cut-out and composite</h3><span class="src">~€0.02–0.20 per image</span></div>
-        <p>Background removal API, then place the bottle on a fixed backdrop with a fixed shadow. The label pixels do not change, so there is no text risk. The result is only as good as the phone photo.</p>
+        <div class="head"><h3>A. Shopify Magic, in the admin</h3><span class="src">Free for now</span></div>
+        <p>Built into the Shopify admin (Content → Files → edit). It removes a background and sets a solid colour, changes the scene from a text prompt, or extends the frame. One image at a time, about 1 megapixel, with an invisible watermark. Use it for the few gift and lifestyle shots. It does not put 92 bottles at one size and position.</p>
+        <p class="src"><a href="https://help.shopify.com/en/manual/shopify-admin/productivity-tools/shopify-magic/media-generation">Shopify Help: media generation in the file editor</a></p>
       </div>
       <div class="opt rec">
-        <div class="head"><h3>C. Nano Banana relight, with a check</h3><span class="pill">Recommended</span></div>
-        <p>Send the phone photo and one reference studio shot to Nano Banana 2 or Nano Banana Pro. It returns a relit, straightened studio shot. Then a second model reads the label on the output and compares producer, wine and vintage with the listing. A mismatch goes to a person. If C fails twice, fall back to B.</p>
-        <p class="src">Nano Banana 2: about $0.045–0.15 per image, half price in batch. 100 wines at three tries each is about €15–45.</p>
+        <div class="head"><h3>B. Cut-out and composite, no AI</h3><span class="pill">Built · 87 of 92</span></div>
+        <p>A script finds the bottle on a white or transparent source, crops it, scales it to 84% of the frame and places it on one backdrop with one shadow. The label pixels do not change, so there is no text risk. It handled 87 of the 92 wine photos. The prototype shows the result as "Studio standard".</p>
+      </div>
+      <div class="opt rec">
+        <div class="head"><h3>C. Nano Banana relight, with a check</h3><span class="pill">For phone photos</span></div>
+        <p>For the 5 photos on busy backgrounds, and for every new bottle staff photograph. Send the phone photo and one reference studio shot to Nano Banana 2. It returns a relit, straightened studio shot. Then a second model reads the label on the output and compares producer, wine and vintage with the listing. A mismatch goes to a person.</p>
+        <p class="src">Nano Banana 2 (gemini-3.1-flash-image-preview): about $0.045–0.15 per image, half price in batch.</p>
       </div>
     </div>
     <div class="grid2">
       <div class="cell"><h3>Do not</h3><p>Generate a bottle from a label scan or a description alone. The model guesses glass colour, bottle shape and capsule. That is a picture of a wine you do not sell.</p></div>
-      <div class="cell"><h3>Note for your app</h3><p>The original Nano Banana (Gemini 2.5 Flash Image) retires on 2 October 2026. Move your app to Nano Banana 2 before then.</p></div>
+      <div class="cell"><h3>Note for your app</h3><p>The original Nano Banana (gemini-2.5-flash-image) stops on the Gemini API on 2 October 2026 (Vertex AI: March 2027). Move your app to Nano Banana 2 before then. It renders label text better and is faster.</p></div>
     </div>
   </section>
 
@@ -178,12 +188,22 @@ a{color:var(--accent)}
       <li>The tool saves a Draft product in Shopify with metafields, image and a first description.</li>
       <li>A person sets the price and approves.</li>
     </ol>
-    <p>Build: a small Shopify custom app (Admin API: product create, staged uploads, metafields) with a phone-friendly page. About 1–2 weeks for a first version. Running cost: a few euro a month plus hosting.</p>
+    <p>Shopify has no built-in feature that reads a label and creates a product. Sidekick writes text and edits images, but does not do this. So the build is one small app for this store, made in Shopify's Dev Dashboard (since January 2026, new custom apps cannot be made in the store admin).</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Part</th><th>What</th></tr></thead>
+      <tbody>
+        <tr><td>Interface</td><td>A page embedded in the Shopify admin. It also opens in the Shopify mobile app, so staff take the photo on the phone they already use. No new login.</td></tr>
+        <tr><td>Our code</td><td>Read the label, make the studio shot, run the catalogue checks.</td></tr>
+        <tr><td>Shopify Admin API</td><td>Create the Draft product, upload images, write metafields.</td></tr>
+        <tr><td>Shopify, built in</td><td>Metafields for wine facts. A "Producer" metaobject. Search &amp; Discovery filters from metafields, in place of the 179 hand-kept collections.</td></tr>
+      </tbody>
+    </table></div>
+    <p>About 1–2 weeks for a first version, plus theme work to show metafields. Running cost: a few euro a month plus hosting.</p>
   </section>
 
   <section class="gaps">
     <h2>Gaps in the plan</h2>
-    <p><b>The problem may not be images.</b> The owner named images. Wrong labels and slow listing cost more. Ask him to time one new listing today. That number sets the value of the tool.</p>
+    <p><b>The problem may not be images.</b> The owner named images. Wrong labels and hand-kept filters cost more. Ask him to time one new listing today, including the collections. That number sets the value of the tool.</p>
     <p><b>Someone must own the tool.</b> A custom app needs API keys, hosting and fixes when models change. Decide who pays for and maintains it before you build.</p>
     <p><b>Staff must take the photo.</b> The tool needs a real photo of each bottle. For wines not yet in stock, supplier shots still arrive. Decide if those go through option B or wait for the bottle.</p>
     <p><b>Your app and his shop have different stakes.</b> A small label change in your app is cosmetic. In his shop it misdescribes a product he sells.</p>
@@ -192,11 +212,12 @@ a{color:var(--accent)}
   <section>
     <h2>What the prototype shows</h2>
     <ul class="plain">
-      <li><b>Shop:</b> one studio standard across the grid, with style, region, grape and price on each card.</li>
-      <li><b>Wine page:</b> Le Piane Boca 2018 with facts, taste scale, drinking window, food, a "pouring at the bar" link, and more from the producer. A toggle shows the phone photo it came from.</li>
-      <li><b>Add a bottle:</b> the four-step flow, run on Rocce Rosse 2018, the wine that shows a 2009 label today.</li>
+      <li><b>Shop:</b> all 92 real wines, prices and stock. A toggle switches between today's photos and the studio standard. Filters are built from the data, so none are empty.</li>
+      <li><b>Wine page:</b> the real description, pairing and press quote for each wine, plus dashed slots for the facts that are missing today.</li>
+      <li><b>Catalogue check:</b> every listing checked for shared photos, vintage mismatches, low resolution, missing vintage and missing filters.</li>
+      <li><b>Add a bottle:</b> the four-step flow, starting from the real Boca phone photo.</li>
     </ul>
-    <p class="src">The bottles in the prototype are drawn in code, not generated. A real version uses a Nano Banana output from a photo of each bottle. Taste values and drinking windows are examples for the team to set.</p>
+    <p class="src">Data and photos read from shop.elywinebar.ie on 28 September 2026. The studio shot in "Add a bottle" is a placeholder until the Nano Banana key is set up.</p>
   </section>
 
   <footer class="src" style="display:grid;gap:4px">

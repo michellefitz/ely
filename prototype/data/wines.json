@@ -1,0 +1,3801 @@
+{
+ "shop": {
+  "scraped": "2026-09-28",
+  "wines": 92,
+  "products": 173,
+  "filter_links": 179,
+  "empty_filter_links": [
+   "2005",
+   "2007",
+   "2012",
+   "2014",
+   "2015",
+   "adelaide-hills",
+   "alicante",
+   "alsace",
+   "argentina",
+   "asti",
+   "australia",
+   "austria",
+   "azores",
+   "barbera",
+   "beaujolais",
+   "brossa-valley",
+   "cadiz",
+   "calchaqui-valley",
+   "campania",
+   "canberra",
+   "center-pieces",
+   "chablis",
+   "chateauneuf-du-pape",
+   "chile",
+   "cinsault",
+   "clare-valley",
+   "colli-euganei-veneto",
+   "cote-chalonnaise",
+   "cote-de-beaune",
+   "cote-rotie",
+   "cotes-du-rhone",
+   "crockery",
+   "decanters",
+   "eden-valley",
+   "falanghina",
+   "gamay",
+   "garganega",
+   "garnatxa-negra",
+   "germany",
+   "greco-di-tufo",
+   "greyton",
+   "hemel-en-aarde",
+   "itata",
+   "jaen",
+   "jerez",
+   "jura",
+   "malvasia",
+   "margaret-river",
+   "margaux",
+   "marsanne",
+   "martinborough",
+   "meal-box",
+   "mendoza",
+   "merenzao",
+   "moclinejo",
+   "moscatel",
+   "moscato",
+   "mourvedre",
+   "nizza-monferrato",
+   "orange",
+   "palomino",
+   "pauillac",
+   "penedes",
+   "pfalz",
+   "pinot-nero",
+   "piquepoul-white",
+   "puglia",
+   "ribera-del-mino",
+   "riesling",
+   "riviera-del-garda",
+   "rolle",
+   "rondinella",
+   "sherry",
+   "shiraz",
+   "sweet-wine",
+   "switzerland",
+   "tasmania",
+   "trebbiano",
+   "treixadura",
+   "ugni-blanc",
+   "utensils",
+   "vacqueyras",
+   "verdicchio",
+   "vin-de-pays-de-lherault",
+   "vinos-de-madrid",
+   "viognier"
+  ],
+  "sold_out": 11
+ },
+ "wines": [
+  {
+   "handle": "adega-algueira-escalada",
+   "title": "Adega Algueira 'Escalada'",
+   "price": 49.0,
+   "available": true,
+   "type": "White",
+   "country": "Spain",
+   "region": "Ribeira Sacra",
+   "grapes": [
+    "Godello"
+   ],
+   "styles": [
+    "Biodynamic"
+   ],
+   "magnum": false,
+   "vintage": "2024",
+   "header": "Adega Algueira 'Escalada' , Godello, Ribeira Sacra, Spain, 2024",
+   "description": [
+    "A wine which clearly shows the massive potential of Godello as a variety. Fermented in old oak and chestnut barrels but matured in stainless, this is layered and complex, with everything from Orange bloom, peach and apricot to honey, almond and fennel. Richly textured but surprisingly lively on the palate, there is great freshness and amazing length. Enjoy now and maybe put some away for 3 to 4 years"
+   ],
+   "pairing": "grilled fish, roast lamb, pork, cheese",
+   "quote": {
+    "text": "The Escalada exemplifies Godello's great affinity for barrel fermentation & potential for aging. Often compared to good white Burgundy, age-worthy Godello is a good bet for laying down",
+    "by": "Aoife Carrigy - Irish Independent"
+   },
+   "published": "2021-05-07",
+   "image": {
+    "file": "AdegaAlgueira_Escalada.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "alexis-pollier-le-clos-macon-milly-lamartine",
+   "title": "Alexis Pollier 'Le Clos' Macon-Milly Lamartine",
+   "price": 30.0,
+   "available": true,
+   "type": "White",
+   "country": "France",
+   "region": "Burgundy",
+   "grapes": [
+    "Chardonnay"
+   ],
+   "styles": [
+    "Biodynamic"
+   ],
+   "magnum": false,
+   "vintage": "2023",
+   "header": "Alexis Pollier 'Le Clos' Macon-Milly Lamartine, Chardonnay, France, 2023",
+   "description": [
+    "100% Chardonnay",
+    "A zippy example of a chardonnay from the Macon region, framed biodynamically Alexis Pollier produces fruit focused styles of white burgundy. Produced from 40 year old vines, vilified in stainless steel and kept in oak barrels for a sort time. This gives the wine a beautiful freshness, summer stone fruits and gorgeous soft texture."
+   ],
+   "pairing": "White Meat, Fish",
+   "quote": "",
+   "published": "2022-04-25",
+   "image": {
+    "file": "AlexisPollier_LeClos_Macon-MillyLamartine_4845154f-d317-4b30-b9da-f9a8847937ab.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "alta-alella-oexeoo-cava-de-paraje",
+   "title": "Alta Alella 'Exeo' Cava De Paraje",
+   "price": 79.0,
+   "available": true,
+   "type": "Sparkling",
+   "country": "Spain",
+   "region": "Alella",
+   "grapes": [
+    "Chardonnay",
+    "Pansa Blanca"
+   ],
+   "styles": [
+    "Organic",
+    "Vegan"
+   ],
+   "magnum": false,
+   "vintage": "2016",
+   "header": "Alta Alella 'Exeo' Cava De Paraje, Spain, 2016",
+   "description": [
+    "Grape: 60% Pansa Blanca and 40% Chardonnay",
+    "Cava de Paraje Calificado is Cava’s newest and highest classification and is the equivalent to a Grand Cru -it is only awarded to the finest wines from the very best sites. The wines of Alta Alella display finesse and complexity to rival- and even surpass- many top-end Champagnes.The Mirgin Exeo comes from the Paratge Vallcirera-Serra de Mar, which is where Alta Alella lies. The soils are Sailó, so acidic, rough granite sand. Produced only in exceptional years the Exeo is macerated and fermented in 2 and 3 year old barrels and is then aged for over 5 years before being released. There’s a nice level of toasty aromas plus floral and ripe fruits. It’s creamy with distinct minerality, balanced with the ripe fruits and toast flavors. This is an excellent example of Cava.",
+    "“Remarkably powerful, lots of aromas and flavors. The oak is perfectly integrated. On the nose, it has some toasty note I don’t find in the palate. Dry style, I like the mellow texture and the finesse of the mousse. Quite ample with brioche and creamy aftertaste. Very complete and delightful wine. A great vintage!” Janis Robinson.com",
+    "An exceptional aperitif, delicious with smoked salmon, prawns, a plate of oysters or roast chicken."
+   ],
+   "pairing": "",
+   "quote": "",
+   "published": "2021-11-17",
+   "image": {
+    "file": "AltaAlella_Exeo_CavaDeParaje.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "alta-alella-omirgin-opuso-cava-de-paraje",
+   "title": "Alta Alella 'Mirgin Opus' Cava De Paraje",
+   "price": 59.0,
+   "available": true,
+   "type": "Sparkling",
+   "country": "Spain",
+   "region": "Alella",
+   "grapes": [
+    "Chardonnay",
+    "Pansa Blanca"
+   ],
+   "styles": [
+    "Organic",
+    "Vegan"
+   ],
+   "magnum": false,
+   "vintage": "2019",
+   "header": "Alta Alella 'Mirgin Opus' Cava De Paraje, Spain, 2019",
+   "description": [
+    "Grape: 60% Chardonnay and 40% Pansa Blanca",
+    "Cava de Paraje Calificado is Cava’s newest and highest classification and is the equivalent to a Grand Cru -it is awarded to the finest wines from the very best sites.",
+    "The Mirgin Opus comes from the Paratge Vallcirera-Serra de Mar, which is where Alta Alella lies. The soils are Sailó, so acidic, rough granite sand. The Chardonnay is fermented in two year old French oak barrels, while the Pansa Blanca is fermented in stainless steel. 2019 was an excellent year with very healthy grapes giving ripe white fruits and flowers on the nose, with seaside salinity. The white fruits follows through, some nut flavors. Lovely, balanced, acidity and a depth and long length, from the 3 years of aging, makes for a world class sparkling wine.",
+    "Brilliant as an aperitif and delicious with seafood or a roast chicken sandwich!"
+   ],
+   "pairing": "",
+   "quote": "",
+   "published": "2020-10-22",
+   "image": {
+    "file": "AltaAlella_MirginOpus_CavaDeParaje.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "alta-alella-pb",
+   "title": "Alta Alella PB",
+   "price": 23.0,
+   "available": true,
+   "type": "White",
+   "country": "Spain",
+   "region": "Alella",
+   "grapes": [
+    "Pansa Blanca"
+   ],
+   "styles": [
+    "Organic",
+    "Vegan"
+   ],
+   "magnum": false,
+   "vintage": "2024",
+   "header": "Alta Alella PB, Spain, 2024",
+   "description": [
+    "Grape: Pansa Blanca",
+    "This is the perfect all rounder! The Alta Alella PB is wonderfully light, has very generous fruit quality due to the high quality grapes which are organically grown. Once it opens up, this wine shows amazing character, great minerality, fresh tropical fruits, notes of green almonds. Great if you're into Chablis or Alberino and want to try something a little different and easy. This is the one!"
+   ],
+   "pairing": "seafood and light chicken dishes",
+   "quote": "",
+   "published": "2023-06-29",
+   "image": {
+    "file": "AltaAlellaPB.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "alta-alella-tallarol",
+   "title": "Alta Alella TALLAROL",
+   "price": 28.0,
+   "available": true,
+   "type": "White",
+   "country": "Spain",
+   "region": "Alella",
+   "grapes": [
+    "Pansa Blanca"
+   ],
+   "styles": [
+    "Organic",
+    "Natural",
+    "Vegan"
+   ],
+   "magnum": false,
+   "vintage": "2019",
+   "header": "Alta Alella TALLAROL, Spain, 2019",
+   "description": [
+    "Grape: Pansa Blanca",
+    "A fantastic Spanish white made from Pansa Blanca also known as Xarel·lo. With aromas of white fruit (pear and apple), green almonds and hints of fennel and citrus on the nose. On the palate the nose is reflected with a luscious mouthfeel with the aromas of ripe white fruit with hints of citrus and fennel. saline notes, good acidity and a fresh, well-balanced long finish."
+   ],
+   "pairing": "fish and chicken, also the perfect picnic wine",
+   "quote": "",
+   "published": "2022-11-24",
+   "image": {
+    "file": "AltaAlellaTALLAROL.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "alta-alella-10-gran-reserva",
+   "title": "Alta Alella ‘10’ Gran Reserva Cava",
+   "price": 149.0,
+   "available": true,
+   "type": "Sparkling",
+   "country": "Spain",
+   "region": "Alella",
+   "grapes": [
+    "Mataró"
+   ],
+   "styles": [
+    "Organic",
+    "Vegan"
+   ],
+   "magnum": false,
+   "vintage": "2010",
+   "header": "Alta Alella Mirgin Rose Reserva Cava,  Alella, Spain, 2010",
+   "description": [
+    "A collectible cava, embodying a \"grand vin\" philosophy, celebrates the graceful passage of time. Rooted in early harvests and enriched by Sauló soil from Torrent Vallcirera, an esteemed region, ALTA ALELLA 10 exhibits a commitment to grand vin quality and impressive aging potential."
+   ],
+   "pairing": "shellfish and tapas style foods",
+   "quote": "",
+   "published": "2023-10-24",
+   "image": {
+    "file": "AltaAlella_10_GranReserva.jpg",
+    "w": 400,
+    "h": 400,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (400×400 px)"
+    },
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Photo on a busy background. Needs a reshoot or an AI studio shot"
+    }
+   ],
+   "studio": false,
+   "studio_note": "busy background"
+  },
+  {
+   "handle": "arpepe-buon-consiglio-2016-grumello-valtellina-superiore-grumello-riserva",
+   "title": "ArPePe 'Buon Consiglio' 2016 Grumello Valtellina Superiore Grumello Riserva",
+   "price": 129.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Valtellina",
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2016",
+   "header": "ArPePe 'Buon Consiglio' 2016 Grumello Valtellina Superiore Grumello Riserva",
+   "description": [
+    "From 50-100-year-old vines in the Buon Consiglio and San Antonio single vineyards in the Grumello subzone of Valtellina, lying beneath the fourteenth century Castel Gremello that lends its' name to the wine. There's a little more subsoil here and that gives the wine a certain softness over its siblings, Sassella and Inferno, making them a little more accessible sooner.",
+    "\"Deceptive in its medium-bodied feel, the 2016 Valtellina Superiore Grumello Riserva Buon Consiglio is beguiling. Sweet floral overtones are immediately alluring. Red cherry fruit, orange peel, mint and sage soar into the pliant, silky finish. This is a very complete wine. There's so much to admire.\" 94 Vinous Feb 2026",
+    "\"Dense and tightly meshed, with taut, chalky tannins and a racy streak of minerality married to flavors of dried black cherry, medicinal herbs, orange peel and milled pepper. Reveals savory hints of tobacco and smoke that push through and linger on the persistent finish. Let this open in the glass or decant for full enjoyment.\" 93 Wine Spectator April 2024"
+   ],
+   "pairing": "",
+   "quote": {
+    "text": "Restrained wine, stony and spicy with licorice, wild strawberries and darker fruits with incense depth. Medium- to full-bodied with weight and density, velvety tannins, juicy and fruity palate, supple and tense with a long stony finish. Drink or hold.\" 95 JamesSuckling.com May 2026",
+    "by": ""
+   },
+   "published": "2026-09-25",
+   "image": {
+    "file": "Ar.Pe.Pe.Inferno_SestoCantoRiserva.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Same image as ArPePe 'Sant Antonio' 2013 Grumello Valtellina Superiore Grumello Riserva, ArPePe 'Sant Antonio' 2016 Grumello Valtellina Superiore Grumello Riserva, ArPePe 'Sesto Canto' 2013 Inferno Valtellina Superiore Inferno Riserva"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "arpepe-stella-retica-sassella-2019-valtellina-superiore-sassella-copy",
+   "title": "Arpepe 'Fiamme Antiche' Inferno 2019 Valtellina Superiore Inferno",
+   "price": 64.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Valtellina",
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2019",
+   "header": "ArPePe 'Fiamme Antiche' Valtellina Superiore Inferno, Italy 2019",
+   "description": [
+    "This is Nebbiolo at its most ethereal and elegant, pale in colour, fragrant and fine, but with all of the varietal character that makes Nebbiolo one of the greatest of red grapes. The Inferno subzone creates wines with glorious finesse, structure and longevity, with lovely mineral tones. With long macerations, 50 days on its' skins, and the incredible terroir, gives this wine a remarkable minerality.",
+    "For more on the wine maker click here."
+   ],
+   "pairing": "bresaola, grilled lamb and roast vegetables",
+   "quote": {
+    "text": "Layered and vibrant dark fruit profile with blueberries, strawberries, sweet violets and some peppery notes. Sucrosity on the palate with a medium body, silky tannins and a savory finish showing black olive flavor. Drink or hold.\" JamesSuckling.com July 2024",
+    "by": ""
+   },
+   "published": "2026-09-25",
+   "image": {
+    "file": "UpdatedWines-IS24.5.21_4.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Same image as Arpepe 'Fiamme Antiche' Inferno 2022 Valtellina Superiore Inferno, Arpepe 'Stella Retica' Sassella 2017 Valtellina Superiore Sassella, Arpepe 'Stella Retica' Sassella 2019 Valtellina Superiore Sassella"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "arpepe-fiamme-antiche-inferno-2022-valtellina-superiore-inferno-copy",
+   "title": "Arpepe 'Fiamme Antiche' Inferno 2022 Valtellina Superiore Inferno",
+   "price": 69.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Valtellina",
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2022",
+   "header": "ArPePe 'Fiamme Antiche' Valtellina Superiore Inferno, Italy 2022",
+   "description": [
+    "This is Nebbiolo at its most ethereal and elegant, pale in colour, fragrant and fine, but with all of the varietal character that makes Nebbiolo one of the greatest of red grapes. The Inferno subzone creates wines with glorious finesse, structure and longevity, with lovely mineral tones. With long macerations, 50 days on its' skins, and the incredible terroir, gives this wine a remarkable minerality.",
+    "\"A svelte, mouthwatering red, with fine integration to its silky tannins and notes of pureed raspberry, blood orange peel, rooibos tea, dried mint and leather. Glides across the palate, with its flavors expanding through the lingering, lightly spiced finish.\" 92 Wine Spectator Aug 2026",
+    "For more on the wine maker click here."
+   ],
+   "pairing": "bresaola, grilled lamb and roast vegetables",
+   "quote": {
+    "text": "The 2022 Inferno Fiamme Antiche is lithe and lovely, with a captivating fragrance of wild rose, crushed stone, Alpine herb and red forest berry. Linear and elegant, the palate offers succulent Marasca cherry, wild strawberry, bitter orange and fine tobacco blend alongside taut, ultra-refined tannins. A classic mountain Nebbiolo, it has fresh acidity that lends racy tension.\" 94 Kerin O'Keefe Dec 2025",
+    "by": ""
+   },
+   "published": "2026-09-25",
+   "image": {
+    "file": "UpdatedWines-IS24.5.21_4.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Same image as Arpepe 'Fiamme Antiche' Inferno 2019 Valtellina Superiore Inferno, Arpepe 'Stella Retica' Sassella 2017 Valtellina Superiore Sassella, Arpepe 'Stella Retica' Sassella 2019 Valtellina Superiore Sassella"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "arpepe-il-pettirosso-1",
+   "title": "Arpepe 'Il Pettirosso' 2023 Valtellina Superiore DOCG",
+   "price": 59.0,
+   "available": true,
+   "type": null,
+   "country": "Italy",
+   "region": null,
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2023",
+   "header": "Arpepe 'Il Pettirosso' Valtellina Superiore DOCG, Italy 2023",
+   "description": [
+    "The 2023 Il Pettitrosso comes from the winery's top sites, Sassella, Inferno and Grumello, and is a seriously good introduction to the wines of Arpepe and indeed to the beguiling elegance of 'Alpine Nebbiolo' of Valtellina. The 2023 vintage was wamer, giving a more structured and richer Il Pettirosso than previous releases.",
+    "The grapes spend up to 3 months on their skins and another 12 in used oak barrels, giving the wine certain dusty, dry tannins. There's red berry fruits, raspberries, strawberries, and cherries hiding behind the tea-like tannins that reveal themselves gently in the glass. Although this is a lighter, more delicate style of Nebbiolo there's so much going on it the glass and, as with all of Arpepe's wines, your patience once you've opened the bottle will reward you in spades!",
+    "Magnificent with grilled vegetables and lighter meats, especially Lamb that’s been judiciously grilled or roasted :)"
+   ],
+   "pairing": "",
+   "quote": {
+    "text": "a subtly spicy and elegant wine with aromas of embers, bark, fresh roses, violets, red currants, pomegranates, restrained blood oranges, and licorice.\" JamesSuckling.com",
+    "by": ""
+   },
+   "published": "2022-12-30",
+   "image": {
+    "file": "Arpepe_IlPettirosso_ValtellinaSuperioreDOCG2018.jpg",
+    "w": 3024,
+    "h": 3024,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Image file says 2018, listing says 2023"
+    },
+    {
+     "kind": "filter",
+     "level": "medium",
+     "text": "Not in any wine-type collection, so the Red / White filters miss it"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "copy-of-arpepe-il-pettirosso-valtellina-superiore-docg-2018",
+   "title": "Arpepe 'Il Pettirosso' Valtellina Superiore DOCG 2017 MAGNUM",
+   "price": 105.0,
+   "available": true,
+   "type": null,
+   "country": null,
+   "region": null,
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": true,
+   "vintage": "2017",
+   "header": "The 2017 Il Pettitrosso comes from the winery's top sites, Sassella, Inferno and Grumello, and is a seriously good introduction to the wines of Arpepe and indeed to the beguiling elegance of 'Alpine Nebbiolo' and Valtellina.",
+   "description": [
+    "The grapes spend 4 months on their skins and another 12 in used oak barrels, giving the wine certain dusty, dry tannins. There's red berry fruits, raspberries, strawberries, and cherries hiding behind the tea-like tannins that reveal themselves gently in the glass. Although this is a lighter, more delicate style of Nebbiolo there's so much going on it the glass and, as with all of Arpepe's wines, your patience once you've opened the bottle will reward you in spades!"
+   ],
+   "pairing": "",
+   "quote": "",
+   "published": "2023-10-19",
+   "image": {
+    "file": "IlPettirosso2018.webp",
+    "w": 1080,
+    "h": 1080,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Image file says 2018, listing says 2017"
+    },
+    {
+     "kind": "filter",
+     "level": "medium",
+     "text": "Not in any wine-type collection, so the Red / White filters miss it"
+    }
+   ],
+   "studio": true,
+   "studio_note": "transparent"
+  },
+  {
+   "handle": "copy-of-arpepe-inferno-nuova-regina-riserva",
+   "title": "ArPePe 'Nuova Regina' 2013 Valtellina Superiore Sassella Riserva",
+   "price": 119.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": null,
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2013",
+   "header": "ArPePe 'Nuova Regina' Valtellina Superiore Sassella Riserva, Italy, 2013",
+   "description": [
+    "Nebbiolo",
+    "Sassella, the stoniest of the five subzones in Valtellina and probably the most celebrated and historic, creates some of longest-lived and refined wines of Valtellina.",
+    "Rock and more rock, on terraces of rock, bound by drywalls of rock. This could be the most emblematic of Valtellina wines. 50 years old Nebbiolo vines, 67 days of maceration and 39 months in barrels, vats and bottle. This is a wine with incredible finesse and silky tannins, not a heavy hitter by any means, rather a delicate creation that reveals itself gently.",
+    "- 22 of the Top 100 Cellar Selections in The Wine Enthusiast's 2022 rankings.- Drink 2025–2035."
+   ],
+   "pairing": "bresaola, grilled lamb, roast vegetables or a great book",
+   "quote": {
+    "text": "Arpepe 2013 Sassella Nuova Regina Riserva (Valtellina Superiore). Loaded with finesse and energy and still youthfully austere, this linear, structured red offers tart cranberry, blood orange and star anise sensations. A vein of salty mineral provides the backdrop while fine-grained tannins provide elegant structure and support. Racy acidity keeps it balanced. Give it time to fully develop and blossom into even more of a beauty.",
+    "by": "- 22 of the Top 100 Cellar Selections in The Wine Enthusiast's 2022 rankings."
+   },
+   "published": "2023-08-28",
+   "image": {
+    "file": "ARPEPE_Sassella_Nuova.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Same image as ArPePe 'Nuova Regina' 2016 Valtellina Superiore Sassella Riserva, ArPePe 'Nuova Regina' 2018 Valtellina Superiore Sassella Riserva"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "arpepe-nuova-regina-2013-valtellina-superiore-sassella-riserva-copy",
+   "title": "ArPePe 'Nuova Regina' 2016 Valtellina Superiore Sassella Riserva",
+   "price": 129.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": null,
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2016",
+   "header": "ArPePe 'Nuova Regina' Valtellina Superiore Sassella Riserva, Italy, 2016",
+   "description": [
+    "Nebbiolo",
+    "Sassella, the stoniest of the five subzones in Valtellina and probably the most celebrated and historic, creates some of longest-lived and refined wines of Valtellina.",
+    "Rock and more rock, on terraces of rock, bound by drywalls of rock. This could be the most emblematic of Valtellina wines. 50 years old Nebbiolo vines, 67 days of maceration and 39 months in barrels, vats and bottle. This is a wine with incredible finesse and silky tannins, not a heavy hitter by any means, rather a delicate creation that reveals itself gently.",
+    "\"Shows a zesty, fragrant layer of milled pepper and chopped rosemary accenting flavors of cherry, raspberry and leather. This red's detailed flavor range is integrated with bright acidity and firm, fine-grained tannins.\" 92 Wine Spectator March 2024"
+   ],
+   "pairing": "bresaola, grilled lamb, roast vegetables or a great book",
+   "quote": {
+    "text": "Intense floral nose of red and dark fruit, with a slightly peppery, almost meaty character. There is a lot of stony minerality. Tight-knit structure with fruit and acidity that are crisp and zesty, ripe tannins, a velvety texture and a medium body. Good cherry fruit finish. Drinkable now, but best from 2026.\" 95 JamesSuckling.com Aug 2024",
+    "by": ""
+   },
+   "published": "2026-09-25",
+   "image": {
+    "file": "ARPEPE_Sassella_Nuova.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Same image as ArPePe 'Nuova Regina' 2013 Valtellina Superiore Sassella Riserva, ArPePe 'Nuova Regina' 2018 Valtellina Superiore Sassella Riserva"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "arpepe-nuova-regina-2018-valtellina-superiore-sassella-riserva-copy",
+   "title": "ArPePe 'Nuova Regina' 2018 Valtellina Superiore Sassella Riserva",
+   "price": 136.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": null,
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2018",
+   "header": "ArPePe 'Nuova Regina' Valtellina Superiore Sassella Riserva, Italy, 2018",
+   "description": [
+    "Nebbiolo",
+    "Sassella, the stoniest of the five subzones in Valtellina and probably the most celebrated and historic, creates some of longest-lived and refined wines of Valtellina.",
+    "Rock and more rock, on terraces of rock, bound by drywalls of rock. This could be the most emblematic of Valtellina wines. 50 years old Nebbiolo vines, 67 days of maceration and 39 months in barrels, vats and bottle. This is a wine with incredible finesse and silky tannins, not a heavy hitter by any means, rather a delicate creation that reveals itself gently.",
+    "\"A waft of medicinal herbs and spices mixes with flavors of macerated strawberry and cherry in this chewy red. Well-meshed, with a swath of satiny texture cloaking the chalky tannins. Hints of iron, mandarin orange peel, licorice root and stone join the fruit notes and linger on the finish.\" 92 Wine Specator Aug 2026"
+   ],
+   "pairing": "",
+   "quote": {
+    "text": "Mineral-driven aromas recalling rusty nail mingle with forest berry, camphor, dried herb, carob and dog rose. Elegantly structured, the delicious palate delivers layers of succulent Morello cherry, wild raspberry and baking spice before a salty licorice finish. Firm, fine-grained tannins and bright acidity carry through the lingering close.",
+    "by": ""
+   },
+   "published": "2026-09-25",
+   "image": {
+    "file": "ARPEPE_Sassella_Nuova.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Same image as ArPePe 'Nuova Regina' 2013 Valtellina Superiore Sassella Riserva, ArPePe 'Nuova Regina' 2016 Valtellina Superiore Sassella Riserva"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "ar-pe-pe-grumello-rocca-de-piro",
+   "title": "ArPePe 'Rocca de Piro' 2017 Valtellina Superiore Grumello",
+   "price": 64.0,
+   "available": false,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Valtellina",
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2017",
+   "header": "ArPePe 'Rocca de Piro' Valtellina Superiore Grumello, Italy, 2017",
+   "description": [
+    "From 50-100-year-old vines in the Buon Consiglio and San Antonio single vineyards in the Grumello subzone of Valtellina, lying beneath the fourteenth century Castel Gremello that lends its' name to the wine. There's a little more subsoil here and that gives the wine a certain softness over its siblings, Sassella and Inferno."
+   ],
+   "pairing": "bresaola, grilled lamb, roast vegetables",
+   "quote": {
+    "text": "Initially shy, the subtle nose eventually reveals new leather, Alpine herb and wild berry. The savory palate has an understated elegance, offering Marasca cherry, pomegranate and graphite alongside refined tannins. Drink through 2027.",
+    "by": ""
+   },
+   "published": "2021-04-23",
+   "image": {
+    "file": "Ar.Pe.Pe.Grumello_RoccadePiro_3.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Same image as ArPePe 'Rocca de Piro' Grumello 2019 Valtellina Superiore Grumello"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "arpepe-rocca-de-piro-2019-valtellina-superiore-grumello-copy",
+   "title": "ArPePe 'Rocca de Piro' Grumello 2019 Valtellina Superiore Grumello",
+   "price": 64.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Valtellina",
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2019",
+   "header": "ArPePe 'Rocca de Piro' Valtellina Superiore Grumello, Italy, 2019",
+   "description": [
+    "From 50-100-year-old vines in the Buon Consiglio and San Antonio single vineyards in the Grumello subzone of Valtellina, lying beneath the fourteenth century Castel Gremello that lends its' name to the wine. There's a little more subsoil here and that gives the wine a certain softness over its siblings, Sassella and Inferno, making them a little more accessible sooner."
+   ],
+   "pairing": "bresaola, grilled lamb, roast vegetables",
+   "quote": {
+    "text": "I just love this wine, thanks to its sheer brightness and energy. The Ar. Pe. Pe. 2019 Valtellina Superiore Grumello Rocca de Piro reveals impeccable balance and a very silky quality, with nuanced delivery of cherry cola, white licorice root and blue mountain flower. The wine evokes a warmer sense as well with mountain meadow and sunshine on slate rock. All of these elements work in harmony and transfer to the palate with soft intensity. Production is 12,850 bottles.\" 95 Wine Advocate Jan 2024",
+    "by": ""
+   },
+   "published": "2026-09-25",
+   "image": {
+    "file": "Ar.Pe.Pe.Grumello_RoccadePiro_3.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Same image as ArPePe 'Rocca de Piro' 2017 Valtellina Superiore Grumello"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "ar-pe-pe-sassella-rocce-rosse-riserva",
+   "title": "Arpepe 'Rocce Rosse' 2016 Sassella Valtellina Sassella Superiore Riserva",
+   "price": 129.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Valtellina",
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2016",
+   "header": "Arpepe 'Rocce Rosse' Valtellina Superiore Sassella Riserva, Italy 2016",
+   "description": [
+    "Named after the iron-rich 'red rock' of this cru-subzone, the Rocce Rosse is only made in exceptional vintages. It's a more powerful, dense wine (by Arpepe standards). Like most of their wines, this is beguiling, with smoke, dark spice, lavender and star anise on the nose. There's a richness and structure that reflects the granite terraces, the hard working vines, the 40 day maceration and 5 years of aging in barrel, concrete vats and eventually bottles. A triumph.",
+    "\"Very flowery on the nose, with fresh violets, roses, red currants, bright fruitiness, licorice and stony minerality. The attack is soft, with a medium body, brilliant crisp acidity and tight yet ripe tannins soaked in fruit. Not an easy wine, more elegant than powerful. It needs time to develop more complexity. Drinkable now, but best from 2026.\" 96 JamesSuckling.com Aug 2024",
+    "\"The Ar. Pe. Pe. 2016 Valtellina Superiore Riserva Sassella Rocce Rosse is initially understated with timid primary fruit, blood orange and apricot. There is a pretty spiciness as well, with dried cinnamon stick, nutmeg and tanned leather. The wine needs time, and if you come back to the glass after a little pause, it sings with greater intensity and balance. This is a release of 25,302 bottles that sees 97 days on the skins and 34 months of wood and cement aging.\" 96 Wine Advocate Jan 2024",
+    "This is an exceptional wine, a heroic wine and one worthy of any cellar or, more importantly, any moment that should be shared and cherished, with yourself or with a worthy friend. Enjoy."
+   ],
+   "pairing": "",
+   "quote": {
+    "text": "Tight, taut and very young, this gorgeous wine has intense aromas of Alpine berry, orange zest, camphor and cake spice. On the savory, elegantly structured palate, firm tannins accompany crushed mint, wild strawberry, pomegranate and grilled Porcini. A salty note signals the close while vibrant acidity keeps it balanced.\" Drink through 2046 98 Kerin O'Keefe December 2024",
+    "by": ""
+   },
+   "published": "2021-04-23",
+   "image": {
+    "file": "Ar.Pe.Pe.Sassella_RocceRosseRiserva_1.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Same image as Arpepe 'Rocce Rosse' 2016 Sassella Valtellina Sassella Superiore Riserva, Arpepe 'Rocce Rosse' 2018 Sassella Valtellina Sassella Superiore Riserva, Arpepe 'Ultimi Raggi' 2016 Sassella Valtellina Sassella Superiore Riserva"
+    },
+    {
+     "kind": "data",
+     "level": "medium",
+     "text": "Two listings with this exact title"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "arpepe-rocce-rosse-2016-sassella-valtellina-sassella-superiore-riserva",
+   "title": "Arpepe 'Rocce Rosse' 2016 Sassella Valtellina Sassella Superiore Riserva",
+   "price": 129.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Valtellina",
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2016",
+   "header": "Arpepe 'Rocce Rosse' Valtellina Superiore Sassella Riserva, Italy 2016",
+   "description": [
+    "Named after the iron-rich 'red rock' of this cru-subzone, the Rocce Rosse is only made in exceptional vintages. It's a more powerful, dense wine (by Arpepe standards). Like most of their wines, this is beguiling, with smoke, dark spice, lavender and star anise on the nose. There's a richness and structure that reflects the granite terraces, the hard working vines, the 40 day maceration and 5 years of aging in barrel, concrete vats and eventually bottles. A triumph.",
+    "\"Very flowery on the nose, with fresh violets, roses, red currants, bright fruitiness, licorice and stony minerality. The attack is soft, with a medium body, brilliant crisp acidity and tight yet ripe tannins soaked in fruit. Not an easy wine, more elegant than powerful. It needs time to develop more complexity. Drinkable now, but best from 2026.\" 96 JamesSuckling.com Aug 2024",
+    "\"The Ar. Pe. Pe. 2016 Valtellina Superiore Riserva Sassella Rocce Rosse is initially understated with timid primary fruit, blood orange and apricot. There is a pretty spiciness as well, with dried cinnamon stick, nutmeg and tanned leather. The wine needs time, and if you come back to the glass after a little pause, it sings with greater intensity and balance. This is a release of 25,302 bottles that sees 97 days on the skins and 34 months of wood and cement aging.\" 96 Wine Advocate Jan 2024",
+    "This is an exceptional wine, a heroic wine and one worthy of any cellar or, more importantly, any moment that should be shared and cherished, with yourself or with a worthy friend. Enjoy."
+   ],
+   "pairing": "",
+   "quote": {
+    "text": "Tight, taut and very young, this gorgeous wine has intense aromas of Alpine berry, orange zest, camphor and cake spice. On the savory, elegantly structured palate, firm tannins accompany crushed mint, wild strawberry, pomegranate and grilled Porcini. A salty note signals the close while vibrant acidity keeps it balanced.\" Drink through 2046 98 Kerin O'Keefe December 2024",
+    "by": ""
+   },
+   "published": "2026-09-25",
+   "image": {
+    "file": "Ar.Pe.Pe.Sassella_RocceRosseRiserva_1.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Same image as Arpepe 'Rocce Rosse' 2016 Sassella Valtellina Sassella Superiore Riserva, Arpepe 'Rocce Rosse' 2018 Sassella Valtellina Sassella Superiore Riserva, Arpepe 'Ultimi Raggi' 2016 Sassella Valtellina Sassella Superiore Riserva"
+    },
+    {
+     "kind": "data",
+     "level": "medium",
+     "text": "Two listings with this exact title"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "arpepe-rocce-rosse-2018-sassella-valtellina-sassella-superiore-riserva-copy-1",
+   "title": "Arpepe 'Rocce Rosse' 2018 Sassella Valtellina Sassella Superiore Riserva",
+   "price": 136.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Valtellina",
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2018",
+   "header": "Arpepe 'Rocce Rosse' Valtellina Superiore Sassella Riserva, Italy 2018",
+   "description": [
+    "Named after the iron-rich 'red rock' of this cru-subzone, the Rocce Rosse is only made in exceptional vintages. It's a more powerful, dense wine (by Arpepe standards). Like most of their wines, this is beguiling, with smoke, dark spice, lavender and star anise on the nose. There's a richness and structure that reflects the granite terraces, the hard working vines, the 40 day maceration and 5 years of aging in barrel, concrete vats and eventually bottles. Always a triumph.",
+    "\"Refined and harmonious overall, but sculpted tannins bring breadth and weight to the flavors of sun-dried cherry, strawberry, red licorice, leather, spices and blood orange pâte de fruit. Refreshing, with succulent juiciness, this is long and plush on the finish, echoing dusty spice and mineral notes.\" 95 Wine Spectator Aug 2026",
+    "\"Intense and perfumed nose of rosemary, cherry pits, flowers, balsamic, dried oranges, rhubarb, Parma violets and cinnamon enhanced by stony minerality. On the palate it's smooth, silky and medium-bodied, with velvety tannins, crisp acidity and balsamic flavors. Tight-knit and precise, it's a bit austere in the finish yet forthright.\" 96 JamesSuckling.com June 2025",
+    "\"The 2018 Valtellina Superiore Sassella Riserva Rocce Rosse is bright, lifted and translucent in the glass. It offers striking intensity and yet remains light on its feet. Crushed red berry fruit, white flowers, mint, chalk and tangerine peel build with time in the glass, filling out the layers effortlessly. There is a feeling of translucency here that is utterly beguiling. Readers will find a wine of real stature and pedigree.\" 94 Vinous Feb 2026"
+   ],
+   "pairing": "",
+   "quote": {
+    "text": "This wine has risen to become the estate's flagship, a pure expression of the rocky and windy Sassella sub-zone, known for its wines' structure, minerality and ageing potential. Just released, this 100% Nebbiolo shows a brilliant garnet colour and a confident mix of ripe cherries layered with cinnamon, chocolate and a distinct mineral backbone. Its firm tannins are nonetheless juicy, balanced by vibrant acidity and built to evolve long and gracefully. Dreaming of this with porcini risotto.\" 94 Decanter July 2025",
+    "by": ""
+   },
+   "published": "2026-09-25",
+   "image": {
+    "file": "Ar.Pe.Pe.Sassella_RocceRosseRiserva_1.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Same image as Arpepe 'Rocce Rosse' 2016 Sassella Valtellina Sassella Superiore Riserva, Arpepe 'Rocce Rosse' 2016 Sassella Valtellina Sassella Superiore Riserva, Arpepe 'Ultimi Raggi' 2016 Sassella Valtellina Sassella Superiore Riserva"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "arpepe-sesto-canto-2013-inferno-valtellina-superiore-inferno-riserva-copy",
+   "title": "ArPePe 'Sant Antonio' 2013 Grumello Valtellina Superiore Grumello Riserva",
+   "price": 129.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Valtellina",
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2013",
+   "header": "ArPePe 'Sant Antonio' 2013 Grumello Valtellina Superiore Grumello Riserva",
+   "description": [
+    "From 50-100-year-old vines in the Buon Consiglio and San Antonio single vineyards in the Grumello subzone of Valtellina, lying beneath the fourteenth century Castel Gremello that lends its' name to the wine. There's a little more subsoil here and that gives the wine a certain softness over its siblings, Sassella and Inferno, making them a little more accessible sooner."
+   ],
+   "pairing": "",
+   "quote": {
+    "text": "All about finesse and depth, this opens with enticing scents recalling underbrush, dried rose petal, camphor and perfumed berry. Structured and linear, the elegant palate features dried cherry, spiced cranberry and star anise set against a saline mineral note. Taut, refined tannins and bright acidity keep it vibrant. Already enjoyable, it also offers very good aging potential.\" 94 Kerin O'Keefe Aug 2021",
+    "by": ""
+   },
+   "published": "2026-09-25",
+   "image": {
+    "file": "Ar.Pe.Pe.Inferno_SestoCantoRiserva.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Same image as ArPePe 'Buon Consiglio' 2016 Grumello Valtellina Superiore Grumello Riserva, ArPePe 'Sant Antonio' 2016 Grumello Valtellina Superiore Grumello Riserva, ArPePe 'Sesto Canto' 2013 Inferno Valtellina Superiore Inferno Riserva"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "arpepe-sant-antonio-2016-grumello-valtellina-superiore-grumello-riserva",
+   "title": "ArPePe 'Sant Antonio' 2016 Grumello Valtellina Superiore Grumello Riserva",
+   "price": 129.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Valtellina",
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2016",
+   "header": "ArPePe 'Sant Antonio' 2016 Grumello Valtellina Superiore Grumello Riserva",
+   "description": [
+    "From 50-100-year-old vines in the Buon Consiglio and San Antonio single vineyards in the Grumello subzone of Valtellina, lying beneath the fourteenth century Castel Gremello that lends its' name to the wine. There's a little more subsoil here and that gives the wine a certain softness over its siblings, Sassella and Inferno, making them a little more accessible sooner.",
+    "\"The 2016 Valtellina Superiore Grumello Riserva Sant’Antonio is now fully mature. Dried cherry, cedar, pipe tobacco, mint, dried herbs and brown spice are all consistent with a wine that is peaking today. The 2016 has enough energy to drink well for another handful years, but I would not push my luck too far beyond that.\" 92 Vinous Feb 2026",
+    "\"Dense and layered, this opens nicely with air in the glass, revealing flavors of dried raspberry, eucalyptus, leather and black tea enmeshed with a core of firm tannins. Showing fine balance and good energy overall, this should shine even brighter after short-term cellaring.\" 94 Wine Spectator March 2024"
+   ],
+   "pairing": "",
+   "quote": {
+    "text": "Game, smoke, earth, strawberries and bright licorice root depth. The attack is soft and elegant, with silky tannins and refreshing acidity. A chewy, vivid finish.\" 93 JamesSuckling.com June 2024",
+    "by": ""
+   },
+   "published": "2026-09-25",
+   "image": {
+    "file": "Ar.Pe.Pe.Inferno_SestoCantoRiserva.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Same image as ArPePe 'Buon Consiglio' 2016 Grumello Valtellina Superiore Grumello Riserva, ArPePe 'Sant Antonio' 2013 Grumello Valtellina Superiore Grumello Riserva, ArPePe 'Sesto Canto' 2013 Inferno Valtellina Superiore Inferno Riserva"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "ar-pe-pe-inferno-sesto-canto-riserva",
+   "title": "ArPePe 'Sesto Canto' 2013 Inferno Valtellina Superiore Inferno Riserva",
+   "price": 129.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Valtellina",
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2013",
+   "header": "ArPePe 'Sesto Canto' Valtellina Superiore Inferno Riserva, Italy, 2013",
+   "description": [
+    "Expressing a deep and concentrated nose which is mostly representative of it's mountainous terroir, flinty minerality, graphite, forest fruits, pressed rose and sloe berry, ripe strawberry all emerge from the glass. It's elegance is well balanced with refined and fresh acidity."
+   ],
+   "pairing": "bresaola, grilled lamb, roast vegetables",
+   "quote": {
+    "text": "Made in high-altitude mountain vineyards, this classy, fragrant Nebbiolo combines structure, depth, elegance and personality. It features enticing scents of pressed rose, Alpine herb, new leather, camphor and wild red berry while the lithe, delicious palate delivers raspberry compote, cinnamon, tobacco and star anise alongside firm but extremely refined tannins. Bright acidity keeps it impeccably balanced and energized while a flinty mineral note lingers on the close. Just gorgeous. Drink through 2043\"  96 Kerin O'Keefe Aug 2021",
+    "by": ""
+   },
+   "published": "2021-04-23",
+   "image": {
+    "file": "Ar.Pe.Pe.Inferno_SestoCantoRiserva.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Same image as ArPePe 'Buon Consiglio' 2016 Grumello Valtellina Superiore Grumello Riserva, ArPePe 'Sant Antonio' 2013 Grumello Valtellina Superiore Grumello Riserva, ArPePe 'Sant Antonio' 2016 Grumello Valtellina Superiore Grumello Riserva"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "ar-pe-pe-sassela-stella-retica",
+   "title": "Arpepe 'Stella Retica' Sassella 2017 Valtellina Superiore Sassella",
+   "price": 59.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Valtellina",
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2017",
+   "header": "ArPePe 'Stella Retica' Valtellina Superiore Sassella, Italy 2017",
+   "description": [
+    "This is Nebbiolo at its most ethereal and elegant, pale in colour, fragrant and fine, but with all of the varietal character that makes Nebbiolo one of the greatest of red grapes. Sassella translates as Rock in the local dialect. With long macerations, 50 days on its' skins and the incredible terroir, gives this wine a remarkable minerality.",
+    "\"Fragrant and loaded with finesse, this lovely red opens with heady aromas of woodland berry, wild rose and camphor. Lithe and delicious, the elegant palate offers juicy red cherry, crushed strawberry, baked spice and a tangy mineral note suggesting granite. It's well balanced, with polished tannins and fresh acidity. Drink through 2032.\" Kerin O'Keefe The Wine Enthusiast October 2021",
+    "For more on the wine maker click here."
+   ],
+   "pairing": "bresaola, grilled lamb and roast vegetables",
+   "quote": "",
+   "published": "2021-05-24",
+   "image": {
+    "file": "UpdatedWines-IS24.5.21_4.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Same image as Arpepe 'Fiamme Antiche' Inferno 2019 Valtellina Superiore Inferno, Arpepe 'Fiamme Antiche' Inferno 2022 Valtellina Superiore Inferno, Arpepe 'Stella Retica' Sassella 2019 Valtellina Superiore Sassella"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "arpepe-sassella-stella-retica-2019-valtellina-superiore-sassella-copy",
+   "title": "Arpepe 'Stella Retica' Sassella 2019 Valtellina Superiore Sassella",
+   "price": 64.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Valtellina",
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2019",
+   "header": "ArPePe 'Stella Retica' Valtellina Superiore Sassella, Italy 2019",
+   "description": [
+    "This is Nebbiolo at its most ethereal and elegant, pale in colour, fragrant and fine, but with all of the varietal character that makes Nebbiolo one of the greatest of red grapes. Sassella translates as Rock in the local dialect. With long macerations, 50 days on its' skins and the incredible terroir, gives this wine a remarkable minerality.",
+    "For more on the wine maker click here."
+   ],
+   "pairing": "bresaola, grilled lamb and roast vegetables",
+   "quote": {
+    "text": "The Ar. Pe. Pe. 2019 Valtellina Superiore Sassella Stella Retica shows a dry aroma of graham cracker or sawdust that takes a minute or two to lift. The bouquet then veers toward a pretty interlude of cassis, forest fruit, or dried blueberry that then segues to chalky tannins that are a little more astringent in the Stella Retica. That extra structure sets this wine up for a pairing with stewed meats with juniper berry and bay leaf.\" 94+ Wine Advocate January 2024",
+    "by": ""
+   },
+   "published": "2026-09-25",
+   "image": {
+    "file": "UpdatedWines-IS24.5.21_4.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Same image as Arpepe 'Fiamme Antiche' Inferno 2019 Valtellina Superiore Inferno, Arpepe 'Fiamme Antiche' Inferno 2022 Valtellina Superiore Inferno, Arpepe 'Stella Retica' Sassella 2017 Valtellina Superiore Sassella"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "arpepe-ultimi-raggi-2016-sassella-valtellina-sassella-superiore-riserva",
+   "title": "Arpepe 'Ultimi Raggi' 2016 Sassella Valtellina Sassella Superiore Riserva",
+   "price": 136.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Valtellina",
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2016",
+   "header": "Arpepe 'Ultimi Raggi' Valtellina Superiore Sassella Riserva, Italy 2016",
+   "description": [
+    "The Ultimi Raggi (meaning Last Rays) is a late-harvested Nebbiolo where the grapes undergo a light and natural drying process, due to the Alpine winds, while still attached to the vines. The later harvesting, before the snows in mind November, thickens the skins and concentrates the sugars, creating the most full-bodied and structured offering in the winery’s line-up. It has a naturally high acidity that comes, in part, from the plots 600 meter altitude, right up at the highest reaches of the Sassella subzone, in an area called Ere. Think Morello cherries, prunes and licorice, accompanied by firm, close-grained tannins that grip through to a long, beguiling finish.",
+    "\"A lively, graceful red, well-spiced and aromatic, with a skein of incense and potpourri notes winding through cherry and berry fruit flavors. Reveals a savory push of loamy earth, mineral and brambly herbs on the plush finish.\" 92 Wine Spectator March 2024"
+   ],
+   "pairing": "",
+   "quote": {
+    "text": "Aromas of graphite, game, earth, red cherries and dark berries. Dense palate with dusty yet ripe tannins, refreshing acidity and a medium to full body. A lot of good substance that still needs time to integrate and gain complexity. Drinkable now, but best from 2026.\" 95 JamesSuckling.com July 2024",
+    "by": ""
+   },
+   "published": "2026-09-25",
+   "image": {
+    "file": "Ar.Pe.Pe.Sassella_RocceRosseRiserva_1.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Same image as Arpepe 'Rocce Rosse' 2016 Sassella Valtellina Sassella Superiore Riserva, Arpepe 'Rocce Rosse' 2016 Sassella Valtellina Sassella Superiore Riserva, Arpepe 'Rocce Rosse' 2018 Sassella Valtellina Sassella Superiore Riserva"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "arpepe-rosso-di-valtellina-2024",
+   "title": "Arpepe 2024 Rosso Di Valtellina",
+   "price": 45.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": null,
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2024",
+   "header": "Arpepe Rosso Di Valtellina, Italy, 2024",
+   "description": [
+    "A Nebbiolo that drinks like a Pinot. Light ruby colour, soft and fragrant on the nose -there’s that characteristic Nebbiolo hint of rose- red berry fruits, grippy tannins and a sprinkle of mountain magic, leading to a wonderfully silky finish. Oh So Good.",
+    "Although this is a lighter, more delicate style of Nebbiolo there's so much going on it the glass and, as with all of Arpepe's wines, your patience once you've opened the bottle will reward you in spades!",
+    "More on Arpepe",
+    "Nebbiolo from the Alps, from Valtellina in Lombardy to be exact, practically in Switzerland, where the wines are in every respect lighter and leaner than their better known Nebbiolo cousins in Barolo and Barbaresco or even northern Piedmont. They have their own set of aromas, wild berries, dried raspberries, flint, crushed granite and smoke, with a lively, focused purity from light, mineral infused grapes, some say they’re Pinot-esque. This is down to the poverty of the soil, essentially schist and granite, and the elevation of up to 700 meters above sea level resulting in fruit with intense minerality. The valley runs from Lake Como to the Stelvio Pass, west to east, with all the vineyards planted on the northern slopes with long sunshine days and a mild microclimate that’s almost Mediterranean like.",
+    "Located on impressively steep granite terraces which can be traced back to pre-Roman times, now a Unesco World Heritage site, the Perego family have been making wine here since 1860.",
+    "What distinguishes the wines of Ar.Pe.Pe. is their focus on long aging and tradition. Everything is worked by hand, with minimum intervention, and the wines only released when the family deem they’re ready for drinking. The wines though have the quality and depth to age gracefully.",
+    "There are plots in three specific sites in Sassella, Grumello and Inferno and they decide on the number of wines to vinify with each vintage. Meaning that, from year to year, the range can be quite different but always Nebbiolo and always with incredible results.",
+    "Each year they bottle a Rosso di Valtellina, a blend from any of the three sites. In the good vintages ARPEPE makes Valtellina Superiore wines from the Sassella, Grumello and Inferno, that see a longer maceration and up to 30 months in Chestnut barrels followed by time in bottle before being released. In exceptional vintages ARPEPE produces its five “Riserva” wines, wines that deserve both time and attention. Wines that appear pale and light but with a burgundy like elegance, delicate yet full, gentle and ethereal. Age-worthy and a must for any genuine cellar.",
+    "The results are graceful, fragrant reds that are naturally lighter on their feet and have lower alcohol levels than Barolo and Barbaresco but that feature depth, finesse and serious longevity. They also deliver their varietal pedigree, offering enticing sensations of rose, red berry, camphor and new leather as well as Alpine herb sensations, bright acidity, taut but refined tannins and savory mineral notes.\" Kerin O'Keefe www.kerinokeefe.com/arpepe/"
+   ],
+   "pairing": "",
+   "quote": {
+    "text": "Valtellina Cradled among soaring Alpine peaks near the town of Sondrio in Italy’s northern Lombardy region, Valtellina’s steep mountain vineyards have been turning out notable wines for millennia. Nebbiolo has the starring role on the breathtakingly vertiginous slopes and currently accounts for 90% of Valtellina’s 850ha under vine. Planted predominantly in terraced, dry stone wall vineyards, Nebbiolo thrives in the area’s unique growing conditions. These include high altitude vineyards that are protected from strong winds and fierce storms by the Rhaetian Alps. The grape further benefits from mild breezes from Lake Como below and southern exposures that all together add up to a long growing season that generates aromatic complexity while rocky soils impart elegance and mineral sensations.",
+    "by": ""
+   },
+   "published": "2020-10-22",
+   "image": {
+    "file": "Wines_3.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "copy-of-arpepe-rosso-di-valtellina-2018-jeroboam",
+   "title": "Arpepe Rosso Di Valtellina 2018 JEROBOAM",
+   "price": 190.0,
+   "available": false,
+   "type": "Red",
+   "country": "Italy",
+   "region": null,
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": true,
+   "vintage": "2018",
+   "header": "Arpepe Rosso Di Valtellina, Italy, 2018 JEROBOAM",
+   "description": [
+    "A Nebbiolo that drinks like a Pinot. Light ruby colour, soft and fragrant on the nose -there’s that characteristic Nebbiolo hint of rose- red berry fruits, grippy tannins and a sprinkle of mountain magic, leading to a wonderfully silky finish. Oh So Good.",
+    "Although this is a lighter, more delicate style of Nebbiolo there's so much going on it the glass and, as with all of Arpepe's wines, your patience once you've opened the bottle will reward you in spades!",
+    "More on Arpepe",
+    "Nebbiolo from the Alps, from Valtellina in Lombardy to be exact, practically in Switzerland, where the wines are in every respect lighter and leaner than their better known Nebbiolo cousins in Barolo and Barbaresco or even northern Piedmont. They have their own set of aromas, wild berries, dried raspberries, flint, crushed granite and smoke, with a lively, focused purity from light, mineral infused grapes, some say they’re Pinot-esque. This is down to the poverty of the soil, essentially schist and granite, and the elevation of up to 700 meters above sea level resulting in fruit with intense minerality. The valley runs from Lake Como to the Stelvio Pass, west to east, with all the vineyards planted on the northern slopes with long sunshine days and a mild microclimate that’s almost Mediterranean like.",
+    "Located on impressively steep granite terraces which can be traced back to pre-Roman times, now a Unesco World Heritage site, the Perego family have been making wine here since 1860.",
+    "What distinguishes the wines of Ar.Pe.Pe. is their focus on long aging and tradition. Everything is worked by hand, with minimum intervention, and the wines only released when the family deem they’re ready for drinking. The wines though have the quality and depth to age gracefully.",
+    "There are plots in three specific sites in Sassella, Grumello and Inferno and they decide on the number of wines to vinify with each vintage. Meaning that, from year to year, the range can be quite different but always Nebbiolo and always with incredible results.",
+    "Each year they bottle a Rosso di Valtellina, a blend from any of the three sites. In the good vintages ARPEPE makes Valtellina Superiore wines from the Sassella, Grumello and Inferno, that see a longer maceration and up to 30 months in Chestnut barrels followed by time in bottle before being released. In exceptional vintages ARPEPE produces its five “Riserva” wines, wines that deserve both time and attention. Wines that appear pale and light but with a burgundy like elegance, delicate yet full, gentle and ethereal. Age-worthy and a must for any genuine cellar."
+   ],
+   "pairing": "bresola, grilled lamb and roast vegetables",
+   "quote": {
+    "text": "Fragrant with inviting notes of rose, dried mint and wild berry, lively with crunchy tannins and a delicate ethereal finish'",
+    "by": "Aoife Carrigy - Irish Independent"
+   },
+   "published": "2023-10-19",
+   "image": {
+    "file": "ArpepeRosso_9ebc4d02-37e7-4ff6-b671-a1880980c7c9.webp",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "copy-of-arpepe-rosso-di-valtellina",
+   "title": "Arpepe Rosso Di Valtellina 2023 MAGNUM",
+   "price": 99.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": null,
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": true,
+   "vintage": "2023",
+   "header": "Arpepe Rosso Di Valtellina, Italy, 2023 MAGNUM",
+   "description": [
+    "A Nebbiolo that drinks like a Pinot. Light ruby colour, soft and fragrant on the nose -there’s that characteristic Nebbiolo hint of rose- red berry fruits, grippy tannins and a sprinkle of mountain magic, leading to a wonderfully silky finish. Oh So Good.",
+    "Although this is a lighter, more delicate style of Nebbiolo there's so much going on it the glass and, as with all of Arpepe's wines, your patience once you've opened the bottle will reward you in spades!",
+    "More on Arpepe",
+    "Nebbiolo from the Alps, from Valtellina in Lombardy to be exact, practically in Switzerland, where the wines are in every respect lighter and leaner than their better known Nebbiolo cousins in Barolo and Barbaresco or even northern Piedmont. They have their own set of aromas, wild berries, dried raspberries, flint, crushed granite and smoke, with a lively, focused purity from light, mineral infused grapes, some say they’re Pinot-esque. This is down to the poverty of the soil, essentially schist and granite, and the elevation of up to 700 meters above sea level resulting in fruit with intense minerality. The valley runs from Lake Como to the Stelvio Pass, west to east, with all the vineyards planted on the northern slopes with long sunshine days and a mild microclimate that’s almost Mediterranean like.",
+    "Located on impressively steep granite terraces which can be traced back to pre-Roman times, now a Unesco World Heritage site, the Perego family have been making wine here since 1860.",
+    "What distinguishes the wines of Ar.Pe.Pe. is their focus on long aging and tradition. Everything is worked by hand, with minimum intervention, and the wines only released when the family deem they’re ready for drinking. The wines though have the quality and depth to age gracefully.",
+    "There are plots in three specific sites in Sassella, Grumello and Inferno and they decide on the number of wines to vinify with each vintage. Meaning that, from year to year, the range can be quite different but always Nebbiolo and always with incredible results.",
+    "Each year they bottle a Rosso di Valtellina, a blend from any of the three sites. In the good vintages ARPEPE makes Valtellina Superiore wines from the Sassella, Grumello and Inferno, that see a longer maceration and up to 30 months in Chestnut barrels followed by time in bottle before being released. In exceptional vintages ARPEPE produces its five “Riserva” wines, wines that deserve both time and attention. Wines that appear pale and light but with a burgundy like elegance, delicate yet full, gentle and ethereal. Age-worthy and a must for any genuine cellar."
+   ],
+   "pairing": "bresola, grilled lamb and roast vegetables",
+   "quote": {
+    "text": "Fragrant with inviting notes of rose, dried mint and wild berry, lively with crunchy tannins and a delicate ethereal finish'",
+    "by": "Aoife Carrigy - Irish Independent"
+   },
+   "published": "2023-10-19",
+   "image": {
+    "file": "ArpepeRosso.webp",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "alta-alella-mirgin-laieta-rose",
+   "title": "Art Laietá  ‘Laietà’ Rosé Gran Reserva Cava",
+   "price": 46.0,
+   "available": true,
+   "type": "Sparkling",
+   "country": "Spain",
+   "region": "Alella",
+   "grapes": [
+    "Mataró"
+   ],
+   "styles": [
+    "Organic",
+    "Vegan"
+   ],
+   "magnum": false,
+   "vintage": "2020",
+   "header": "Art Laietá  Mirgin Laietà Rosé 2020 Gran Reserva, Brut Nature",
+   "description": [
+    "Grape: Mataró (Monastrell)",
+    "An organic Gran Reserva Rose from the Cava maestros Alta Alella. Made from the Matro (Monastrell) grape, the wine is aged in bottle for 30 months, giving it a lovely depth of flavour and silky bubbles. Elegant and stylish, and that’s not just the bottle, with soft red fruits, classic toastiness, minerally and saline with a wonderful long finish.",
+    "Beautifully presented in a Gift tube."
+   ],
+   "pairing": "",
+   "quote": "",
+   "published": "2022-12-30",
+   "image": {
+    "file": "AltaAlellaLaietaRose.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "alta-alella-omirgin-reserva",
+   "title": "Art Laietá Mirgin Cava Reserva",
+   "price": 34.0,
+   "available": true,
+   "type": "Sparkling",
+   "country": "Spain",
+   "region": "Alella",
+   "grapes": [
+    "Macabeu",
+    "Pansa Blanca",
+    "Parellada"
+   ],
+   "styles": [
+    "Organic",
+    "Vegan"
+   ],
+   "magnum": false,
+   "vintage": "2022",
+   "header": "Art Laietá Mirgin Cava Reserva, Alella, Spain, 2022",
+   "description": [
+    "An exceptional Cava producer that tends to get less attention than some of the showier estates, but we like it that way. Crisp green apple, peach, and lemon fruit, fine bubbles, and great length. Properly dry.",
+    "This zero-dosage sparkling wine comes off a southeast-facing plot on the local sauló soil. After a gentle pressing, the base wine is fermented in stainless steel tanks. Once blended and bottled, it’s aged on the fine lees for 15 to 30 months prior to disgorgement"
+   ],
+   "pairing": "seafood and is great as an aperitif",
+   "quote": {
+    "text": "A gastronomic Cava with notes of roast chestnuts and toffee apple, with sea-fresh salinity underlying savoury complexity.",
+    "by": "-The Irish Independent"
+   },
+   "published": "2020-10-22",
+   "image": {
+    "file": "C71A5D51-6653-479C-BC5C-29FEFA568A63_jpeg.webp",
+    "w": 600,
+    "h": 600,
+    "count": 2
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "alta-alella-laieta-gran-reserva-brut-nature-cava",
+   "title": "Art Laietá ‘Laieta’ Gran Reserva Brut Nature Cava",
+   "price": 46.0,
+   "available": true,
+   "type": "Sparkling",
+   "country": null,
+   "region": "Alella",
+   "grapes": [
+    "Chardonnay",
+    "Pansa Blanca",
+    "Pinot Noir",
+    "Xarel·lo"
+   ],
+   "styles": [
+    "Organic"
+   ],
+   "magnum": false,
+   "vintage": "2021",
+   "header": "Art Laietá ‘Laieta’ Gran Reserva Brut Nature Cava, Alella, Barcellona, Spain, 2021",
+   "description": [
+    "Grape: Panca Blanca (Xarel lo), Chardonnay, Pinot Noir",
+    "Set in the Serralada de Marina nature reserve, with the Mediterranean a kilometre or so below it and Barcellona clearly visible just beyond the hills, this winery sits among the vines in a small, natural amphitheatre. It’s also the family home of the Pujol-Busquets Guillen family. Today Mireia is the wine maker and she continues to herald the families dedication to conservation and organic practices. The family has also been at the forefront of elevating the quality and global recognition of Cava and they have helped create the classification systems that recognise single vineyards through the Paraje Calificado appellation and the Integral Producer stamp that ensures that the wines are 100% estate produced.",
+    "The Laieta Gran Reserva is simply delicious. It’s a wine of considerable quality, one that is complex and one that deserves to stand above many of its international peers. There’s green apple, peach and honey suckle on the nose. It’s dry with white stone fruits notes of peach and nectarine and a salinity that comes from the fine granite soils. The bubbles are elegant and persistent."
+   ],
+   "pairing": "almonds, Iberico ham, hard cheese, smoked salmon or cured trout",
+   "quote": "",
+   "published": "2024-03-26",
+   "image": {
+    "file": "AltaAlella_Laieta_GranReservaBrutNatureCava.jpg",
+    "w": 3024,
+    "h": 3024,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "alta-alella-mirgin-rose-reserva-cava",
+   "title": "Art Laietá ‘Mirgin Reserva’ Rosé Cava",
+   "price": 34.0,
+   "available": true,
+   "type": "Sparkling",
+   "country": "Spain",
+   "region": "Alella",
+   "grapes": [
+    "Mataró"
+   ],
+   "styles": [
+    "Organic",
+    "Vegan"
+   ],
+   "magnum": false,
+   "vintage": "2021",
+   "header": "Art Laietá ‘Mirgin Reserva’ Rosé Cava, Alella, Spain, 2021",
+   "description": [
+    "This zero-dosage, saignée sparkling rosado comes off a southeast-facing plot on the local sauló soil. After a gentle pressing, the base wine is fermented in stainless steel tanks. Once blended and bottled, it’s aged on the fine lees for 15 to 30 months prior to disgorgement."
+   ],
+   "pairing": "shellfish and tapas style foods",
+   "quote": "",
+   "published": "2022-11-25",
+   "image": {
+    "file": "FB8FFBC1-0382-476F-895F-CE025C3AA94A_jpeg.webp",
+    "w": 600,
+    "h": 600,
+    "count": 2
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "copy-of-falcoeira-a-capilla-2020-ladeiras-do-biei-valdeorras-spain",
+   "title": "As Caborcas 2020, Ladeiras do Biei, Valdeorras, Spain",
+   "price": 74.0,
+   "available": true,
+   "type": "Red",
+   "country": "Spain",
+   "region": null,
+   "grapes": [
+    "Brancellao",
+    "Mencía",
+    "Sousón"
+   ],
+   "styles": [
+    "Organic"
+   ],
+   "magnum": false,
+   "vintage": "2020",
+   "header": "As Caborcas 2020 Ladeiras do Biei, Valdeorras, Spain",
+   "description": [
+    "As Caborcas means 'vineyard by the little river' and this prized plot sits just above the Bibei river, outside the town of Santa Cruz. Having long been recognised by the older generation of local growers as being a special site, the team of Telmo Rodriguez started bottling this single vineyard wine in 2010. It's a field blend of organic Mencía, Merenzao, Sousón, Brancellao, Godello and more, from a complete mixture of altitudes and aspects. There's minimum intervention with wild yeast fermentation in small oak barrels and stainless steel tanks. Followed by up to 15 months in large foudres. As Caborcas tends to be intensely aromatic with silky, smooth tannins, it's complex, elegant yet powerful.",
+    "\"The expressive, floral and aromatic 2020 As Caborcas was cropped from a warmer year but without the frost or mildew of past years like 2017 and 2018. 2020 was a year when they achieved a wine with good structure and a little more alcohol (14%) that was not really noticeable, as the wine comes through as balanced and elegant, textured and juicy, with fine tannins but not lacking clout.\" 2,664 bottles were produced. Robert Parker 96/100",
+    "\"The nose is amazing. Sweet licorice with sweet sloe. A high intensity play of sweetness and acidity. Almost black forest raspberry underneath. Something like a highly ripe Cabernet Franc on the nose. Light strawberry comes behind it and garrigue spice, but all remains sweet. Sweet black cherry and a bit of amarena. The wine is not fat at all, it is infinitely fine on the nose. But highly aromatic, sweet, dense and rich. This charming fruit brings tears of joy to your eyes. What a brilliant composition! In the mouth, sweet black cherry with some charcoal. Underpinned with licorice, concentrated, almost blackish raspberry. Wonderful acidity and freshness, an acidity of red currant but more still of sweet cassis. The phenomenal thing about this wine is the play of sweetness and acidity. The oscillograph is enormous and at the same time it has this infinite charm from the high ripeness of the vintage. Highly ripe, high acidity and at the same time remaining lean and delicate. So brutally intense in the mouth! Concentrated finesse... Nothing heavy, but just standing for minutes with a brilliant charm factor - with a salty touch from the granite soils. A treat of the very highest order!\" Heiner Lobenberg 97-100/100",
+    "To many, Telmo Rodriguez, who, along with his sister Amaia, runs the impressive Remelluri winery in Rioja, needs no introduction but it's his partnership with fellow winemaker, Pablo Egnziza that has created the exciting range of wines that come together under the umbrella of Telmo Rodriguez Wines. The two have have spent the past thirty years reclaiming abandoned vineyards of indigenous grapes, across a number of regions. Together they are working with over 350 separate small plots, totalling 80 hectares and 43 different varieties of native grapes."
+   ],
+   "pairing": "",
+   "quote": "",
+   "published": "2023-09-29",
+   "image": {
+    "file": "TR-As-Caborcas-2017.png",
+    "w": 202,
+    "h": 500,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Image file says 2017, listing says 2020"
+    },
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (202×500 px)"
+    },
+    {
+     "kind": "image",
+     "level": "low",
+     "text": "Not square (202×500 px), crops differently in the grid"
+    }
+   ],
+   "studio": true,
+   "studio_note": "transparent"
+  },
+  {
+   "handle": "aus-bruant-nature-reserva-cava",
+   "title": "AUS Bruant Nature Reserva Cava",
+   "price": 38.0,
+   "available": true,
+   "type": "Sparkling",
+   "country": "Spain",
+   "region": "Alella",
+   "grapes": [
+    "Pansa Blanca"
+   ],
+   "styles": [
+    "Organic",
+    "Natural"
+   ],
+   "magnum": false,
+   "vintage": "2021",
+   "header": "AUS Bruant Nature Reserva Cava, Catelonia, Spain, 2021",
+   "description": [
+    "Grape: Pansa Blanca (Xarel·lo)",
+    "Discover the finesse of this Ancestral cava, distinguished as the first cava crafted without added sulfites. Made from carefully selected organic grapes, this cava ensures impeccable health from vineyard to cellar. Undergoing a single fermentation ending in the bottle, it ages on the lees for a minimum of 15 months before disgorging. Released to the market without dosage, it maintains a pure expression. Enjoy its pale yellow color and fine bubbles, while its bouquet offers floral notes, white fruits such as pear and green apple, and hints of burlap and hazelnuts. On the palate, experience a light and refreshing sensation with integrated and persistent bubbles, accompanied by delicate flavors of white fruit and almonds. Experience the purity and authenticity of this sulfite-free Ancestral cava."
+   ],
+   "pairing": "white fish, shellfish and in particular oysters",
+   "quote": "",
+   "published": "2024-04-10",
+   "image": {
+    "file": "AUSBruantNatureReservaCava.jpg",
+    "w": 3024,
+    "h": 3024,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "avignonesi-vino-nobile-di-montepulciano",
+   "title": "Avignonesi Vino Nobile Di Montepulciano",
+   "price": 35.0,
+   "available": false,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Tuscany",
+   "grapes": [
+    "Sangiovese"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": null,
+   "header": "Nobile Di Montepulciano",
+   "description": [
+    "A perfect 'now' drinking Sangiovese with great ageing potential for years to come! Showing a sleek and elegant medium body. On the nose we get comforting red fruits, cherries, red berries and pomegranate with the undeniably seductive aroma of Sangiovese."
+   ],
+   "pairing": "",
+   "quote": "",
+   "published": "2020-10-22",
+   "image": {
+    "file": "AvignonesiVinoNobileDiMontepulciano.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "data",
+     "level": "medium",
+     "text": "No vintage in title or description"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "cantine-garrone-munaloss-nebbiolo",
+   "title": "Cantine Garrone ‘Munaloss’ Nebbiolo",
+   "price": 24.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": null,
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2024",
+   "header": "Cantine Garrone ‘Munaloss’ Nebbiolo, Piedmont, Italy 2024",
+   "description": [
+    "80% Nebbiolo with 20% Croatina.",
+    "High up in the Alto-Piemonte, and just seven miles from the Swiss border, is the Val d’Ossola where Nebbiolo is known as Prunent. Munaloss is 80% Nebbiolo and 20% Croatina and it’s a fresh, crunchy, lively red, with cherry and raspberry notes. It’s light, fresh and juicy.",
+    "Ideal as an aperitif but even better with some cheese, tuna or your treat pizza."
+   ],
+   "pairing": "",
+   "quote": "",
+   "published": "2026-03-26",
+   "image": {
+    "file": "Cantine_Garrone_Munaloss_Nebbiolo.png",
+    "w": 400,
+    "h": 400,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (400×400 px)"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "castello-di-ama-l-apparita-1",
+   "title": "Castello di Ama ‘L’Apparita’",
+   "price": 275.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Tuscany",
+   "grapes": [
+    "Merlot"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2017",
+   "header": "Castello di Ama ‘L’Apparita’ Toscana I.G.T., Italy, 2017",
+   "description": [
+    "100% Merlot",
+    "L’Apparita is the first of the pure Merlot bottlings produced in Tuscany and has been an icon since its debut in 1985. Harvested from two parcels in the upper part of the Bellavista vineyard, the wine spends about 14 months in new and old barriques. To the eye it’s almost opaque, purple with violet tomes. On the nose it’s intense and exotic, with black and blue berry fruits and walnuts. With a mouthful of dense, richly concentrated fruit and a sublimely succulent finish and hugely deserving of its cult status.",
+    "For more on the wine maker click here.",
+    "Vinous - Antonio Galloni, September 2020 96+points",
+    "“I am immediately struck by the power and concentration of the Castello di Ama 2017 L’Apparita. This is an exuberant and gregarious expression of Merlot that has absorbed every last sunbeam of the hot summer season. On the nose, the wine shows beautiful fullness and generosity that spills richly across the senses. Blackberry syrup and cherry liqueur are followed by smoke, tar, toast and sweet chewing tobacco. You taste that extra density in a similar manner, and the rich concentration of the fruit has consequently shaped a more apparent tannin and a little snap of astringency on the close. My sample bottle does not show a reading of the wine’s alcoholic content, but you feel some heat as well. This edition of L’Apparita is extra dark, succulent and firm. When the wine has been given another five to ten years of cellar age, then I’d suggest guinea fowl or one of those delicious roasted pigeon dishes you find in Tuscany. Some 7,300 bottles were made.”",
+    "Wine Advocate, May 2020 96 points.",
+    "“Intense and exotic on the nose with blackberry, blueberry, violet and walnut aromas that follow through to a full body with layers of ripe tannins and a beautiful finish of polished and well poised fruit. It goes on and on. I am impressed by the freshness here, as well as the intensity for the vintage. Drink in 2023 and onwards, but a joy to taste now.”",
+    "jamessuckling.com, July, 2020 97 points."
+   ],
+   "pairing": "red meat, game and aged hard cheese",
+   "quote": {
+    "text": "The 2017 L’Apparita, Ama’s 100% Merlot, is silky, polished and exceptionally beautiful. In 2017, L’Apparita is restrained and elegant more than it is powerful. I have seen L’Apparita blossom with a few years in bottle. I imagine it will be the case here too. Today, L’Apparita is decidedly nuanced and elegant.",
+    "by": "Vinous - Antonio Galloni, September 2020 96+points"
+   },
+   "published": "2022-11-29",
+   "image": {
+    "file": "CastellodiAma_L_Apparita.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "castello-di-ama-vigneto-bellavista-chianti-classico",
+   "title": "Castello di Ama ‘Vigneto Bellavista’ Chianti Classico",
+   "price": 260.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Tuscany",
+   "grapes": [
+    "Sangiovese"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2018",
+   "header": "Castello di Ama ‘Vigneto Bellavista’ Chianti Classico Gran Selezione, Italy, 2018",
+   "description": [
+    "80% Sangiovese and 20% Malvasia Nera",
+    "From a plot of 22 parcels the Bellavista is a blend of 80% Sangiovese and 20% Malvasia Nera. It is a deep ruby-red with an exotic blend of dark berries, pomegranate and tobacco on the nose.  It’s deliciously juicy and succulent, with a seductively silky and supple texture. This is one for the cellar!",
+    "For more on the wine maker click here.",
+    "Wine Spectator, May 2022 94 Points.",
+    "“The 2018 Chianti Classico Gran Selezione Vigneto Bellavista marries Sangiovese and Malvasia Nera, a combination that works so well. The Bellavista is a powerful, vertical wine endowed with explosive and tremendous energy. Like all the top wines, it needs the better part of a decade to show all it’s got. Gravel, smoke, leather, licorice and scorched earth. 2026 – 2041”",
+    "Vinous - Antonio Galloni, September 2021 98 points.",
+    "“This is a very deep and serious Chianti Classico with bark, dark-mushroom and blackberry aromas that follow through to a full body with very polished and integrated tannins that are long and classy. A sophisticated and glorious wine. Drink in 2024 and onwards, but already very pretty.”",
+    "jamessuckling.com, August 2021 97 points.",
+    "“Camphor, dark spice, blue flower and a whiff of forest floor shape the alluring nose on this delicious red. Elegantly structured and all about finesse and flavor, the savory, focused palate delivers juicy Marasca cherry, orange zest, licorice and cassis alongside taut, ultrarefined tannins. Made with 80% Sangiovese and 20% Malvasia Nera, it’s beautifully balanced, with bright acidity. 2025–2038”",
+    "Wine Enthusiast, May 2022 93 points."
+   ],
+   "pairing": "ossobuco, filet of beef and Escalope de veau à la milanaise",
+   "quote": {
+    "text": "A rich, intense red, displaying black cherry, blackberry, menthol, iron and graphite flavors, this is polished and expressive, yet with beefy tannins lining the chalky finish. All the components are there—this just needs time. Sangiovese and Malvasia Nera. Best from 2024 through 2040.",
+    "by": "Wine Spectator, May 2022 94 Points."
+   },
+   "published": "2022-11-29",
+   "image": {
+    "file": "CastellodiAma_VignetoBellavista_ChiantiClassico.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "alta-alella-aus-pet-nat-penedes-spain",
+   "title": "Cellar de les Aus Puput Pét Nat",
+   "price": 24.0,
+   "available": true,
+   "type": "Sparkling",
+   "country": "Spain",
+   "region": "Alella",
+   "grapes": [
+    "Pansa Blanca"
+   ],
+   "styles": [
+    "Organic",
+    "Natural"
+   ],
+   "magnum": false,
+   "vintage": "2024",
+   "header": "Cellar de les Aus Puput Pét Nat, Penedès, Spain, 2024",
+   "description": [
+    "Grape: Pansa Blanca",
+    "A lovely lightly sparkling organic wine from the cava masters as Alta Alella.A light and bright colour with aromas of strawberries, grapefruit and pomegranate with summery floral notes. On the palate is is a dry wine but with almost crunchy bubbles making it a refreshing rosé for spring and summer."
+   ],
+   "pairing": "fish and chicken dishes",
+   "quote": "",
+   "published": "2022-11-24",
+   "image": {
+    "file": "AltaAlellaAUS_1.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "aus-rose-2022-pet-nat",
+   "title": "Cellar de les Aus Puput Rosé Pet-Nat",
+   "price": 24.0,
+   "available": true,
+   "type": "Rosé",
+   "country": "Spain",
+   "region": "Alella",
+   "grapes": [
+    "Monastrell"
+   ],
+   "styles": [
+    "Organic",
+    "Natural"
+   ],
+   "magnum": false,
+   "vintage": "2024",
+   "header": "Cellar de les Aus Puput Rosé Pet-Nat, Penedès, Spain, 2024",
+   "description": [
+    "Grape: Mataró (Monastrell)",
+    "Experience the vibrant essence of Pét-Nat, crafted from organically grown grapes of pristine quality. This Pét-Nat undergoes natural fermentation, initiated without the use of sulfites or additives, at a cool 15ºC. Following the Ancestral Method, fermentation completes in the bottle, resulting in a delightful fizz and distinctive flavor profile. Delight in its light and luminous pink hue, with a hint of cloudiness reflecting its artisanal production. Revel in aromas of ripe red fruits and delicate floral hints on the nose, while the palate offers a dry yet lively sensation, bursting with red fruit flavors and refreshing citrus undertones. Discover a truly expressive and fresh wine, capped with the same crown cork used during fermentation, remaining unfiltered and without disgorging."
+   ],
+   "pairing": "fish, salads and cold cuts",
+   "quote": "",
+   "published": "2024-04-10",
+   "image": {
+    "file": "AUSRosePet-Nat_Penedes_Spain_2022.jpg",
+    "w": 3024,
+    "h": 3024,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Image file says 2022, listing says 2024"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "charles-heidsieck-brut-reserve",
+   "title": "Charles Heidsieck Brut Reserve",
+   "price": 79.0,
+   "available": true,
+   "type": "Sparkling",
+   "country": "France",
+   "region": "Champagne",
+   "grapes": [
+    "Chardonnay",
+    "Pinot Noir"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "NV",
+   "header": "Charles Heidsieck Brut Reserve NV",
+   "description": [
+    "One of the great houses of Champagne, with a reputation for particularly elegant wines. The unusually high proportion of reserve wines in the blend gives an incredible depth of flavour.",
+    "Ideal with Seafood, Aperitif. Grape variety Chardonnay / Pinot Noir/ Meunier."
+   ],
+   "pairing": "",
+   "quote": {
+    "text": "One of my absolute favourite champagnes. Made using a high percentage of mature wines, and aged for three years on its lees, this is an irresistibly opulent champagne, full of ripe exotic fruits, toasted nuts and brioche. Perfect with or without food.",
+    "by": "- John Wilson, The Irish Times"
+   },
+   "published": "2022-12-30",
+   "image": {
+    "file": "CharlesHeidsieckBrutReserve.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "charles-heidsieck-rose-reserve",
+   "title": "Charles Heidsieck Rosé Reserve With Gift Box",
+   "price": 99.0,
+   "available": true,
+   "type": "Rosé",
+   "country": "France",
+   "region": "Champagne",
+   "grapes": [
+    "Chardonnay",
+    "Pinot Noir"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "NV",
+   "header": "Charles Heidsieck Rosé Reserve, Champagne, France, NV",
+   "description": [
+    "Blend of Chardonnay, Pinot Noir and Pinot Meunier.",
+    "The ultimate Rosé in our eyes, the bottle practically glows! Subtle jam like aromas with hints of peach and a warmness often likened to 'gingerbread'. On the palate, these flavours really come to life and leaves a velvety, creamy finish."
+   ],
+   "pairing": "seafood, salads, fruit and cheese or as an aperitif",
+   "quote": "",
+   "published": "2023-10-24",
+   "image": {
+    "file": "ChristmasGiftsatELY_5.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Photo on a busy background. Needs a reshoot or an AI studio shot"
+    }
+   ],
+   "studio": false,
+   "studio_note": "busy background"
+  },
+  {
+   "handle": "chateau-du-cedre-heritage-chardonnay-1",
+   "title": "Chateau du Cedre ‘Heritage’ Chardonnay",
+   "price": 20.0,
+   "available": true,
+   "type": "White",
+   "country": "France",
+   "region": null,
+   "grapes": [
+    "Chardonnay"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2024",
+   "header": "Chateau du Cedre ‘Heritage’ Chardonnay, France, 2024",
+   "description": [
+    "100% Chardonnay",
+    "From the legendary Malbec producer, Chateau du Cedre,  in the heart of Cahors comes this excellent Chardonnay. With a slow fermentation and 8 months on its lees, in stainless steel, this is a vibrant, zesty wine with nice weight and a crisp mineral finish. Really enjoyable on its own and even better with grilled spring vegetables."
+   ],
+   "pairing": "grilled spring vegetables or very enjoyable on its own",
+   "quote": "",
+   "published": "2026-03-26",
+   "image": {
+    "file": "Chateau_du_Cedre_Heritage_Chardonnay.png",
+    "w": 400,
+    "h": 400,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (400×400 px)"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "chateau-potensac-1",
+   "title": "Chateau Potensac",
+   "price": 54.0,
+   "available": false,
+   "type": "Red",
+   "country": "France",
+   "region": "Bordeaux",
+   "grapes": [
+    "Cabernet Sauvignon",
+    "Merlot"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2018",
+   "header": "Chateau Potensac, Medoc, Bordeaux, France, 2018",
+   "description": [
+    "44% Merlot, 39% Cabernet Sauvignon, 15% Cabernet Franc and 2% Petit Verdot",
+    "Potensac is often cited as being the perfect example of how a Medoc should be. The 2018 is an excellent vintage with potential for cellaring it's delicious now though with blackcurrants and black cherries on the nose, ripe black fruits, medium bodied with a hint of smoke and a pleasing minerality. Enjoy now or keep until 2029.",
+    "Chateau Potensac belongs to the Delon family who also own Leoville Las Cases and Clos du Marquis in Saint-Julian and Chateau Nenin in Pomerol so the quality of this Medoc wine should certainly come as no surprise.Located in the northern part of the Medoc, Potensac’s vineyards roll over hilly mounds of gravel and clay, with a limestone subsoil, that is not unlike those of Saint-Estephe. This leads into the wines being finely textured, tight but with a richness and a freshness that is at the same time powerful and dense, with a long satisfying finish."
+   ],
+   "pairing": "roast beef, roast lamb and cheese",
+   "quote": "",
+   "published": "2021-05-07",
+   "image": {
+    "file": "ChateauPotensac_8bb6b8a8-479e-44c4-b1d3-0ebaf175a4db.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "domaine-de-pepiere-muscadet-sevre-maine",
+   "title": "Domaine de Pepiere Clisson Muscadet Sevre & Maine",
+   "price": 36.0,
+   "available": true,
+   "type": "White",
+   "country": "France",
+   "region": "Muscadet",
+   "grapes": [],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2022",
+   "header": "Domaine de Pepiere Muscadet Sevre & Maine, Clisson Valley, France, 2022",
+   "description": [
+    "Located in the Clisson Valley, on granite subsoils with high drainage, this Muscadet has delicious minerality that’s complemented by a richness from two years on its lees, in underground glass tanks. There’s a fullness here, one that’s smooth but without weight that might come from oak, backed up by that minerality."
+   ],
+   "pairing": "shellfish, especially mussels, oysters, prawns. Also pairs very well with soft cheese",
+   "quote": "",
+   "published": "2023-04-21",
+   "image": {
+    "file": "Domaine_de_Pepiere_Muscadet_Sevre_amp_Maine_Clisson_Valley_France_2022.png",
+    "w": 400,
+    "h": 400,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (400×400 px)"
+    },
+    {
+     "kind": "filter",
+     "level": "low",
+     "text": "Not in any grape collection"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "domaine-des-roches-neuves",
+   "title": "Domaine des Roches Neuves Saumur-Champigny",
+   "price": 29.0,
+   "available": true,
+   "type": "Red",
+   "country": "France",
+   "region": "Loire",
+   "grapes": [],
+   "styles": [
+    "Organic",
+    "Biodynamic"
+   ],
+   "magnum": false,
+   "vintage": "2024",
+   "header": "Domaine des Roches Neuves 2024 Samaur Champigny, Loire, France",
+   "description": [
+    "Grape: 100% Cabernet Franc",
+    "Red berry fruits and floral aromas. The wine’s fresh, with supple textures and tannins, it’s ripe and there’s a hint of smoke on the finish. This is a gorgeous introduction to the wines of Maire and Thierry Germain and their son Louis and Cabernet Franc itself."
+   ],
+   "pairing": "roast lamb dishes and charcuterie",
+   "quote": {
+    "text": "One of the elite wine-growers, (Germain) gathers exceptionally ripe grapes which give a unique smoothness and velvety texture to his wines....",
+    "by": ""
+   },
+   "published": "2024-03-26",
+   "image": {
+    "file": "DomainedesRochesNeuvesSaumur-Champign.jpg",
+    "w": 3024,
+    "h": 3024,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "filter",
+     "level": "low",
+     "text": "Not in any grape collection"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "domaine-loecu-omephistoo",
+   "title": "Domaine L'Ecu 'Mephisto'",
+   "price": 49.0,
+   "available": true,
+   "type": "Red",
+   "country": "France",
+   "region": "Loire",
+   "grapes": [],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2022",
+   "header": "Domaine L'Ecu 'Mephisto', Loire Valley, France 2022",
+   "description": [
+    "L’Ecu say- “Full, flattering, round, expressive nose, on black fruits and red berries, blackberry, strawberry, redcurrant, notes of white pepper. Suave attack, tense but charming mid-palate, still tight but velvety tannins, good volume, rich, deep, delicate, chiseled fruit, notes of sweet spices. A wine vinified to sublimate and respect the Cabernet Franc, a certain idea of finesse and delicacy, no over-extraction in this bottle.”Which is exactly what we were thinking.Not nearly as scary as the label suggests!",
+    "For more on wines of the Loire Valley and the wine maker click here"
+   ],
+   "pairing": "",
+   "quote": "",
+   "published": "2020-10-22",
+   "image": {
+    "file": "l_ecu.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "filter",
+     "level": "low",
+     "text": "Not in any grape collection"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "domaine-la-roubine-vacqueyras-rhone-valley-france-2017",
+   "title": "Domaine la Roubine Vacqueyras, Rhone Valley, France 2021",
+   "price": 33.0,
+   "available": true,
+   "type": "Red",
+   "country": "France",
+   "region": "Rhône",
+   "grapes": [
+    "Grenache",
+    "Syrah"
+   ],
+   "styles": [
+    "Biodynamic"
+   ],
+   "magnum": false,
+   "vintage": "2021",
+   "header": "A blend of Grenache, Syrah and Mouvedre, Vacqueyras is the lesser known, better looking sibling to Chateauneuf-du-Pape, and it beats its neighbour hands down for consistency and class. Small and family run, Domaine la Roubine focus their work on the vineyards “where the real work is done” By ensuring the grapes are of the highest quality, they say the wines practically make themselves. We know they are just being modest, and their winemaking clearly matches their grape growing! This wine is wonderfully full and rich, with bramble fruit, spice, black pepper and liquorice.",
+   "description": [],
+   "pairing": "",
+   "quote": "",
+   "published": "2020-11-23",
+   "image": {
+    "file": "WebsiteProducts-2020-11-23T173733.309.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Image file says 2020, listing says 2021"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "domaine-roblin-enclos-de-maimbray-sancerre",
+   "title": "Domaine Roblin 'Enclos de Maimbray' Sancerre",
+   "price": 38.0,
+   "available": true,
+   "type": "White",
+   "country": "France",
+   "region": "Loire",
+   "grapes": [
+    "Sauvignon Blanc"
+   ],
+   "styles": [
+    "Organic"
+   ],
+   "magnum": false,
+   "vintage": "2023",
+   "header": "Domaine Roblin 'Enclos de Maimbray' Sancerre, Loire, France, 2023",
+   "description": [
+    "A green fruits and minerally profile with a notable 'limey' zing - Balanced acidity"
+   ],
+   "pairing": "cheese and charcuterie, sea food, vegetable based dishes",
+   "quote": "",
+   "published": "2021-05-06",
+   "image": {
+    "file": "DomaineRoblin_EnclosdeMaimbray_Sancerre.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "domaine-roblin-sancerre",
+   "title": "Domaine Roblin Sancerre rose, Loire Valley, France 2021",
+   "price": 29.0,
+   "available": false,
+   "type": "Rosé",
+   "country": "France",
+   "region": "Loire",
+   "grapes": [],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2021",
+   "header": "",
+   "description": [],
+   "pairing": "",
+   "quote": "",
+   "published": "2024-07-11",
+   "image": {
+    "file": "lyiPFcaVSEGE5EyYpNZ1lw_pb_600x600_be317c9f-c61f-41f9-85dd-b0c057c77e6e.png",
+    "w": 600,
+    "h": 600,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "filter",
+     "level": "low",
+     "text": "Not in any grape collection"
+    }
+   ],
+   "studio": true,
+   "studio_note": "transparent"
+  },
+  {
+   "handle": "elena-walch-cardellino-2021-alto-adige-italy",
+   "title": "Elena Walch ‘Cardellino’ Alto Adige",
+   "price": 30.0,
+   "available": true,
+   "type": null,
+   "country": "Italy",
+   "region": "Alto Adige",
+   "grapes": [
+    "Chardonnay"
+   ],
+   "styles": [
+    "Organic"
+   ],
+   "magnum": false,
+   "vintage": "2021",
+   "header": "Elena Walch ‘Cardellino’ Alto Adige, Italy, 2021",
+   "description": [
+    "Grape: 100% Chardonnay",
+    "Cardellino means Gold Finch in Italian and there’s a little legend that the Cardellino only nests in the vines of the Chardonnay grape. This was Elena Walch’s first wine and she duly named it after the ever present Cadellinos. The wine itself is a testament to the terroir and climate of the Alto Adige in the Southern Tyrol with its crisp, fresh style. Handpicked, the wine spends several months on its lees, with 15% of it being aged in French oak for 6 months. The result is a racy mouth feel, with minerality and texture. It’s reminiscent of quality Chablis but with its own personality that’s a tad richer, a little juicer and there’s a long, engaging finish that merits taking your time to savour it. This is a gorgeous Chardonnay and genuinely good value."
+   ],
+   "pairing": "smoked salmon or smoked chicken",
+   "quote": "",
+   "published": "2024-03-26",
+   "image": {
+    "file": "ElenaWalch_Cardellino_AltoAdige_Italy_2021.jpg",
+    "w": 3024,
+    "h": 3024,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "filter",
+     "level": "medium",
+     "text": "Not in any wine-type collection, so the Red / White filters miss it"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "enoz-la-monade-fiano-campania-italy-2021",
+   "title": "Enoz 'La Monade' Fiano, Campania, Italy 2021",
+   "price": 32.0,
+   "available": true,
+   "type": null,
+   "country": null,
+   "region": null,
+   "grapes": [],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2021",
+   "header": "",
+   "description": [],
+   "pairing": "",
+   "quote": "",
+   "published": "2024-07-19",
+   "image": {
+    "file": "Enoz-Fiano-La-Monade-2021_1.jpg",
+    "w": 600,
+    "h": 600,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "filter",
+     "level": "medium",
+     "text": "Not in any wine-type collection, so the Red / White filters miss it"
+    },
+    {
+     "kind": "filter",
+     "level": "low",
+     "text": "Not in any grape collection"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "fabien-jouves-la-roque-cahors-malbec",
+   "title": "Fabien Jouves 'La Roque' Cahors, Malbec 2021",
+   "price": 32.0,
+   "available": true,
+   "type": "Red",
+   "country": "France",
+   "region": null,
+   "grapes": [
+    "Malbec"
+   ],
+   "styles": [
+    "Biodynamic"
+   ],
+   "magnum": false,
+   "vintage": "2021",
+   "header": "Fabien Jouves, Mas de Périé 'La Roque' Cahors Malbec, France 2021",
+   "description": [
+    "There is a freshness, due to the cooler microclimates of the higher slopes and a distinct minerality, from the Miocene Brown Marne soil, in the wine. Nice red fruit with good complexity, integrated tannins and a crisp finish. Surprisingly, it's only 11.5% in alcohol but you don't miss it. No added sulphites and biodynamic.",
+    "More on the maker:",
+    "Fabien Jouves is the 6th generation of this domaine, located on the limestone plateaus of Causses, with some of the highest slopes in the Cahors.  Fabiens' first vintage was in 2006 and his methodology is that of a non-interventionist. The whole vinification process occurs naturally with spontaneous yeast, with biodynamic farming and terroir being at the core of his wine making. Vinification is done naturally, in various vessel types, to allow each plot to express its own individuality.",
+    "Each of Fabien’s “Vin de Terroir” bottling is a vineyard designate wine, to showcase the differences in terroir, He goes as far as highlighting the soil type on each label."
+   ],
+   "pairing": "red meats and roast dinners",
+   "quote": "",
+   "published": "2023-08-28",
+   "image": {
+    "file": "FabienJouves_MasdePerie_LaRoque_CahorsMalbec_France2019.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Image file says 2019, listing says 2021"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "fabien-jouves-les-escures-cahors",
+   "title": "Fabien Jouves 'Les Escures' Cahors Malbec",
+   "price": 28.0,
+   "available": false,
+   "type": "Red",
+   "country": "France",
+   "region": null,
+   "grapes": [
+    "Malbec"
+   ],
+   "styles": [
+    "Biodynamic"
+   ],
+   "magnum": false,
+   "vintage": "2021",
+   "header": "Fabien Jouves, Mas de Périé 'Les Escures' Cahors Malbec, France 2021",
+   "description": [
+    "Cahors in southwest France is the original home of Malbec, a variety which is now more famous from the other side of the world. In the past the reds of Cahors were hugely tannic and structured, needing years to soften and develop, but this is a very different style. Ripe and juicy, with a lovely softness on the palate, this is a Malbec of uncommon freshness and vibrancy. Probably why we love it.",
+    "More on the maker:",
+    "Fabien Jouves is the 6th generation of this domaine, located on the limestone plateaus of Causses, with some of the highest slopes in the Cahors.Fabiens' first vintage was in 2006 and his methodology is that of a non-interventionist. The whole vinification process occurs naturally with spontaneous yeast, with biodynamic farming and terroir being at the core of his wine making. Vinification is done naturally, in various vessel types, to allow each plot to express its own individuality.",
+    "Each of Fabien’s “Vin de Terroir” bottling is a vineyard designate wine, to showcase the differences in terroir, He goes as far as highlighting the soil type on each label."
+   ],
+   "pairing": "red meats and roast dinners",
+   "quote": "",
+   "published": "2020-10-22",
+   "image": {
+    "file": "FabienJouves_MasdePerie_LesEscures_CahorsMalbec_France2019.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Image file says 2019, listing says 2021"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "copy-of-fabien-jouves-la-roque-cahors-malbec-2021",
+   "title": "Falcoeira 'A Capilla' 2020, Ladeiras do Biei, Valdeorras, Spain",
+   "price": 73.0,
+   "available": true,
+   "type": "Red",
+   "country": "Spain",
+   "region": null,
+   "grapes": [
+    "Brancellao",
+    "Mencía",
+    "Sousón"
+   ],
+   "styles": [
+    "Organic"
+   ],
+   "magnum": false,
+   "vintage": "2020",
+   "header": "Falcoeira 'A Capilla' 2020 Ladeiras do Biei, Valdeorras, Spain",
+   "description": [
+    "A Capilla comes from the Falcoeira vineyard in Santa Cruz, Ladeiras do Biei, which sits about half a kilometre above sea level, on steep granite terraced slopes. A blend of organic, old vine Mencía, Brancellao, Sousón and Garnacha, plus some other indigenous grapes. Crushed, dusty red berries, dried mint and aniseed on the nose. Rich red fruits, mineral, saline notes and long finish.",
+    "'The nose of the 2020 Falcoeira A Capilla comes through as the ripest of the reds from 2020, despite being bottled at 13.5% alcohol. It has notes of ripe berries and a touch of soy sauce, a touch of iodine and a juicy and tasty palate, rich with deep flavors, and a long-lasting finish. It fermented in a 3,000-liter oak vat and matured in a 2,000-liter oak foudre. 2,664 bottles were filled in July 2022.' Robert Parker 93+/100 Drink 2023-2028.",
+    "To many, Telmo Rodriguez, who, along with his sister Amaia, runs the impressive Remelluri winery in Rioja, needs no introduction but it's his partnership with fellow winemaker, Pablo Egnziza that has created the exciting range of wines that come together under the umbrella of Telmo Rodriguez Wines. The two have have spent the past thirty years reclaiming abandoned vineyards of indigenous grapes, across a number of regions. Together they are working with over 350 separate small plots, totalling 80 hectares and 43 different varieties of native grapes."
+   ],
+   "pairing": "",
+   "quote": "",
+   "published": "2023-09-28",
+   "image": {
+    "file": "Falcoeira-2017.png",
+    "w": 202,
+    "h": 500,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Image file says 2017, listing says 2020"
+    },
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (202×500 px)"
+    },
+    {
+     "kind": "image",
+     "level": "low",
+     "text": "Not square (202×500 px), crops differently in the grid"
+    }
+   ],
+   "studio": true,
+   "studio_note": "transparent"
+  },
+  {
+   "handle": "finca-sandoval-aurora",
+   "title": "Finca Sandoval Aurora",
+   "price": 33.0,
+   "available": true,
+   "type": null,
+   "country": "Spain",
+   "region": null,
+   "grapes": [
+    "Albillo"
+   ],
+   "styles": [
+    "Organic"
+   ],
+   "magnum": false,
+   "vintage": "2021",
+   "header": "Finca Sandoval Aurora, Manchuela, Spain, 2021",
+   "description": [
+    "A distinctive and quietly complex white from old native vines in Manchuela. This is a beautifully textured wine, where ripe orchard fruit and citrus peel are layered with subtle floral notes and a gentle almond character.",
+    "Fermentation and ageing in a mix of oak and amphora bring depth and structure, while maintaining a fine line of freshness and minerality. Elegant and savoury in style, with a soft, rounded texture and a long, composed finish."
+   ],
+   "pairing": "seafood, roast chicken, vegetable dishes and soft cheeses",
+   "quote": {
+    "text": "Albilla Manchego, Marisancho, Tortosí & Trepadell",
+    "by": ""
+   },
+   "published": "2026-05-05",
+   "image": {
+    "file": "Finca_Sandoval_Aurora_Manchuela_Spain_2021_1.png",
+    "w": 400,
+    "h": 400,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (400×400 px)"
+    },
+    {
+     "kind": "filter",
+     "level": "medium",
+     "text": "Not in any wine-type collection, so the Red / White filters miss it"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "finca-sandoval-salia",
+   "title": "Finca Sandoval Fundamentalista",
+   "price": 26.0,
+   "available": true,
+   "type": null,
+   "country": "Spain",
+   "region": null,
+   "grapes": [
+    "Garnacha",
+    "Syrah"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2022",
+   "header": "Finca Sandoval Fundamentalista, Manchuela, Spain, 2022",
+   "description": [
+    "A true reflection of traditional Manchuela vineyards, where red and white grapes are grown and fermented together. Bobal leads the blend, bringing freshness and structure, while the mix of varieties adds aromatic lift and complexity.",
+    "Bright red berry fruit, dried herbs and a subtle savoury note come through, with a lightly textured palate shaped by gentle extraction and careful ageing. Fresh, energetic and quietly layered, with a clean, lifted finish."
+   ],
+   "pairing": "charcuterie, grilled vegetables and lighter meat dishes",
+   "quote": {
+    "text": "Bobal-led field blend (with Syrah & native red & white varieties)",
+    "by": ""
+   },
+   "published": "2026-05-05",
+   "image": {
+    "file": "Finca_Sandoval_Salia.png",
+    "w": 400,
+    "h": 400,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (400×400 px)"
+    },
+    {
+     "kind": "filter",
+     "level": "medium",
+     "text": "Not in any wine-type collection, so the Red / White filters miss it"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "finca-sandoval-la-rosa",
+   "title": "Finca Sandoval La Rosa",
+   "price": 49.0,
+   "available": true,
+   "type": "Red",
+   "country": "Spain",
+   "region": null,
+   "grapes": [],
+   "styles": [
+    "Organic"
+   ],
+   "magnum": false,
+   "vintage": "2021",
+   "header": "Finca Sandoval La Rosa, Manchuela, Spain, 2021Bobal (old vine, with small % co-planted native varieties)",
+   "description": [
+    "Sourced from old vines planted in 1939, this is a more focused and structured expression of Bobal, rooted in limestone soils. The wine shows depth and precision, with dark cherry, plum and dried herbal notes alongside a fine mineral backbone.",
+    "There is a natural grip to the tannins, balanced by freshness and energy, giving the wine both structure and lift. A serious, terroir-driven style with a long, savoury finish."
+   ],
+   "pairing": "lamb, game and slow-cooked dishes",
+   "quote": {
+    "text": "Bobal (old vine, with small % co-planted native varieties)",
+    "by": ""
+   },
+   "published": "2026-05-05",
+   "image": {
+    "file": "Finca_Sandoval_La_Rosa_Manchuela_Spain_2021_1.png",
+    "w": 400,
+    "h": 400,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (400×400 px)"
+    },
+    {
+     "kind": "filter",
+     "level": "low",
+     "text": "Not in any grape collection"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "finca-sandoval-paraje-casa-blanca",
+   "title": "Finca Sandoval Salia Manchuela",
+   "price": 44.0,
+   "available": true,
+   "type": "Red",
+   "country": "Spain",
+   "region": null,
+   "grapes": [
+    "Syrah"
+   ],
+   "styles": [
+    "Organic"
+   ],
+   "magnum": false,
+   "vintage": "2021",
+   "header": "Finca Sandoval Salia, Manchuela, Spain, 2021",
+   "description": [
+    "The estate wine from Finca Sandoval, bringing together Syrah and old-vine Bobal to express the character of Manchuela’s high-altitude, limestone-rich vineyards. This is a more structured and composed style, with a clear sense of place running through it.",
+    "Dark cherry and blackberry are layered with floral notes, subtle spice and a fine mineral edge. The palate is precise and well-defined, with polished tannins and a natural freshness that keeps everything in balance.",
+    "Elegant and quietly powerful, with a long, savoury finish."
+   ],
+   "pairing": "roast meats, lamb and earthy dishes",
+   "quote": {
+    "text": "80% Syrah, 10% Bobal, 10% local variety old vine mix",
+    "by": ""
+   },
+   "published": "2026-05-05",
+   "image": {
+    "file": "Finca_Sandoval_La_Rosa_Manchuela_Spain_2021.png",
+    "w": 400,
+    "h": 400,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (400×400 px)"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "ljalba-tempranillo-blanco-rioja",
+   "title": "Ijalba Tempranillo Blanco, Rioja",
+   "price": 23.0,
+   "available": true,
+   "type": "White",
+   "country": "Spain",
+   "region": "Rioja",
+   "grapes": [],
+   "styles": [
+    "Organic"
+   ],
+   "magnum": false,
+   "vintage": "2022",
+   "header": "Ijalba, Tempranillo Blanco 2022 Rioja, Spain",
+   "description": [
+    "100% Tempranillo Blanco.",
+    "A unique white from the leading organic winery in Rioja. 100% Tempranillo Blanco, with 15% of it being aged in oak, it has a vibrant yellow colour with a slight green hue. The nose immediately reveals conserved tropical fruits such as pineapple and banana. In the mouth the crispy freshness at first contact transforms in to a dry yet fruity wine with an elegant length."
+   ],
+   "pairing": "white meats",
+   "quote": "",
+   "published": "2023-08-28",
+   "image": {
+    "file": "Ijalba_TempranilloBlanco2022Rioja_Spain.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "filter",
+     "level": "low",
+     "text": "Not in any grape collection"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "jd-pabiot-florilege-pouilly-fume",
+   "title": "Jonathan Dider Pabiot 'Leon' Pouilly Fume 2023",
+   "price": 38.0,
+   "available": true,
+   "type": "White",
+   "country": "France",
+   "region": "Loire",
+   "grapes": [
+    "Sauvignon Blanc"
+   ],
+   "styles": [
+    "Biodynamic"
+   ],
+   "magnum": false,
+   "vintage": "2023",
+   "header": "Regarded by those in the know as the next superstar of the region Jonathan began his winemaking with 3.5 ha of vineyard which was given to him by his grandfather. Over the years he acquired more plots and he now owns 16ha which is certified organic and farmed biodynamically.",
+   "description": [
+    "What was previously Florilege is now Leon and comes from Jonathan's older vineyards, spanning all his terroirs, clay, limestone and flint. Fermented and vinified in stainless steel and concrete vats on its lees for up to 18 months, with only natural yeasts to allow a pure aromatic expression of Sauvignon Blanc character – think citrus, gooseberry and herbal, grassy notes. The palate has lots of ripe grapefruit flavours with flinty/ smoky hints, but with surprising richness and weight."
+   ],
+   "pairing": "",
+   "quote": "",
+   "published": "2023-01-12",
+   "image": {
+    "file": "JdPabiot_Florilege_PouillyFume.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "jonathan-didier-pabiot-prelude-pouilly-fume",
+   "title": "Jonathan Didier Pabiot ‘Elisa’ Pouilly Fume",
+   "price": 34.0,
+   "available": true,
+   "type": "White",
+   "country": "France",
+   "region": "Loire",
+   "grapes": [
+    "Sauvignon Blanc"
+   ],
+   "styles": [
+    "Organic",
+    "Biodynamic"
+   ],
+   "magnum": false,
+   "vintage": "2024",
+   "header": "Jonathan Didier Pabiot ‘Elisa' Pouilly Fume, Loire Valley, France 2024",
+   "description": [
+    "Jonathan is one of the most highly respected young winemakers in the Loire, and his Pouilly Fumes are among the finest in the region. Elisa is produced from the younger vines of his plots, and spends 8 months on lees in tank before bottling. The result is a sauvignon of impeccable purity and freshness, with flavours of fresh grass, elderflower and citrus. This is a perennial favorite of ours!"
+   ],
+   "pairing": "shellfish, vegetarian dishes and charcuterie",
+   "quote": "",
+   "published": "2022-05-19",
+   "image": {
+    "file": "JonathanDidierPabiot_Prelude_PouillyFume_LoireValley_France2019.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Image file says 2019, listing says 2024"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "jonathan-didier-pabiot-eurythmie-pouilly-fume",
+   "title": "Jonathan Didier Pabiot, 'Eurythmie', Pouilly Fume",
+   "price": 59.0,
+   "available": true,
+   "type": "White",
+   "country": "France",
+   "region": "Loire",
+   "grapes": [
+    "Sauvignon Blanc"
+   ],
+   "styles": [
+    "Organic",
+    "Biodynamic"
+   ],
+   "magnum": false,
+   "vintage": "2023",
+   "header": "Jonathan Didier Pabiot ‘Eurythmie’ Pouilly Fumé, Loire Valley, France 2023",
+   "description": [
+    "This stunning! From 50 to 60 year old vines grown on Kimmeridgian marls and flint terroir. Hand picked and aged in demi-muids (large 500 litre old oak vats) and barrels for 12 months and then a further 6 in stainless steel. There's incredible depth here, complexity and reward. Think white stone fruits, lemons and apples, with hints of honey, butter and a touch of cream. Then think of a generous pinch of salt that gives a mineral vein to carry the glorious depth of flavour for a long, lovely finish."
+   ],
+   "pairing": "white meat, seafood and, in particular, lobster",
+   "quote": "",
+   "published": "2021-03-30",
+   "image": {
+    "file": "JonathanDidierPabiot_Eurythmie_PouillyFume.png",
+    "w": 3024,
+    "h": 3024,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "jonathan-didier-pabiot-utopia-pouilly-fume",
+   "title": "Jonathan Didier Pabiot, 'Utopia', Pouilly Fume",
+   "price": 64.0,
+   "available": true,
+   "type": "White",
+   "country": "France",
+   "region": "Loire",
+   "grapes": [
+    "Sauvignon Blanc"
+   ],
+   "styles": [
+    "Organic",
+    "Biodynamic",
+    "Natural"
+   ],
+   "magnum": false,
+   "vintage": "2018",
+   "header": "Jonathan Didier Pabiot ‘Utopia’ Pouilly Fumé, Loire Valley, France 2018",
+   "description": [
+    "This is Jonathan's 'natural' wine, his Utopia, from his Les Marnes plot, on Kimmeridgian soils, of 60 year old vines. Hand ploughed, hand harvested and hand made, he ages this wine in 10 to 15 year old barrels for 12 months and then allows it to settle in stainless steel tanks for another 6 months. There's skin contact and it's left on its lees and that seems to be it when it comes to Jonathan's 'intervention'.",
+    "Slightly oxidative on the nose to start, then it opens up with warm spices, candied quince. It's full in the mouth, with saline backbone that's a touch iodized."
+   ],
+   "pairing": "white meat, seafood and  in particular, lobster",
+   "quote": "",
+   "published": "2021-03-30",
+   "image": {
+    "file": "JonathanDidierPabiot_Utopia_PouillyFume_1.png",
+    "w": 3024,
+    "h": 3024,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "le-piane-boca-2018",
+   "title": "Le Piane 'La Maggiorina' 2022",
+   "price": 45.0,
+   "available": true,
+   "type": null,
+   "country": null,
+   "region": null,
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2022",
+   "header": "Croatina, Vespolina, Spanna (Nebbiolo), Bonarda, Dolcetto di Boca, Tinturia, Greco (Erbaluce), Barbera, Durasa, Slarina, Freisa, Rastajola, Baratuciates, Malvasia I",
+   "description": [],
+   "pairing": "",
+   "quote": {
+    "text": "Aromas of marasca cherry, red plum and violets. Medium-bodied, with lively acidity, round tannins and very good persistence. Lovely blend of more than a dozen local varieties from very old vines that offers excellent complexity and marvellous charm.",
+    "by": "For multiorders please contact us here."
+   },
+   "published": "2025-12-06",
+   "image": {
+    "file": "IMG_3668.jpg",
+    "w": 4284,
+    "h": 5712,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "low",
+     "text": "Not square (4284×5712 px), crops differently in the grid"
+    },
+    {
+     "kind": "filter",
+     "level": "medium",
+     "text": "Not in any wine-type collection, so the Red / White filters miss it"
+    },
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Photo on a busy background. Needs a reshoot or an AI studio shot"
+    }
+   ],
+   "studio": false,
+   "studio_note": "busy background"
+  },
+  {
+   "handle": "le-piane-boca-2018-copy",
+   "title": "Le Piane Boca 2018",
+   "price": 79.0,
+   "available": true,
+   "type": null,
+   "country": null,
+   "region": null,
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2018",
+   "header": "For multiorders please contact us here.",
+   "description": [],
+   "pairing": "",
+   "quote": {
+    "text": "Christoph Künzli is one of the architects of the Renaissance of Alto Piemonte. Over the last 25 years, Künzli has built one of the most highly regarded wineries in all of Italy…Le Piane represents the best of the artisan tradition in Alto Piemonte. These are reference-point wines....",
+    "by": "For multiorders please contact us here."
+   },
+   "published": "2025-12-11",
+   "image": {
+    "file": "IMG_3663.jpg",
+    "w": 4284,
+    "h": 5712,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "low",
+     "text": "Not square (4284×5712 px), crops differently in the grid"
+    },
+    {
+     "kind": "data",
+     "level": "medium",
+     "text": "Description opens with “For multiorders please contact us here.”"
+    },
+    {
+     "kind": "filter",
+     "level": "medium",
+     "text": "Not in any wine-type collection, so the Red / White filters miss it"
+    },
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Photo on a busy background. Needs a reshoot or an AI studio shot"
+    }
+   ],
+   "studio": false,
+   "studio_note": "busy background"
+  },
+  {
+   "handle": "le-piane-colle-novaresi-doc-2024-copy",
+   "title": "Le Piane Colle Novaresi DOC 2024",
+   "price": 29.0,
+   "available": true,
+   "type": null,
+   "country": null,
+   "region": null,
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2024",
+   "header": "For multiorders please contact us here.",
+   "description": [],
+   "pairing": "",
+   "quote": "",
+   "published": "2025-12-06",
+   "image": {
+    "file": "IMG_3661.jpg",
+    "w": 4284,
+    "h": 5712,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "low",
+     "text": "Not square (4284×5712 px), crops differently in the grid"
+    },
+    {
+     "kind": "data",
+     "level": "medium",
+     "text": "Description opens with “For multiorders please contact us here.”"
+    },
+    {
+     "kind": "filter",
+     "level": "medium",
+     "text": "Not in any wine-type collection, so the Red / White filters miss it"
+    },
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Photo on a busy background. Needs a reshoot or an AI studio shot"
+    }
+   ],
+   "studio": false,
+   "studio_note": "busy background"
+  },
+  {
+   "handle": "mahi-sauvignon-blanc",
+   "title": "Mahi Marlborough Sauvignon Blanc",
+   "price": 24.0,
+   "available": true,
+   "type": "White",
+   "country": "New Zealand",
+   "region": "Marlborough",
+   "grapes": [
+    "Sauvignon Blanc"
+   ],
+   "styles": [
+    "Practising organic"
+   ],
+   "magnum": false,
+   "vintage": "2024",
+   "header": "Mahi Sauvignon Blanc, Marlborough, New Zealand, 2024",
+   "description": [
+    "New Zealand Sauvignon Blanc with character from the bold Brian Bicknell and his lovely wife Nic. They embody the hard working culture of Marlborough wine making and they bring their natural style and culture to their wines, preferring them to have a depth of character rather than upfront exuberance. This is our best selling Sauvignon Blanc and a perennial favourite at ELY. It’s a wine that shows a certain subtlety and complexity, with an array of fruit characters, ranging from citrus through to tropical notes. This is complemented by some secondary characters from the natural yeast ferments and some barrel aging. The 2023 is vibrant and lively when first opened but given a little time it backs up the fresh fruit flavours with an elegant structure and a creamy, textural mid-palate and a long finish. The wine is made from free-run juice to give an elegance and it then spends 9 months on its lees to add complexity and that depth of character."
+   ],
+   "pairing": "green vegetables like asparagus, sea food and especially BBQ prawns",
+   "quote": "",
+   "published": "2022-04-25",
+   "image": {
+    "file": "MahiSavBlanc.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "mas-alta-artigas",
+   "title": "Mas Alta Artigas",
+   "price": 43.0,
+   "available": true,
+   "type": "Red",
+   "country": "Spain",
+   "region": null,
+   "grapes": [
+    "Cabernet Sauvignon",
+    "Carignan",
+    "Garnacha"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2022",
+   "header": "Mas Alta Artigas, Priorat, Spain, 2022",
+   "description": [
+    "A vibrant and expressive take on Priorat, offering both richness and approachability. Ripe red and black fruits are complemented by floral notes, gentle spice and a subtle touch of oak.",
+    "Sourced from younger vines and higher altitude vineyards, it retains freshness while delivering structure and depth. Smooth tannins and a rounded texture make this an elegant yet accessible introduction to the region."
+   ],
+   "pairing": "grilled meats, charcuterie and Mediterranean dishes",
+   "quote": {
+    "text": "Garnacha, Carignan & Cabernet Sauvignon blend.",
+    "by": ""
+   },
+   "published": "2026-05-05",
+   "image": {
+    "file": "Mas_Alta_Artigas_Priorat_Spain_2022.png",
+    "w": 400,
+    "h": 400,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (400×400 px)"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "mas-alta-cirerets-priorat",
+   "title": "Mas Alta Cirerets",
+   "price": 59.0,
+   "available": true,
+   "type": "Red",
+   "country": "Spain",
+   "region": null,
+   "grapes": [
+    "Garnacha"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2021",
+   "header": "Mas Alta Cirerets, Priorat, Spain, 2021",
+   "description": [
+    "An elegant, high-altitude Garnacha that highlights the finesse and purity of Priorat. Bright red fruits, delicate floral aromatics and a fine mineral thread define the wine, offering a more lifted and refined expression of the region.",
+    "Careful oak ageing enhances texture without overshadowing the fruit, resulting in a silky, precise wine with vibrant acidity and a long, graceful finish."
+   ],
+   "pairing": "lamb, game and roasted vegetables",
+   "quote": {
+    "text": "100% Garnacha",
+    "by": ""
+   },
+   "published": "2026-05-05",
+   "image": {
+    "file": "Mas_Alta_Cirerets_Priorat_Spain_2021.png",
+    "w": 400,
+    "h": 400,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (400×400 px)"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "la-creu-alta-priorat",
+   "title": "Mas Alta La Creu Alta",
+   "price": 65.0,
+   "available": true,
+   "type": "Red",
+   "country": "Spain",
+   "region": null,
+   "grapes": [
+    "Carignan",
+    "Garnacha"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2020",
+   "header": "Mas Alta La Creu Alta, Priorat, Spain, 2020",
+   "description": [
+    "Garnacha & Carignan blend",
+    "A powerful yet refined expression of Priorat, made from old vines grown on the region’s distinctive slate soils. This wine is rich and structured, with concentrated dark berry fruit, hints of spice and a touch of Mediterranean herb. Careful ageing in oak adds depth and a smooth, rounded texture while maintaining freshness and balance.",
+    "Full-bodied with layers of black fruit, subtle minerality and a long, elegant finish."
+   ],
+   "pairing": "red meat, slow-cooked dishes and aged cheeses",
+   "quote": "",
+   "published": "2026-05-05",
+   "image": {
+    "file": "Mas_Alta_La_Creu_Alta_Priorat_Spain_2020.png",
+    "w": 400,
+    "h": 400,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (400×400 px)"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "copy-of-o-diviso-2020-ladeiras-do-biei-valdeorras-spain",
+   "title": "Matallana 2019, Ribera del Duero, Spain",
+   "price": 78.0,
+   "available": true,
+   "type": null,
+   "country": null,
+   "region": null,
+   "grapes": [
+    "Albillo",
+    "Garnacha",
+    "Tempranillo"
+   ],
+   "styles": [
+    "Organic"
+   ],
+   "magnum": false,
+   "vintage": "2019",
+   "header": "Matallana 2019, Ribera del Duero, Spain",
+   "description": [
+    "Matallana is testament of Telmo Rodriguez and Pablo Egnziza's commitment to making ancestral wines. Wines that are styled on how, and where, the wines were made and how they would have tasted from a region that has being making wines for over 1300 years. The pair started making wine in Ribera del Duero in 1998 and today they work across eleven separate vineyards and across five villages, with the village of Sotillo de la Ribera being the epicenter. (The lines across the label are the names of the 11 villages, blacked out, but that's another story). Rare and abandoned vines were reclaimed, new vines were grafted from these ancestral vines and planted as they would have been, as bush vines. The vines are organic, hand harvested with indigenous yeasts used for fermentation.",
+    "\"An elegant year and this is how the nose of Matallana shows: famously fine. Black cherry, some charcoal behind, fine mint and eucalyptus trace, but ultra polished. Not at all reminiscent of sweet Ribera. More suggestive of Rioja on the nose. Then comes a mouthfeel that will be hard to beat for straightforwardness. Wow, what an ultra sharp black peppery black cherry definition! The sides are super clearly drawn, you immediately know where up, down, left and right are. The whole thing is accompanied by an extremely stony, salty minerality, black pepper, mint and eucalyptus. So black and at the same time so ultra-fine, so sweet and at the same time full of finesse! With more air the wine also develops red fruit, from sour cherry to raspberry and final even to red currant with that ultimate freshness. For Ribera del Duero, Matallana has its own dimension for me in this voluptuous, full-bodied, soft, ultra-sleek and fresh finesse. Opposites that seem almost incompatible. But the wine is so super polished. This brilliant freshness almost cannot be attributed to the Ribera del Duero region. An intense, super fine finesse blockbuster. The wine is definitely at the top of the region along with some other products, there Dominio del Aguila is definitely not so far! A superb masterpiece!\" Heiner Lobenberg 97-100/100",
+    "\"The 2019 Matallana is a blend of 85% Tinto Fino with some 15% other varieties such as Valenciano (Bobal), Navarro (Garnacha) and even white Albillo. 2019 was a very classical vintage with power, concentration and plenty of tannin, and the wine should develop and benefit from extended time in bottle. The wine feels very young and primary, with integrated spices from the élevage in oak, a medium to full-bodied palate, powerful and concentrated but very balanced. As I said in previous years, it's a Ribera like the ones from yesteryear! 18,676 produced with the selected grapes from 21 hectares of vineyards. It was bottled in July 2021.\" Robert Parker 96+/100",
+    "To many, Telmo Rodriguez, who, along with his sister Amaia, runs the impressive Remelluri winery in Rioja, needs no introduction but it's his partnership with fellow winemaker, Pablo Egnziza that has created the exciting range of wines that come together under the umbrella of Telmo Rodriguez Wines. The two have have spent the past thirty years reclaiming abandoned vineyards of indigenous grapes, across a number of regions. Together they are working with over 350 separate small plots, totalling 80 hectares and 43 different varieties of native grapes."
+   ],
+   "pairing": "",
+   "quote": "",
+   "published": "2023-10-02",
+   "image": {
+    "file": "TR-Matallana.png",
+    "w": 202,
+    "h": 500,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (202×500 px)"
+    },
+    {
+     "kind": "image",
+     "level": "low",
+     "text": "Not square (202×500 px), crops differently in the grid"
+    },
+    {
+     "kind": "filter",
+     "level": "medium",
+     "text": "Not in any wine-type collection, so the Red / White filters miss it"
+    }
+   ],
+   "studio": true,
+   "studio_note": "transparent"
+  },
+  {
+   "handle": "monteabellon-14-meses",
+   "title": "Monteabellon '14 meses'",
+   "price": 30.0,
+   "available": false,
+   "type": "Red",
+   "country": "Spain",
+   "region": "Ribera del Duero",
+   "grapes": [
+    "Tempranillo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2022",
+   "header": "Monteabellon '14 meses', Ribera del Duero, Spain, 2022",
+   "description": [
+    "Grape: Tempranillo",
+    "Rich, powerful and velvety, with red berry, cherry, tobacco, leather and spice all in one glorious mouthful."
+   ],
+   "pairing": "roasted and grilled meats",
+   "quote": "",
+   "published": "2023-04-21",
+   "image": {
+    "file": "Monteabellon_14meses.jpg",
+    "w": 1080,
+    "h": 1080,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "nervi-vigna-molsino",
+   "title": "Nervi 'Vigna Molsino'",
+   "price": 139.0,
+   "available": false,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Piedmont",
+   "grapes": [
+    "Nebbiolo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2016",
+   "header": "Nervi ‘Vigna Molsino’ 2016",
+   "description": [
+    "It’s a wine with incredible potential, there is a gorgeous fragrance of red cherry and cassis, wood spice and tobacco, with a finely tannic and extraordinary mineral finish. Drink 2020-2030",
+    "Ideal with red meat and game.",
+    "Grape variety Nebbiolo.",
+    "For more on Nebbiolo and the wine maker click here"
+   ],
+   "pairing": "",
+   "quote": "",
+   "published": "2023-06-20",
+   "image": {
+    "file": "nervi.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "copy-of-falcoeira-a-capilla-2020-ladeiras-do-biei-valdeorras-spain-1",
+   "title": "O Diviso 2020, Ladeiras do Biei, Valdeorras, Spain",
+   "price": 78.0,
+   "available": false,
+   "type": "Red",
+   "country": "Spain",
+   "region": null,
+   "grapes": [
+    "Brancellao",
+    "Mencía",
+    "Sousón"
+   ],
+   "styles": [
+    "Organic"
+   ],
+   "magnum": false,
+   "vintage": "2020",
+   "header": "O Diviso, 2020 Ladeiras do Biei, Valdeorras, Spain",
+   "description": [
+    "\"Falcoeira, As Caborcas and O Diviso have helped us to understand the complexity of the region.\" Telmo Rodriguez",
+    "O Diviso forms part of an old, abandoned vineyard just outside of the small town of As Ermitas and it’s one of Telmo’s most treasured sites. On steep north facing slopes, over 700 meters in altitude, which have been partially encroached by chestnut trees over the decades. Currently there is 1.2ha of old vines of mencía, garnacha, merenzao, mouratón, and caíño tinto. Minimum intervention, wild yeast fermentation of handpicked, organic grapes. There’s limited availability with only 790 bottles which were bottled in July 2022 from one single 600-liter barrel.",
+    "\"Wines from O Diviso are ultra-ethereal and graceful, with great tension and subtlety. O Diviso is refined and serious, with the finesse and length that only the world’s greatest vineyards are capable of.\" De Maison Selections",
+    "\"A lovely, fresh red with lots of herbs, stems, sauerkraut and white pepper. Excellent depth of wild berries with decadent roses. Really juicy and fresh on the palate with a medium body and firm tannins. A little more firmness and verticality here than the Falcoeira and As Caborcas.\" James Suckling. Drink now. 95/100",
+    "\"The superb 2020 O Diviso comes from a warm and healthy vintage when they harvested the grapes quite early but with very balanced ripeness. They picked the grapes the 24th of September. It was the last plot to be harvested (always the last), but the bottled wine has only 13% alcohol. It comes through as aromatic, serious, elegant and balanced, reflecting a cooler place that even in a warmer year ripens slowly. It did ripen well this year and developed a full array of aromas and flavors, giving it complexity and depth and a fine-boned palate. It's one of the finest vintages of O Diviso and my favorite red in 2020. 790 bottles were filled in July 2022 from one single 600-liter barrel.\" Robert Parker 97/100",
+    "\"The nose is highly charming, running full on red fruit. Although the percentage of Garnacha is so small, the varietal is still right up front on the nose with a sweet raspberry-strawberry jam. Still, the wine is not heavy, just incredibly fine, charming and sweet. The mouth is much more focused in contrast, staying much leaner with red crisp, red currant, a bit of sour cherry and a bit of raspberry, but in this case not sweet at all. The strawberry is not sweet either. The wine shows more of a lean, focused straightforwardness in the mouth at all, which is very surprising. Cleanly defined left and right, juicy and brilliantly drinkable. Salty on the edges of the tongue. More reminiscent of limestone despite 100% granite soils. A superb beam of red slender fruit, full of finesse and delicacy. To maintain this incredible finesse of the vintage, which is so ripe after all, is already great cinema. Very, very chic! Heiner Lobenberg 97-98/100",
+    "To many, Telmo Rodriguez, who, along with his sister Amaia, runs the impressive Remelluri winery in Rioja, needs no introduction but it's his partnership with fellow winemaker, Pablo Egnziza that has created the exciting range of wines that come together under the umbrella of Telmo Rodriguez Wines. The two have have spent the past thirty years reclaiming abandoned vineyards of indigenous grapes, across a number of regions. Together they are working with over 350 separate small plots, totalling 80 hectares and 43 different varieties of native grapes."
+   ],
+   "pairing": "",
+   "quote": "",
+   "published": "2023-09-29",
+   "image": {
+    "file": "TR-O-Diviso-2017.png",
+    "w": 202,
+    "h": 500,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Image file says 2017, listing says 2020"
+    },
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (202×500 px)"
+    },
+    {
+     "kind": "image",
+     "level": "low",
+     "text": "Not square (202×500 px), crops differently in the grid"
+    }
+   ],
+   "studio": true,
+   "studio_note": "transparent"
+  },
+  {
+   "handle": "ottin-non-expedit-syrah-2023",
+   "title": "Ottin 'Non Expedit' Syrah 2023",
+   "price": 39.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": null,
+   "grapes": [
+    "Syrah"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2023",
+   "header": "Ottin 'Non Expedit' Syrah, Vallée d'Aoste, Italy, 2023",
+   "description": [
+    "100% Syrah",
+    "A beautifully expressive high-altitude Syrah from Italy’s tiny Vallée d’Aoste, grown at around 700 metres. Fermented with 25% whole bunches and aged for a year in large French oak, it combines the depth of Syrah with a lovely Alpine freshness and lift.",
+    "Soft and aromatic, with violet, rose and spice, followed by savoury notes of black olive, herbs and oregano. Fresh and elegant rather than heavy, with plenty of structure, depth and a long, balanced finish.Pairs well with roast or grilled meats, game, hearty stews and aged cheeses."
+   ],
+   "pairing": "",
+   "quote": "",
+   "published": "2026-09-28",
+   "image": {
+    "file": "Ottin_NonExpedit_Syrah2023.png",
+    "w": 400,
+    "h": 400,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (400×400 px)"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "copy-of-zarate-albarino",
+   "title": "Pedraneira, Albariño",
+   "price": 38.0,
+   "available": true,
+   "type": "White",
+   "country": "Spain",
+   "region": "Rías Baixas",
+   "grapes": [
+    "Albariño"
+   ],
+   "styles": [
+    "Organic"
+   ],
+   "magnum": false,
+   "vintage": "2024",
+   "header": "Pedraneira Albariño, Val Do Salnes, Rias Baixas, Spain 2024",
+   "description": [
+    "We've been longtime fans of Eulogio Pomares' Zarate wines so it was an easy decision to add his Pedraneira Albarinos, which come from the most coastal plot within the Francon vineyard. The roots of some the vines are actually directly in contact with the sea and it shows. On the nose you can smell the sea, the crab shells, the seaweed, the ebbing tide, you just know it's going to be saline and minerally. It’s definitely saline and salty and moreish, as you might expect, but with beautifully crystalline citrus and nectarine fruit to balance. The wine spends 6 months on its lees which balances the acidity and salinity beautifully.",
+    "This is fantastic Albarino & worth decanting and taking your time with.",
+    "There's is never too much of Eulogio's wines to go around so grab some and then get a bit more while you're at it, it will aged nicely!"
+   ],
+   "pairing": "white meat, seafood and shellfish",
+   "quote": "",
+   "published": "2023-09-28",
+   "image": {
+    "file": "https___www.indigowine.com_wp-content_uploads_2023_02_eulogio_pomares_pedraneira.png",
+    "w": 480,
+    "h": 640,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "high",
+     "text": "Image file says 2023, listing says 2024"
+    },
+    {
+     "kind": "image",
+     "level": "low",
+     "text": "Not square (480×640 px), crops differently in the grid"
+    },
+    {
+     "kind": "image",
+     "level": "low",
+     "text": "Image saved from another website"
+    }
+   ],
+   "studio": true,
+   "studio_note": "transparent"
+  },
+  {
+   "handle": "pegaso-zeta-garnacha",
+   "title": "Pegaso ‘Zeta’ Garnacha",
+   "price": 29.0,
+   "available": true,
+   "type": "Red",
+   "country": "Spain",
+   "region": null,
+   "grapes": [
+    "Garnacha"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2023",
+   "header": "Pegaso ‘Zeta’ Garnacha, Sierra de Gredos, Madrid, 2023",
+   "description": [
+    "100% Garnacha",
+    "From one of our favourite Spanish winemakers, Telmo Rodriguez, and his longtime colleague Pablo Eguzkiza, the Zeta is old bush-vine Garnacha from Cebreros in the Sierra de Gredos mountains, west of Madrid. Instantly enjoyable, with a classic Garnacha grip, backed by ripe, bright red berry fruit and a touch of Mediterranean herbs."
+   ],
+   "pairing": "Pairs perfectly with lamb chops",
+   "quote": "",
+   "published": "2026-03-26",
+   "image": {
+    "file": "Pegaso_Zeta_Garnacha.png",
+    "w": 400,
+    "h": 400,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (400×400 px)"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "pietro-zardini-pietro-junior-valpolicella",
+   "title": "Pietro Zardini 'Pietro Junior' Valpolicella Ripasso Superiore",
+   "price": 29.0,
+   "available": false,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Veneto",
+   "grapes": [
+    "Corvina"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2022",
+   "header": "Pietro Zardini 'Pietro Junior' Valpolicella, Veneto, Italy, 2022",
+   "description": [
+    "Grape: Corvina, Rondinello, Molinara",
+    "Fresh cherry and red berry fruit on the nose, with a juicy, supple and utterly delicious finish. A red for summer."
+   ],
+   "pairing": "pasta, grilled meats and BBQ",
+   "quote": "",
+   "published": "2023-04-21",
+   "image": {
+    "file": "PietroZardini_PietroJunior_Valpolicella.jpg",
+    "w": 1080,
+    "h": 1080,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "restless-river-le-luc-pinot-noir",
+   "title": "Restless River ‘Le Luc’ Pinot Noir",
+   "price": 59.0,
+   "available": true,
+   "type": "Red",
+   "country": "South Africa",
+   "region": null,
+   "grapes": [
+    "Pinot Noir"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2023",
+   "header": "Restless River ‘Le Luc’ Pinot Noir, Western Cape, South Africa, 2023",
+   "description": [
+    "100% Pinot Noir",
+    "With a definite nod to Burgundy, this seriously good Pinot Noir hails from Hemel-en-Aarde, Walker Bay, along South Africa’s Western Cape’s coast line. Cooling Atlantic breezes and elevated granite soil vineyards help create wines with “real Burgundian allure”. Fresh, elegant, medium bodied, with tight tannins, smoky herbs and raspberry notes."
+   ],
+   "pairing": "Pairs perfectly with roast lamb",
+   "quote": "",
+   "published": "2026-03-26",
+   "image": {
+    "file": "RestlessRiver_LeLuc_PinotNoir.png",
+    "w": 400,
+    "h": 400,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (400×400 px)"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "rocca-di-montegrossi-san-marcellino-chianti-classico-docg",
+   "title": "Rocca di Montegrossi ‘San Marcellino’ Chianti Classico, DOCG",
+   "price": 68.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": null,
+   "grapes": [
+    "Sangiovese"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2016",
+   "header": "Rocca di Montegrossi ‘San Marcellino’ 2016 Chianti Classico Gran Selezione DOCG, Italy",
+   "description": [
+    "95% Sangiovese, 5% Pugbitello.",
+    "Rocca di Montegrossi is steeped in history, dating back as far as the 7th Century and family of Marco Ricasoli, the winery’s owner, played a central role in the creation of the Chianti region and of Chianti Classico.",
+    "Needless to say, they only produce their Gran Selezione from their best grapes and in the greatest of vintages, of wine 2016 was definitely one. The winey has been organic since 2006 and they harvest by hand. There’s a small helping of Pugbitello, about 5%, which is an old Tuscan grape variety. The wines spends 24 months in barrel and another in bottle. It’s bottled unfitered.",
+    "This is a phenomenal opportunity to get your hands on some truly excellent Chianti, one that will give you another decade of pleasure."
+   ],
+   "pairing": "Pairs well steak and other red meats",
+   "quote": {
+    "text": "Vigna San Marcellino is both youthfully fresh and maturely complex. It includes a healthy dose of the deeply coloured Pugnitello grape, and both this and the Sangiovese saw long post-fermentation macerations of over 30 days in 2016. Liquorice, tarragon and broom interlace with exuberant plum and understated toasted nuances that are seductive. Laden with black cherry and rich, velvety tannins, the palate is creamy in texture, while underlying chalkiness and saline minerality lend energy, leading to a sappy, refreshing finish.",
+    "by": "96 POINTS, DECANTER"
+   },
+   "published": "2023-08-28",
+   "image": {
+    "file": "RoccadiMontegrossi_SanMarcellino_ChiantiClassico_DOCG.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "san-vito-colle-dei-mandorli-merlot",
+   "title": "San Vito ‘Colle dei Mandorli’ Merlot",
+   "price": 39.0,
+   "available": true,
+   "type": "Red",
+   "country": "Italy",
+   "region": "Tuscany",
+   "grapes": [
+    "Merlot"
+   ],
+   "styles": [
+    "Organic"
+   ],
+   "magnum": false,
+   "vintage": "2019",
+   "header": "San Vito ‘Colle dei Mandorli’ Merlot 2019 IGT Toscana, Tuscany, Italy",
+   "description": [
+    "100% Merlot.",
+    "San Vito have been organic since 1982 and they hand harvest their best grapes for their Merlot bottling, the Colle dei Mandorli, meaning Almond Hill. The wine is deep ruby red with a generous, complex nose of pungent spice and ripe red berry. It’s well balanced on the palate, firm-structured yet smooth and opulent, with very fine-grained, fragrant tannins and blueberry fruits."
+   ],
+   "pairing": "roasts, stews and game",
+   "quote": "",
+   "published": "2023-08-28",
+   "image": {
+    "file": "SanVito_ColledeiMandorli_Merlot.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "susana-esteban-procura-tinto",
+   "title": "Susana Esteban 'Procura' Tinto",
+   "price": 46.0,
+   "available": true,
+   "type": null,
+   "country": "Portugal",
+   "region": null,
+   "grapes": [],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2017",
+   "header": "Susana Esteban 'Procura' Tinto, Serra de São Mamde, Vinho Regional Alentejano 2017",
+   "description": [
+    "Traditional varieties from São Mamede",
+    "One of the hallmarks of Susana's wines are that the grapes are old vine, indigenous and in most cases field blends. Field blends are usually found in once forgotten vineyards where native verities have naturally flourished but their true identity has been lost in time. Where the wine maker has the courage to work with what mother nature has provided them the identity of each vine isn't always the first priority. The Procura (which translates as search or quest) is a perfect example of what can be achieved with what nature has gifted you.",
+    "Serra de São Mamede is in the mountains of Portalalegre in the coolest subregion of Alentejo/Alentejano. It's surrounded by the forests of a national park and 700 meters above the plains of Alentejo, as a result Susana's style of wines are 'not' typical of Alentejo, they're fresher by design, more complex and with an elegance that surprises."
+   ],
+   "pairing": "steak, veal and charcuterie",
+   "quote": {
+    "text": "Two vineyards, one is the same as for the Procura white – the field blend includes both red and white grapes and winegrowers used to blend them all together. The other is 40-year-old Alicante Bouschet, also from the Serra de São Mamede but not part of a field blend. Spends two winters in barrel, none new.",
+    "by": "- Jancis Robinson, Julia Harding MW"
+   },
+   "published": "2023-08-31",
+   "image": {
+    "file": "SusanaEsteban_Procura_Tinto_1.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "filter",
+     "level": "medium",
+     "text": "Not in any wine-type collection, so the Red / White filters miss it"
+    },
+    {
+     "kind": "filter",
+     "level": "low",
+     "text": "Not in any grape collection"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "tobia-gran-reserva",
+   "title": "Tobia Gran Reserva",
+   "price": 49.0,
+   "available": true,
+   "type": "Red",
+   "country": "Spain",
+   "region": "Rioja",
+   "grapes": [
+    "Tempranillo"
+   ],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2017",
+   "header": "2017 Tobia Gran Reserva ideal with Red Meat, Game. Grape variety Tempranillo.",
+   "description": [],
+   "pairing": "",
+   "quote": "",
+   "published": "2020-10-22",
+   "image": {
+    "file": "TobiaGranReserva.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "valentia-island-vermouth",
+   "title": "Valentia Island Vermouth",
+   "price": 36.0,
+   "available": true,
+   "type": "Vermouth",
+   "country": null,
+   "region": null,
+   "grapes": [],
+   "styles": [],
+   "magnum": false,
+   "vintage": null,
+   "header": "Distilled on Valentia Island, Co. Kerry.",
+   "description": [
+    "This Vermouth stands as a testament to local craftsmanship. Carefully selected and foraged island plants and herbs, including vibrant gorse, are among the 20 botanicals that infuse every bottle. These botanicals are expertly steeped, revealing their harmonious blend of bitter and sweet notes. They are then married with a rich golden caramel and a Verdejo wine sourced from the Rueda region, in the northwest of Madrid.With an Alcohol Vol of 19%, \"This Vermouth\" offers a versatile libation. It can be savoured neat as a delightful aperitif, seamlessly incorporated into iconic cocktails like the Negroni and Boulevardier, or enjoyed with tonic or soda, accompanied by a slice of orange. Every sip embodies the essence of Valentia."
+   ],
+   "pairing": "",
+   "quote": "",
+   "published": "2023-09-29",
+   "image": {
+    "file": "ValentiaIslandVermouth.png",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "data",
+     "level": "medium",
+     "text": "No vintage in title or description"
+    },
+    {
+     "kind": "filter",
+     "level": "low",
+     "text": "Not in any grape collection"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "villa-papiano-tresche-sauvignon-blanc",
+   "title": "Villa Papiano ‘Tresche’ Sauvignon Blanc",
+   "price": 36.0,
+   "available": true,
+   "type": "White",
+   "country": "Italy",
+   "region": null,
+   "grapes": [],
+   "styles": [],
+   "magnum": false,
+   "vintage": "2023",
+   "header": "Villa Papiano ‘Tresche’ Sauvignon Blanc, Emilia - Romagna Italy, 2023",
+   "description": [
+    "100% Sauvignon",
+    "Sitting between Romagna and Tuscany, in the sandstone hills of Modigliana and at an altitude of 450+ metres, lies a single vineyard planted with Sauvignon Blanc. Pure, electric, mineral and herbaceous, this Sauvignon Blanc is really wonderful. Treat it as you would a quality Sancerre."
+   ],
+   "pairing": "your cheese board and white fish",
+   "quote": "",
+   "published": "2026-03-26",
+   "image": {
+    "file": "Villa_Papiano_Tresche_Sauvignon_Blanc_2023.png",
+    "w": 400,
+    "h": 400,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "image",
+     "level": "medium",
+     "text": "Low resolution (400×400 px)"
+    },
+    {
+     "kind": "filter",
+     "level": "low",
+     "text": "Not in any grape collection"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "zarate-balado-albarino-val-do-salnes",
+   "title": "Zarate 'Balado' Albarino",
+   "price": 56.0,
+   "available": true,
+   "type": "White",
+   "country": "Spain",
+   "region": "Rías Baixas",
+   "grapes": [
+    "Albariño"
+   ],
+   "styles": [
+    "Organic"
+   ],
+   "magnum": false,
+   "vintage": "2022",
+   "header": "Zarate 'Balado' Albarino, Val Do Salnes, Spain, 2022",
+   "description": [
+    "From two plots within a single, walled in vineyard of extremely old, ungrafted vines. Fermented with indigenous yeasts plus six months aging on its lees the 2019 vintage has a intriguing nose of dried apricot, peach, lemon and apple plus granite minerality. There’s a tempting hint of the lees, dried flowers and white blossom too. On the palate the wine is pure, full-bodied and very mineral in personality, with a great core of tropical fruit balanced by lifting acidity, grip and a very long, rewarding finish. The 2019 Balado is delicious and inviting now but definitely worth sometime in the cellar to show what it’s really capable of. Up to 20 years."
+   ],
+   "pairing": "white meat and seafood. Also a great appetiser",
+   "quote": "",
+   "published": "2022-11-24",
+   "image": {
+    "file": "ZarateBaladoAlbarino_2.png",
+    "w": 3024,
+    "h": 3024,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "zarate-el-palomar-albarino",
+   "title": "Zarate 'El Palomar' Albarino",
+   "price": 52.0,
+   "available": true,
+   "type": "White",
+   "country": "Spain",
+   "region": "Rías Baixas",
+   "grapes": [
+    "Albariño"
+   ],
+   "styles": [
+    "Organic"
+   ],
+   "magnum": false,
+   "vintage": "2019",
+   "header": "Zarate 'El Palomar' Albarino, Val Do Salnes, Spain, 2019",
+   "description": [
+    "The El Palomar (Dovecote) grapes were planted circa 1850 and are ungrafted pre-phyloxera. It’s the oldest of the 40 small parcels that Zarate farms and one of the oldest vineyards in Rias Bias. The El Palomar is the only one of their whites that sees any wood being fermented in 2200 litre, 15 year old, oak foudre, that gives a more lushish mouthfeel while retaining the family’s signature salty minerality. There’s a seriousness to this wine, due to the incredible age of the vines, with striking complexity and depth."
+   ],
+   "pairing": "white meat, seafood and in particular, shellfish",
+   "quote": "",
+   "published": "2021-03-31",
+   "image": {
+    "file": "ZarateElPalomarAlbarino.png",
+    "w": 3024,
+    "h": 3024,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "zarate-tras-da-vina-albarino",
+   "title": "Zarate 'Tras da Vina' Albarino",
+   "price": 56.0,
+   "available": true,
+   "type": "White",
+   "country": "Spain",
+   "region": "Rías Baixas",
+   "grapes": [
+    "Albariño"
+   ],
+   "styles": [
+    "Organic"
+   ],
+   "magnum": false,
+   "vintage": null,
+   "header": "Zarate 'Tras da Vina', Albarino, Val do Salnes, Spain, 20121",
+   "description": [
+    "The Tras da Viña is from a single vineyard, planted from cuttings taken from one of Eulogio’s pre-phylloxera El Palomar vineyard. With up to 24 months on its lees this is a wine of considerable depth and character that offers up a focused aroma of citrus fruits with a defined minerality. This is a full-bodied and complex wine that’s full of life. It’s that bit softer that the Balado so accessible sooner in it’s life but it too is worth sticking aside, at least a few bottles, for another 5-20 years."
+   ],
+   "pairing": "white meat, seafood and shellfish",
+   "quote": "",
+   "published": "2022-11-25",
+   "image": {
+    "file": "Zarate_TrasdaVina_Albarino.png",
+    "w": 3024,
+    "h": 3024,
+    "count": 1
+   },
+   "issues": [
+    {
+     "kind": "data",
+     "level": "medium",
+     "text": "No vintage in title or description"
+    },
+    {
+     "kind": "data",
+     "level": "medium",
+     "text": "Typo in vintage: 20121"
+    }
+   ],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "zarate-albarino",
+   "title": "Zarate Albarino Val do Salnes",
+   "price": 27.0,
+   "available": true,
+   "type": "White",
+   "country": "Spain",
+   "region": "Rías Baixas",
+   "grapes": [
+    "Albariño"
+   ],
+   "styles": [
+    "Organic"
+   ],
+   "magnum": false,
+   "vintage": "2025",
+   "header": "Zarate, Albarino, Val do Salnes, Spain, 2025",
+   "description": [
+    "It’s fair to say that Zarate’s wines have little in common with much of what passes for Albarino these days. Where some commercial styles of Albarino can seem overly ripe and tropical, the wines from Zarate are just the opposite – precise, mineral, and taut, drawing on the salty character of the Atlantic coast to give the wines a remarkable freshness. 2024 is benchmark Zarate, with structure and acidity and this “entry-level” Zarate is crisp, characterful and rewarding with a long, tasty finish, vibrant and almost salty"
+   ],
+   "pairing": "white meat, seafood and shellfish",
+   "quote": "",
+   "published": "2023-06-03",
+   "image": {
+    "file": "ZarateAlbarino.png",
+    "w": 3024,
+    "h": 3024,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  },
+  {
+   "handle": "zarate-fontecon",
+   "title": "Zarate Fontecon Rosé",
+   "price": 39.0,
+   "available": false,
+   "type": "Rosé",
+   "country": "Spain",
+   "region": "Rías Baixas",
+   "grapes": [
+    "Albariño",
+    "Caíño Tinto",
+    "Espadeiro"
+   ],
+   "styles": [
+    "Practising organic"
+   ],
+   "magnum": false,
+   "vintage": "2022",
+   "header": "Zarate Fontecon Rosé, Rias Baixas, Spain, 2022",
+   "description": [
+    "Blend of Caino, Espadeiro and Albarino.",
+    "Intense pink in colour this is a delightfully fresh rosé.Full and fruity on the nose, vibrant and acidic on the tongue with a well balanced minerality."
+   ],
+   "pairing": "seafood, salads, fruit, cheese and pastas",
+   "quote": "",
+   "published": "2023-10-26",
+   "image": {
+    "file": "ZarateFontecon_1.jpg",
+    "w": 800,
+    "h": 800,
+    "count": 1
+   },
+   "issues": [],
+   "studio": true,
+   "studio_note": "white"
+  }
+ ]
+}

@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>ELY Cellar Concept</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,132 +13,147 @@
   --line:#D9D5D2;
   --oxblood:#6A1F31;
   --oxblood-soft:#F1E4E6;
-  --studio-a:#E7E4E0;
-  --studio-b:#D3CEC9;
-  --ok:#2F6B4A;
-  --warn:#9A5B12;
+  --studio-a:#EAE7E3;
+  --studio-b:#D6D1CC;
+  --ok:#2F6B4A; --ok-soft:#E3EFE8;
+  --warn:#9A5B12; --warn-soft:#F6EBDC;
+  --bad:#A3321F; --bad-soft:#F7E4DF;
   --serif:"Newsreader", Georgia, "Times New Roman", serif;
   --sans:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
   --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
 }
 *{box-sizing:border-box}
 body{background:var(--ground);color:var(--ink);font:15px/1.55 var(--sans);padding-inline:16px;padding-block:0 64px}
-.wrap{max-width:1160px;margin:0 auto}
-.concept{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;justify-content:space-between;padding-block:10px;border-bottom:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+.wrap{max-width:1180px;margin:0 auto}
+button{font:inherit;color:inherit}
+button:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--oxblood);outline-offset:2px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;text-wrap:balance;margin:0}
+p{margin:0}
+.eyebrow{font:500 11px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.note{font-size:12px;color:var(--muted);font-style:italic}
+.num{font-variant-numeric:tabular-nums}
+
+.concept{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:space-between;padding-block:10px;border-bottom:1px solid var(--line);font-size:12.5px;color:var(--muted)}
 .concept b{color:var(--ink);font-weight:600}
-header.shop{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:12px 24px;padding-block:22px 18px}
+header.shop{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding-block:20px 16px}
 .mark{font-family:var(--serif);font-size:30px;letter-spacing:.14em;font-weight:500}
 .mark small{font-family:var(--sans);font-size:11px;letter-spacing:.2em;color:var(--muted);margin-left:10px;text-transform:uppercase}
 nav.tabs{display:flex;flex-wrap:wrap;gap:4px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:4px}
-nav.tabs button{font:500 13.5px var(--sans);border:0;background:none;color:var(--muted);padding:8px 16px;border-radius:999px;cursor:pointer}
+nav.tabs button{font-weight:500;font-size:13.5px;border:0;background:none;color:var(--muted);padding:8px 14px;border-radius:999px;cursor:pointer}
 nav.tabs button[aria-selected="true"]{background:var(--ink);color:var(--paper)}
-nav.tabs button:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--oxblood);outline-offset:2px}
-h1,h2,h3{font-family:var(--serif);font-weight:400;text-wrap:balance;margin:0}
-.eyebrow{font:500 11px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
-.mono{font-family:var(--mono);font-size:12px}
-.note{font-size:12px;color:var(--muted);font-style:italic}
 
-/* ---------- Shop grid ---------- */
-.intro{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:end;padding-block:8px 20px}
-.intro h1{font-size:clamp(30px,4.4vw,48px);line-height:1.05}
-.intro p{margin:0;color:var(--muted);max-width:52ch}
-.filters{display:flex;flex-wrap:wrap;gap:8px;padding-block:6px 18px}
-.chip{font:500 13px var(--sans);border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:6px 12px;border-radius:999px;cursor:pointer}
-.chip[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:var(--paper)}
-.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 16px}
-.card{display:flex;flex-direction:column;gap:10px;cursor:pointer;background:none;border:0;padding:0;text-align:left;color:inherit;font:inherit}
-.tile{position:relative;aspect-ratio:4/5;background:radial-gradient(120% 90% at 50% 18%,var(--studio-a),var(--studio-b));border-radius:4px;overflow:hidden;max-width:100%}
-.tile canvas{position:absolute;inset:0;width:100%;height:100%}
-.badge{position:absolute;left:10px;top:10px;font:600 10.5px var(--sans);letter-spacing:.08em;text-transform:uppercase;background:var(--paper);color:var(--oxblood);padding:4px 8px;border-radius:2px}
-.card .name{font-family:var(--serif);font-size:18px;line-height:1.2}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:3px;overflow:hidden;background:var(--paper)}
+.seg button{border:0;background:none;padding:6px 12px;font-size:12.5px;font-weight:500;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+
+/* Shop */
+.bar{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;justify-content:space-between;padding-block:4px 16px}
+.facets{display:flex;flex-wrap:wrap;gap:8px}
+.facets label{display:flex;flex-direction:column;gap:2px;font:500 10.5px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.facets select{font:14px var(--sans);color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:6px 8px;max-width:190px}
+.count{font-size:13px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px 16px}
+.card{display:flex;flex-direction:column;gap:8px;cursor:pointer;background:none;border:0;padding:0;text-align:left}
+.tile{position:relative;aspect-ratio:4/5;border-radius:3px;overflow:hidden;background:#fff;max-width:100%}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tile.now img{object-fit:contain;padding:0}
+.tile.now.square img{object-fit:contain}
+.tile.studio{background:linear-gradient(180deg,var(--studio-a),var(--studio-b))}
+.badge{position:absolute;left:8px;top:8px;font:600 10px var(--sans);letter-spacing:.08em;text-transform:uppercase;background:var(--paper);color:var(--oxblood);padding:3px 7px;border-radius:2px}
+.badge.sold{color:var(--muted)}
+.flagdot{position:absolute;right:8px;top:8px;font:600 10px var(--sans);background:var(--bad-soft);color:var(--bad);padding:3px 7px;border-radius:2px}
+.card .name{font-family:var(--serif);font-size:17px;line-height:1.2}
 .card .meta{font-size:12.5px;color:var(--muted)}
-.card .row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
-.card .price{font-variant-numeric:tabular-nums;font-weight:600}
+.card .row{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.card .price{font-weight:600}
 .card:hover .tile{outline:1px solid var(--ink);outline-offset:-1px}
-.empty{grid-column:1/-1;color:var(--muted);padding:40px 0}
+.more-btn{margin:26px auto 0;display:block;border:1px solid var(--ink);background:none;padding:10px 18px;border-radius:3px;cursor:pointer;font-weight:600}
 
-/* ---------- Product page ---------- */
-.pdp{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;padding-block:8px}
-.hero-tile{aspect-ratio:4/5}
-.toggle{display:flex;gap:4px;margin-top:10px}
-.toggle button{font:500 12.5px var(--sans);border:1px solid var(--line);background:var(--paper);padding:6px 12px;border-radius:3px;cursor:pointer;color:var(--ink)}
-.toggle button[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:var(--paper)}
-.pdp h1{font-size:clamp(30px,4vw,44px);line-height:1.05;margin-top:6px}
-.pdp .sub{color:var(--muted);margin-top:6px}
-.buy{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-block:20px;padding-block:16px;border-block:1px solid var(--line)}
-.buy .p{font-size:26px;font-variant-numeric:tabular-nums;font-family:var(--serif)}
-.btn{font:600 14px var(--sans);border:0;background:var(--oxblood);color:#fff;padding:12px 20px;border-radius:3px;cursor:pointer}
+/* Wine page */
+.pdp{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;padding-block:6px}
+.pdp .tile{aspect-ratio:4/5}
+.imgctl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:10px}
+.pdp h1{font-size:clamp(28px,3.8vw,42px);line-height:1.06;margin-top:6px}
+.buy{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-block:18px;padding-block:14px;border-block:1px solid var(--line)}
+.buy .p{font-size:26px;font-family:var(--serif)}
+.btn{font-weight:600;font-size:14px;border:0;background:var(--oxblood);color:#fff;padding:11px 18px;border-radius:3px;cursor:pointer}
+.btn[disabled]{background:var(--line);color:var(--muted);cursor:default}
 .btn.ghost{background:none;color:var(--ink);border:1px solid var(--ink)}
-.stock{font-size:12.5px;color:var(--warn)}
-.facts{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin:0}
-.facts dt{font:500 11px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:7px 18px;margin:0}
+.facts dt{font:500 10.5px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:3px}
 .facts dd{margin:0}
-.block{margin-top:26px}
-.block h3{font-size:20px;margin-bottom:10px}
-.scale{display:grid;grid-template-columns:90px 1fr;gap:8px 14px;align-items:center}
-.scale span{font-size:13px}
-.dots{display:flex;gap:5px}
-.dots i{width:100%;height:6px;background:var(--line);border-radius:1px}
-.dots i.on{background:var(--oxblood)}
-.window{position:relative;height:40px;margin-top:4px}
-.window .axis{position:absolute;left:0;right:0;top:14px;height:2px;background:var(--line)}
-.window .band{position:absolute;top:8px;height:14px;background:var(--oxblood-soft);border:1px solid var(--oxblood);border-radius:2px}
-.window .peak{position:absolute;top:8px;height:14px;background:var(--oxblood)}
-.window .now{position:absolute;top:2px;width:2px;height:26px;background:var(--ink)}
-.window .ticks{position:absolute;left:0;right:0;top:26px;display:flex;justify-content:space-between;font:11px var(--mono);color:var(--muted)}
-.bar-callout{display:flex;gap:14px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);padding:14px 16px;border-radius:3px}
-.bar-callout .glass{flex:none;width:26px;height:34px}
-.more{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.more .card .name{font-size:15px}
+.facts dd.gap{color:var(--muted);border:1px dashed var(--line);border-radius:2px;padding:0 8px;font-size:13px;width:fit-content}
+.block{margin-top:24px;display:grid;gap:8px}
+.block h3{font-size:19px}
+.block p{max-width:62ch}
+blockquote{margin:0;padding-left:14px;border-left:2px solid var(--oxblood);font-family:var(--serif);font-style:italic;font-size:17px}
+blockquote cite{display:block;font:500 12px var(--sans);font-style:normal;color:var(--muted);margin-top:6px}
+.check{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:12px 14px;display:grid;gap:6px;font-size:13.5px}
+.issue{display:flex;gap:8px;align-items:baseline}
+.lvl{flex:none;font:600 9.5px var(--sans);letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:2px}
+.lvl.high{color:var(--bad);background:var(--bad-soft)}
+.lvl.medium{color:var(--warn);background:var(--warn-soft)}
+.lvl.low{color:var(--muted);background:var(--line)}
+.lvl.ok{color:var(--ok);background:var(--ok-soft)}
+.related{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.related .name{font-size:15px}
 
-/* ---------- Add a bottle ---------- */
-.flow-head{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:end;padding-block:8px 20px}
+/* Catalogue check */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-block:6px 22px}
+.stat{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:14px 16px;display:grid;gap:2px}
+.stat b{font:400 32px/1.1 var(--serif)}
+.stat span{font-size:13px;color:var(--muted)}
+.list{display:grid;gap:0;border-top:1px solid var(--line)}
+.li{display:grid;grid-template-columns:56px minmax(0,1fr);gap:14px;padding-block:12px;border-bottom:1px solid var(--line);cursor:pointer;background:none;border-left:0;border-right:0;border-top:0;text-align:left;padding-inline:0}
+.li .tile{aspect-ratio:4/5;width:56px}
+.li .t{font-family:var(--serif);font-size:16px}
+.li .issues{display:grid;gap:3px;margin-top:4px;font-size:13px}
+.empties{margin-top:26px;display:grid;gap:8px}
+.empties .tags{display:flex;flex-wrap:wrap;gap:5px}
+.empties .tags span{font:12px var(--mono);background:var(--paper);border:1px solid var(--line);padding:2px 6px;border-radius:2px;color:var(--muted)}
+
+/* Add a bottle */
+.flow-head{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:end;padding-block:6px 20px}
 .flow-head h1{font-size:clamp(28px,4vw,42px);line-height:1.08}
-.flow-head p{margin:0;color:var(--muted)}
+.flow-head p{color:var(--muted)}
 .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-.step{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:14px;display:flex;flex-direction:column;gap:10px;min-height:100%;transition:border-color .3s, opacity .3s}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:14px;display:flex;flex-direction:column;gap:10px;transition:opacity .3s,border-color .3s}
 .step.dim{opacity:.45}
 .step.active{border-color:var(--ink)}
 .step .n{font:500 11px var(--mono);color:var(--muted)}
 .step h3{font-size:18px}
 .step .tile{aspect-ratio:4/5}
-.fields{display:grid;gap:6px;font-size:13px}
-.fields div{display:grid;grid-template-columns:78px 1fr auto;gap:6px;align-items:baseline;border-bottom:1px dashed var(--line);padding-bottom:4px}
+.pending{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:16px;font-size:13px;color:var(--muted);border:1px dashed var(--muted);border-radius:3px}
+.fields{display:grid;gap:5px;font-size:13px}
+.fields div{display:grid;grid-template-columns:74px 1fr auto;gap:6px;align-items:baseline;border-bottom:1px dashed var(--line);padding-bottom:4px}
 .fields .k{color:var(--muted);font-size:11.5px}
 .conf{font:500 10.5px var(--mono);padding:1px 5px;border-radius:2px}
-.conf.hi{color:var(--ok);background:#E3EFE8}
-.conf.lo{color:var(--warn);background:#F6EBDC}
-.check{display:grid;gap:6px;font-size:13px}
-.check div{display:flex;gap:8px;align-items:baseline}
-.tick{color:var(--ok);font-weight:600}
-.flag{color:var(--warn);font-weight:600}
-.flow-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding-block:20px 0}
-.compare{margin-top:28px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.compare .box{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:16px}
-.compare h3{font-size:18px;margin-bottom:8px}
-.compare ol{margin:0;padding-left:20px;display:grid;gap:4px;font-size:13.5px}
+.conf.hi{color:var(--ok);background:var(--ok-soft)}
+.conf.lo{color:var(--warn);background:var(--warn-soft)}
+.flow-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding-block:18px 0}
 
-@media (max-width:900px){
+.loading{padding:60px 0;color:var(--muted)}
+
+@media (max-width:980px){ .grid{grid-template-columns:repeat(3,minmax(0,1fr))} .stats{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:760px){
   .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .pdp{grid-template-columns:1fr;gap:22px}
   .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .intro,.flow-head{grid-template-columns:1fr}
-}
-@media (max-width:720px){
-  .pdp{grid-template-columns:1fr;gap:24px}
-  .compare{grid-template-columns:1fr}
+  .flow-head{grid-template-columns:1fr}
 }
 @media (max-width:460px){
   .steps{grid-template-columns:1fr}
-  .more{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .related{grid-template-columns:repeat(2,minmax(0,1fr))}
   .mark small{display:none}
+  .facets select{max-width:150px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
 <div class="wrap">
   <div class="concept">
-    <span><b>Concept prototype</b> for ELY Wine by Sideforge. This is not the live shop. Nothing here is for sale.</span>
-    <span>Bottles are drawn stand-ins. The real tool uses a photo of each bottle.</span>
+    <span><b>Concept prototype</b> for ELY Wine by Sideforge. Not the live shop. Nothing here is for sale.</span>
+    <span id="scrapeNote">Real wines, prices and photos from shop.elywinebar.ie.</span>
   </div>
 
   <header class="shop">
@@ -145,148 +161,117 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;text-wrap:balance;margin:0}
     <nav class="tabs" role="tablist" aria-label="Prototype views">
       <button role="tab" id="tab-shop" aria-selected="true" data-view="shop">Shop</button>
       <button role="tab" id="tab-wine" aria-selected="false" data-view="wine">Wine page</button>
+      <button role="tab" id="tab-check" aria-selected="false" data-view="check">Catalogue check</button>
       <button role="tab" id="tab-add" aria-selected="false" data-view="add">Add a bottle</button>
     </nav>
   </header>
 
+  <div id="loading" class="loading">Loading the wine list…</div>
+
   <!-- SHOP -->
-  <section id="view-shop" role="tabpanel" aria-labelledby="tab-shop">
-    <div class="intro">
-      <h1>Every bottle in the same light, on the same ground, at the same size.</h1>
-      <p>One studio standard for every wine. The grid reads as one cellar, and the eye goes to the label, the region and the price.</p>
+  <section id="view-shop" role="tabpanel" aria-labelledby="tab-shop" hidden>
+    <div class="bar">
+      <div class="facets" id="facets"></div>
+      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+        <span class="count num" id="count"></span>
+        <div class="seg" role="group" aria-label="Photos">
+          <button type="button" data-photos="now" aria-pressed="false">Photos today</button>
+          <button type="button" data-photos="studio" aria-pressed="true">Studio standard</button>
+        </div>
+      </div>
     </div>
-    <div class="filters" id="filters" aria-label="Filter by style"></div>
     <div class="grid" id="grid"></div>
+    <button type="button" class="more-btn" id="moreBtn" hidden>Show all wines</button>
   </section>
 
   <!-- WINE PAGE -->
   <section id="view-wine" role="tabpanel" aria-labelledby="tab-wine" hidden>
     <div class="pdp">
       <div>
-        <div class="tile hero-tile" id="heroTile"><canvas id="heroCanvas"></canvas></div>
-        <div class="toggle" role="group" aria-label="Image version">
-          <button id="shotStudio" aria-pressed="true">Studio shot</button>
-          <button id="shotPhone" aria-pressed="false">Phone photo it came from</button>
+        <div class="tile" id="pdpTile"><img id="pdpImg" alt=""></div>
+        <div class="imgctl">
+          <div class="seg" role="group" aria-label="Photo version">
+            <button type="button" data-photos="now" aria-pressed="false">Today</button>
+            <button type="button" data-photos="studio" aria-pressed="true">Studio standard</button>
+          </div>
+          <span class="note" id="pdpImgNote"></span>
         </div>
+        <div class="block" id="pdpCheck"></div>
       </div>
       <div>
-        <div class="eyebrow">Red · Alto Piemonte, Italy</div>
-        <h1>Le Piane Boca 2018</h1>
-        <div class="sub">Nebbiolo and Vespolina from old vines on volcanic porphyry. Deep and powerful, and built to age for twenty years.</div>
-
+        <div class="eyebrow" id="pdpEyebrow"></div>
+        <h1 id="pdpTitle"></h1>
         <div class="buy">
-          <span class="p">€79.00</span>
-          <button class="btn" type="button">Add to basket</button>
+          <span class="p num" id="pdpPrice"></span>
+          <button class="btn" type="button" id="pdpBuy">Add to basket</button>
           <button class="btn ghost" type="button">Send as a gift</button>
-          <span class="stock">Last 4 bottles <span class="note">(example)</span></span>
         </div>
-
-        <dl class="facts">
-          <dt>Producer</dt><dd>Le Piane · Christoph Künzli</dd>
-          <dt>Appellation</dt><dd>Boca DOC</dd>
-          <dt>Grapes</dt><dd>Nebbiolo 85%, Vespolina 15%</dd>
-          <dt>Soil</dt><dd>Volcanic porphyry</dd>
-          <dt>Vintage</dt><dd>2018</dd>
-          <dt>Alcohol</dt><dd class="mono">14.0% vol</dd>
-          <dt>Size</dt><dd class="mono">750 ml</dd>
-          <dt>Serve</dt><dd>16–18 °C · decant 1 hour</dd>
-        </dl>
-
-        <div class="block">
-          <h3>How it tastes</h3>
-          <div class="scale" id="scale"></div>
-          <p class="note">Values are examples. The ELY team sets them once per wine.</p>
-        </div>
-
-        <div class="block">
-          <h3>When to drink it</h3>
-          <div class="window" id="window" aria-label="Drinking window 2024 to 2038, best 2027 to 2034">
-            <div class="axis"></div>
-          </div>
-          <p class="note" style="margin-top:14px">Drink 2024–2038, best 2027–2034 (example).</p>
-        </div>
-
-        <div class="block">
-          <h3>With food</h3>
-          <p style="margin:0">Braised beef, wild mushroom risotto, aged Comté.</p>
-        </div>
-
-        <div class="block bar-callout">
-          <svg class="glass" viewBox="0 0 26 34" aria-hidden="true"><path d="M4 2h18c0 9-3 15-9 15S4 11 4 2Z" fill="#6A1F31"/><path d="M13 17v12M7 31h12" stroke="#1E1A1C" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
-          <div>
-            <b>Pouring at ELY Wine Bar this week</b>
-            <div class="meta" style="font-size:13px;color:var(--muted)">Taste it by the glass in Dublin 2 before you buy the bottle. Linked to the bar's pour list (example).</div>
-          </div>
-        </div>
-
-        <div class="block">
-          <h3>More from Le Piane</h3>
-          <div class="more" id="more"></div>
-        </div>
+        <dl class="facts" id="pdpFacts"></dl>
+        <p class="note" style="margin-top:8px">Dashed fields are empty today. They become Shopify metafields that staff fill once per wine.</p>
+        <div class="block" id="pdpDesc"></div>
+        <div class="block" id="pdpPair"></div>
+        <div class="block" id="pdpQuote"></div>
+        <div class="block" id="pdpRelatedWrap"><h3 id="pdpRelatedH"></h3><div class="related" id="pdpRelated"></div></div>
       </div>
     </div>
+  </section>
+
+  <!-- CATALOGUE CHECK -->
+  <section id="view-check" role="tabpanel" aria-labelledby="tab-check" hidden>
+    <div class="flow-head">
+      <h1>Every listing, checked the same way.</h1>
+      <p>These checks run on the live catalogue data. The same checks run on each new bottle before it goes live.</p>
+    </div>
+    <div class="stats" id="stats"></div>
+    <div class="bar">
+      <div class="seg" role="group" aria-label="Issue type" id="kindSeg">
+        <button type="button" data-kind="all" aria-pressed="true">All</button>
+        <button type="button" data-kind="image" aria-pressed="false">Images</button>
+        <button type="button" data-kind="data" aria-pressed="false">Details</button>
+        <button type="button" data-kind="filter" aria-pressed="false">Filters</button>
+      </div>
+      <span class="count num" id="checkCount"></span>
+    </div>
+    <div class="list" id="issueList"></div>
+    <div class="empties" id="empties"></div>
   </section>
 
   <!-- ADD A BOTTLE -->
   <section id="view-add" role="tabpanel" aria-labelledby="tab-add" hidden>
     <div class="flow-head">
       <h1>Add a bottle from one phone photo.</h1>
-      <p>Take a photo of the bottle on the counter. The tool reads the label, makes the studio shot, checks it against the label, and saves a draft in Shopify. A person approves it before it goes live.</p>
+      <p>Staff photograph the bottle. The tool reads the label, makes the studio shot, runs the catalogue checks, and saves a draft in Shopify. A person approves it before it goes live.</p>
     </div>
-
-    <div class="steps" id="steps">
-      <div class="step" data-step="1">
+    <div class="steps">
+      <div class="step" data-step="0">
         <span class="n">STEP 1 · PHONE</span>
-        <h3>Snap the bottle</h3>
-        <div class="tile"><canvas id="c-phone"></canvas></div>
-        <span class="note">Any phone. Any counter. Front label to camera.</span>
+        <h3>Photograph the bottle</h3>
+        <div class="tile"><img id="addPhone" alt="Phone photo of Le Piane Boca 2018 from the live shop"></div>
+        <span class="note">The real phone photo from the live listing.</span>
       </div>
-      <div class="step" data-step="2">
+      <div class="step" data-step="1">
         <span class="n">STEP 2 · READ</span>
         <h3>Read the label</h3>
-        <div class="fields" id="fields"></div>
+        <div class="fields" id="addFields"><span class="note">Waiting for the photo.</span></div>
         <span class="note">Amber fields need a person to confirm.</span>
       </div>
-      <div class="step" data-step="3">
+      <div class="step" data-step="2">
         <span class="n">STEP 3 · STUDIO</span>
         <h3>Make the studio shot</h3>
-        <div class="tile"><canvas id="c-studio"></canvas></div>
-        <div class="check" id="checks"></div>
+        <div class="tile studio" id="addStudio"><div class="pending">The Nano Banana studio shot appears here once the API key is set up.</div></div>
+        <div class="fields" id="addChecks"></div>
       </div>
-      <div class="step" data-step="4">
+      <div class="step" data-step="3">
         <span class="n">STEP 4 · SHOPIFY</span>
         <h3>Save as draft</h3>
-        <div class="fields" id="draft"></div>
+        <div class="fields" id="addDraft"><span class="note">Waiting for the studio shot.</span></div>
         <button class="btn" type="button" id="approve" disabled>Approve and publish</button>
         <span class="note" id="approveNote">Runs after steps 1–3.</span>
       </div>
     </div>
-
     <div class="flow-actions">
       <button class="btn" type="button" id="run">Run the example</button>
       <button class="btn ghost" type="button" id="reset">Reset</button>
-      <span class="note">Example: Arpepe 'Rocce Rosse' 2018. The live shop shows a 2009 label for this wine today.</span>
-    </div>
-
-    <div class="compare">
-      <div class="box">
-        <h3>Adding a bottle today</h3>
-        <ol>
-          <li>Find or take a photo. Crop it by hand.</li>
-          <li>Type title, price, description.</li>
-          <li>Add tags for type, country, grape, style, vintage.</li>
-          <li>Hope the photo and the vintage match.</li>
-        </ol>
-      </div>
-      <div class="box">
-        <h3>Adding a bottle with the tool</h3>
-        <ol>
-          <li>Take one photo.</li>
-          <li>Confirm the amber fields. Type the price.</li>
-          <li>Check the studio shot. Approve.</li>
-          <li>Filters, tags and wine facts fill from the same data.</li>
-        </ol>
-      </div>
     </div>
   </section>
 </div>
@@ -294,381 +279,242 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;text-wrap:balance;margin:0}
 <script>
 (function(){
 "use strict";
+var DATA=null, WINES=[], photos="studio", current=null, kind="all", showAll=false;
+var PAGE=24;
+var $=function(id){ return document.getElementById(id); };
+function el(tag, cls, text){ var e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; }
+function eur(n){ return "€"+n.toFixed(2); }
+function imgFor(w, mode){ return (mode==="studio" && w.studio) ? "img/studio/"+w.handle+".jpg" : "img/now/"+w.handle+".jpg"; }
+function place(w){ return [w.region, w.country].filter(Boolean).join(", "); }
+function metaLine(w){ return [w.type, place(w)].filter(Boolean).join(" · ") || "Wine"; }
+function worst(w){ var o={high:3,medium:2,low:1}, m=0; w.issues.forEach(function(i){ m=Math.max(m,o[i.level]); }); return m; }
+function producerKey(t){ return t.toLowerCase().replace(/[’'‘]/g,"").split(/[ ,]/).filter(Boolean).slice(0,1).join(" "); }
 
-/* ---------- Wine data (from shop.elywinebar.ie, Sept 2026) ---------- */
-var WINES = [
-  {id:"boca", name:"Le Piane Boca 2018", producer:"Le Piane", region:"Alto Piemonte, Italy", grape:"Nebbiolo, Vespolina", style:"Red", price:79, badge:"At the bar",
-   b:{shape:"burg", glass:"dark", cap:"#141214", label:{bg:"#3F6E86", y:.60, h:.28, lines:[
-     {t:"LE PIANE", f:"600 {s}px Figtree", s:.052, c:"#F3EFE6", ls:.14},
-     {t:"Boca", f:"italic 400 {s}px Newsreader", s:.12, c:"#F3EFE6"},
-     {t:"2018", f:"500 {s}px Newsreader", s:.045, c:"#F3EFE6"}]}}},
-  {id:"rocce", name:"Arpepe 'Rocce Rosse' 2018", producer:"Arpepe", region:"Valtellina, Italy", grape:"Nebbiolo", style:"Red", price:136,
-   b:{shape:"burg", glass:"dark", cap:"#151314", label:{bg:"#141214", y:.60, h:.29, border:"#8A7A4A", lines:[
-     {t:"VALTELLINA SUPERIORE", f:"500 {s}px Newsreader", s:.034, c:"#E9E4DA", ls:.04},
-     {t:"RISERVA 2018", f:"500 {s}px Newsreader", s:.034, c:"#C8352E"},
-     {t:"Sassella", f:"600 {s}px Newsreader", s:.07, c:"#E9E4DA"},
-     {t:"Rocce Rosse", f:"600 {s}px Newsreader", s:.07, c:"#C8352E"},
-     {t:"ARPEPE", f:"500 {s}px Newsreader", s:.04, c:"#E9E4DA", ls:.1}]}}},
-  {id:"pettirosso", name:"Arpepe 'Il Pettirosso' 2023", producer:"Arpepe", region:"Valtellina, Italy", grape:"Nebbiolo", style:"Red", price:59,
-   b:{shape:"bdx", glass:"dark", cap:"#1A1718", label:{bg:"#EFE9DC", y:.54, h:.34, mark:"#B3261E", lines:[
-     {t:"VALTELLINA SUPERIORE", f:"500 {s}px Newsreader", s:.032, c:"#1E1A1C"},
-     {gap:.11},
-     {t:"IL PETTIROSSO", f:"600 {s}px Newsreader", s:.048, c:"#1E1A1C"},
-     {t:"NEBBIOLO 2023", f:"500 {s}px Newsreader", s:.034, c:"#1E1A1C"},
-     {t:"ARPEPE", f:"600 {s}px Newsreader", s:.04, c:"#1E1A1C", ls:.08}]}}},
-  {id:"larosa", name:"Finca Sandoval La Rosa", producer:"Finca Sandoval", region:"Manchuela, Spain", grape:"Bobal", style:"Red", price:49,
-   b:{shape:"burg", glass:"dark", cap:"#4A1F3A", label:{bg:"#6D6275", y:.58, h:.31, lines:[
-     {t:"LA ROSA", f:"600 {s}px Figtree", s:.075, c:"#EDE7DE", ls:.12},
-     {gap:.05},
-     {t:"FINCA SANDOVAL", f:"500 {s}px Figtree", s:.03, c:"#EDE7DE", ls:.16},
-     {t:"MANCHUELA", f:"500 {s}px Figtree", s:.028, c:"#CFC6D3", ls:.16}]}}},
-  {id:"creu", name:"Mas Alta La Creu Alta 2020", producer:"Mas Alta", region:"Priorat, Spain", grape:"Garnacha, Cariñena", style:"Red", price:65,
-   b:{shape:"burg", glass:"dark", cap:"#121112", label:{bg:"#F4F2EE", y:.59, h:.30, lines:[
-     {t:"LA", f:"400 {s}px Newsreader", s:.04, c:"#1E1A1C", ls:.2},
-     {t:"CREU", f:"500 {s}px Newsreader", s:.085, c:"#1E1A1C", ls:.08},
-     {t:"ALTA", f:"400 {s}px Newsreader", s:.05, c:"#1E1A1C", ls:.2},
-     {t:"MAS ALTA", f:"700 {s}px Figtree", s:.03, c:"#1E1A1C", ls:.16},
-     {t:"PRIORAT", f:"500 {s}px Figtree", s:.022, c:"#6B6468", ls:.2}]}}},
-  {id:"zeta", name:"Pegaso 'Zeta' Garnacha", producer:"Pegaso", region:"Sierra de Gredos, Spain", grape:"Garnacha", style:"Red", price:29,
-   b:{shape:"burg", glass:"dark", cap:"#9B9C97", label:{bg:"#F1EFEA", y:.60, h:.28, border:"#2A2728", lines:[
-     {t:"PEGASO", f:"600 {s}px Figtree", s:.03, c:"#1E1A1C", ls:.14},
-     {t:"'ZETA'", f:"700 {s}px Figtree", s:.075, c:"#1E1A1C", ls:.06},
-     {t:"VINO DE GARNACHA", f:"500 {s}px Figtree", s:.024, c:"#1E1A1C", ls:.12},
-     {t:"SIERRA DE GREDOS", f:"600 {s}px Figtree", s:.026, c:"#1E1A1C", ls:.14}]}}},
-  {id:"cedre", name:"Château du Cèdre 'Héritage' Chardonnay 2024", producer:"Château du Cèdre", region:"South West France", grape:"Chardonnay", style:"White", price:20, badge:"Staff pick",
-   b:{shape:"burg", glass:"flint", wine:"#E4D38E", cap:"#B9BBB8", label:{bg:"#F6F5F2", y:.62, h:.26, lines:[
-     {t:"CHARDONNAY", f:"600 {s}px Figtree", s:.03, c:"#1E1A1C", ls:.14},
-     {t:"Cèdre Héritage", f:"italic 400 {s}px Newsreader", s:.07, c:"#1E1A1C"},
-     {t:"VIN DE FRANCE · 2024", f:"500 {s}px Figtree", s:.024, c:"#6B6468", ls:.12}]}}},
-  {id:"althea", name:"Althea Prosecco Superiore Brut", producer:"Althea", region:"Valdobbiadene, Italy", grape:"Glera", style:"Sparkling", price:29,
-   b:{shape:"spark", glass:"dark", cap:"#141314", label:{bg:"#161415", y:.60, h:.26, border:"#8E8E8E", lines:[
-     {t:"ALTHEA", f:"500 {s}px Newsreader", s:.05, c:"#DADADA", ls:.14},
-     {t:"VALDOBBIADENE", f:"500 {s}px Newsreader", s:.034, c:"#DADADA", ls:.06},
-     {t:"Prosecco Superiore", f:"italic 400 {s}px Newsreader", s:.034, c:"#BDBDBD"},
-     {t:"BRUT", f:"600 {s}px Figtree", s:.03, c:"#DADADA", ls:.2}]}}}
-];
-var MORE = [
-  {id:"magg", name:"Le Piane 'La Maggiorina' 2022", producer:"Le Piane", region:"Alto Piemonte, Italy", grape:"Field blend", style:"Red", price:45,
-   b:{shape:"burg", glass:"dark", cap:"#141214", label:{bg:"#E9E2CF", y:.60, h:.28, lines:[
-     {t:"LE PIANE", f:"600 {s}px Figtree", s:.045, c:"#3A3335", ls:.14},
-     {t:"Maggiorina", f:"italic 400 {s}px Newsreader", s:.075, c:"#3A3335"},
-     {t:"2022", f:"500 {s}px Newsreader", s:.04, c:"#3A3335"}]}}},
-  {id:"colle", name:"Le Piane Colle Novaresi 2024", producer:"Le Piane", region:"Alto Piemonte, Italy", grape:"Nebbiolo, Vespolina", style:"Red", price:29,
-   b:{shape:"burg", glass:"dark", cap:"#141214", label:{bg:"#A34A36", y:.60, h:.28, lines:[
-     {t:"LE PIANE", f:"600 {s}px Figtree", s:.045, c:"#F3EFE6", ls:.14},
-     {t:"Colline", f:"italic 400 {s}px Newsreader", s:.08, c:"#F3EFE6"},
-     {t:"NOVARESI · 2024", f:"500 {s}px Figtree", s:.026, c:"#F3EFE6", ls:.12}]}}},
-  WINES[1]
-];
-
-/* ---------- Bottle renderer ---------- */
-var SHAPES = {
-  // half-width profile as fraction of bottle height; u = 0 top, 1 bottom
-  burg:{neck:.048, lip:.056, body:.14, neckEnd:.30, shoulderEnd:.56, capEnd:.24},
-  bdx:{neck:.046, lip:.054, body:.128, neckEnd:.34, shoulderEnd:.44, capEnd:.22},
-  spark:{neck:.052, lip:.062, body:.152, neckEnd:.28, shoulderEnd:.54, capEnd:.30}
-};
-function bottlePath(ctx, cx, top, H, sh){
-  var n=sh.neck*H, l=sh.lip*H, b=sh.body*H, ne=top+sh.neckEnd*H, se=top+sh.shoulderEnd*H, bot=top+H, r=b*0.18;
-  ctx.beginPath();
-  ctx.moveTo(cx-l, top);
-  ctx.lineTo(cx+l, top);
-  ctx.lineTo(cx+l, top+.028*H);
-  ctx.lineTo(cx+n, top+.036*H);
-  ctx.lineTo(cx+n, ne);
-  ctx.bezierCurveTo(cx+n, ne+(se-ne)*.45, cx+b, se-(se-ne)*.35, cx+b, se);
-  ctx.lineTo(cx+b, bot-r);
-  ctx.quadraticCurveTo(cx+b, bot, cx+b-r, bot);
-  ctx.lineTo(cx-b+r, bot);
-  ctx.quadraticCurveTo(cx-b, bot, cx-b, bot-r);
-  ctx.lineTo(cx-b, se);
-  ctx.bezierCurveTo(cx-b, se-(se-ne)*.35, cx-n, ne+(se-ne)*.45, cx-n, ne);
-  ctx.lineTo(cx-n, top+.036*H);
-  ctx.lineTo(cx-l, top+.028*H);
-  ctx.closePath();
+function tile(w, mode, cls){
+  var t=el("div","tile "+(mode==="studio"&&w.studio?"studio":"now")+(cls?" "+cls:""));
+  var i=el("img"); i.loading="lazy"; i.alt=w.title; i.src=imgFor(w,mode);
+  t.appendChild(i);
+  return t;
 }
-function glassColor(spec){
-  if(spec.glass==="flint") return spec.wine||"#E4D38E";
-  if(spec.glass==="green") return "#2E3B24";
-  return "#1D1418";
+
+/* ---------- Facets ---------- */
+var FACETS=[["type","Type"],["country","Country"],["grapes","Grape"],["styles","Style"]];
+var sel={type:"",country:"",grapes:"",styles:""}, sort="featured";
+function values(key){
+  var c={};
+  WINES.forEach(function(w){ var v=w[key]; (Array.isArray(v)?v:[v]).forEach(function(x){ if(x) c[x]=(c[x]||0)+1; }); });
+  return Object.keys(c).sort().map(function(k){ return [k,c[k]]; });
 }
-function drawBottle(canvas, spec, mode){
-  var dpr=Math.min(window.devicePixelRatio||1, 2);
-  var W=canvas.clientWidth, Hc=canvas.clientHeight;
-  if(!W||!Hc) return;
-  canvas.width=Math.round(W*dpr); canvas.height=Math.round(Hc*dpr);
-  var ctx=canvas.getContext("2d");
-  ctx.setTransform(dpr,0,0,dpr,0,0);
-  ctx.clearRect(0,0,W,Hc);
-  var phone = mode==="phone";
-  var sh=SHAPES[spec.shape];
-
-  if(phone){
-    // grey paper backdrop, uneven light, warm cast
-    var g=ctx.createRadialGradient(W*.62,Hc*.28,Hc*.05,W*.5,Hc*.55,Hc*.9);
-    g.addColorStop(0,"#D8D8D6"); g.addColorStop(.55,"#A9AAA8"); g.addColorStop(1,"#6F706E");
-    ctx.fillStyle=g; ctx.fillRect(0,0,W,Hc);
-    ctx.fillStyle="rgba(255,255,255,.18)"; ctx.fillRect(0,Hc*.66,W,Hc*.34);
-  }
-
-  // standard: bottle is 82% of tile height, centred, same floor line for every wine
-  var H = phone ? Hc*.66 : Hc*.82;
-  var cx = phone ? W*.47 : W/2;
-  var top = phone ? Hc*.20 : Hc*.085;
-
-  ctx.save();
-  if(phone){ ctx.translate(cx, top+H); ctx.rotate(-.035); ctx.translate(-cx, -(top+H)); }
-
-  // floor shadow
-  var bw=sh.body*H;
-  ctx.save();
-  ctx.filter = "blur("+Math.max(2,H*.012)+"px)";
-  ctx.fillStyle = phone ? "rgba(20,20,20,.45)" : "rgba(40,28,30,.30)";
-  ctx.beginPath();
-  if(phone){ ctx.ellipse(cx+bw*.9, top+H-1, bw*1.6, H*.022, 0, 0, Math.PI*2); }
-  else { ctx.ellipse(cx, top+H-1, bw*1.35, H*.018, 0, 0, Math.PI*2); }
-  ctx.fill();
-  ctx.restore();
-
-  // glass body
-  bottlePath(ctx,cx,top,H,sh);
-  ctx.fillStyle=glassColor(spec); ctx.fill();
-
-  ctx.save();
-  bottlePath(ctx,cx,top,H,sh); ctx.clip();
-
-  // flint: air gap above wine
-  if(spec.glass==="flint"){
-    ctx.fillStyle="rgba(235,238,236,.9)";
-    ctx.fillRect(cx-bw*2, top, bw*4, top+H*.36-top);
-  }
-
-  // capsule
-  var capEnd=top+sh.capEnd*H;
-  var cg=ctx.createLinearGradient(cx-sh.lip*H,0,cx+sh.lip*H,0);
-  cg.addColorStop(0,shade(spec.cap,-.35)); cg.addColorStop(.35,shade(spec.cap,.25)); cg.addColorStop(.6,spec.cap); cg.addColorStop(1,shade(spec.cap,-.4));
-  ctx.fillStyle=cg;
-  ctx.fillRect(cx-bw*1.2, top, bw*2.4, capEnd-top);
-  ctx.fillStyle="rgba(0,0,0,.25)"; ctx.fillRect(cx-bw*1.2, capEnd-1.5, bw*2.4, 1.5);
-
-  // label
-  var L=spec.label, ly=top+L.y*H, lh=L.h*H, lw=bw*2;
-  ctx.fillStyle=L.bg; ctx.fillRect(cx-lw/2, ly, lw, lh);
-  if(L.border){ ctx.strokeStyle=L.border; ctx.lineWidth=Math.max(1,H*.004); ctx.strokeRect(cx-lw/2+bw*.1, ly+bw*.1, lw-bw*.2, lh-bw*.2); }
-  if(L.mark){ // brush stroke motif
-    ctx.save(); ctx.fillStyle=L.mark;
-    for(var k=0;k<7;k++){ ctx.globalAlpha=.55+.06*k; ctx.fillRect(cx-bw*.5+k*bw*.12, ly+lh*.18+(k%3)*H*.006, bw*.7, H*.01); }
-    ctx.fillStyle="#1E1A1C"; ctx.globalAlpha=.8;
-    for(var j=0;j<5;j++){ ctx.fillRect(cx-bw*.62+j*bw*.14, ly+lh*.13+(j%2)*H*.008, bw*.56, H*.008); }
-    ctx.restore();
-  }
-  // label text
-  var total=0, items=L.lines.map(function(ln){ var s=ln.gap?ln.gap*H*.2:ln.s*H; total+=s*1.28; return s; });
-  var y=ly+(lh-total)/2;
-  ctx.textAlign="center"; ctx.textBaseline="top";
-  L.lines.forEach(function(ln,i){
-    var s=items[i];
-    if(ln.gap){ y+=s*1.28; return; }
-    ctx.font=ln.f.replace("{s}", s.toFixed(1));
-    ctx.fillStyle=ln.c;
-    if("letterSpacing" in ctx) ctx.letterSpacing=((ln.ls||0)*s).toFixed(1)+"px";
-    var maxW=lw*.86, m=ctx.measureText(ln.t).width;
-    if(m>maxW){ ctx.save(); ctx.translate(cx,y); ctx.scale(maxW/m,1); ctx.fillText(ln.t,0,0); ctx.restore(); }
-    else ctx.fillText(ln.t,cx,y);
-    y+=s*1.28;
+function buildFacets(){
+  var f=$("facets"); f.innerHTML="";
+  FACETS.forEach(function(fc){
+    var lab=el("label"); lab.appendChild(document.createTextNode(fc[1]));
+    var s=el("select"); s.id="f-"+fc[0];
+    var all=el("option",null,"All"); all.value=""; s.appendChild(all);
+    values(fc[0]).forEach(function(v){ var o=el("option",null,v[0]+" ("+v[1]+")"); o.value=v[0]; s.appendChild(o); });
+    s.addEventListener("change",function(){ sel[fc[0]]=s.value; showAll=false; renderGrid(); });
+    lab.appendChild(s); f.appendChild(lab);
   });
-  if("letterSpacing" in ctx) ctx.letterSpacing="0px";
-
-  // cylinder shading across everything
-  var sg=ctx.createLinearGradient(cx-bw,0,cx+bw,0);
-  if(phone){
-    sg.addColorStop(0,"rgba(0,0,0,.55)"); sg.addColorStop(.2,"rgba(0,0,0,.05)"); sg.addColorStop(.58,"rgba(255,255,255,.0)"); sg.addColorStop(.66,"rgba(255,255,255,.55)"); sg.addColorStop(.71,"rgba(255,255,255,.05)"); sg.addColorStop(1,"rgba(0,0,0,.45)");
-  } else {
-    sg.addColorStop(0,"rgba(0,0,0,.50)"); sg.addColorStop(.14,"rgba(0,0,0,.10)"); sg.addColorStop(.24,"rgba(255,255,255,.26)"); sg.addColorStop(.28,"rgba(255,255,255,.04)"); sg.addColorStop(.72,"rgba(0,0,0,.02)"); sg.addColorStop(.86,"rgba(255,255,255,.10)"); sg.addColorStop(1,"rgba(0,0,0,.50)");
-  }
-  ctx.fillStyle=sg; ctx.fillRect(cx-bw,top,bw*2,H);
-  // soft top light on shoulder
-  var tg=ctx.createLinearGradient(0,top+sh.neckEnd*H,0,top+sh.shoulderEnd*H);
-  tg.addColorStop(0,"rgba(255,255,255,0)"); tg.addColorStop(.6,"rgba(255,255,255,.08)"); tg.addColorStop(1,"rgba(255,255,255,0)");
-  ctx.fillStyle=tg; ctx.fillRect(cx-bw,top,bw*2,H);
-  if(phone){ // glare blob over label, like an overhead light
-    var gg=ctx.createRadialGradient(cx+bw*.3,ly+lh*.35,1,cx+bw*.3,ly+lh*.35,bw*.8);
-    gg.addColorStop(0,"rgba(255,255,255,.6)"); gg.addColorStop(1,"rgba(255,255,255,0)");
-    ctx.fillStyle=gg; ctx.fillRect(cx-bw,top,bw*2,H);
-  }
-  ctx.restore();
-  ctx.restore();
-
-  if(phone){ // colour cast, low contrast, sensor noise
-    ctx.fillStyle="rgba(255,196,120,.08)"; ctx.fillRect(0,0,W,Hc);
-    var id=ctx.getImageData(0,0,canvas.width,canvas.height), d=id.data;
-    for(var p=0;p<d.length;p+=4){ var nz=(Math.random()-.5)*18; d[p]+=nz; d[p+1]+=nz; d[p+2]+=nz; }
-    ctx.putImageData(id,0,0);
-  }
+  var lab=el("label"); lab.appendChild(document.createTextNode("Sort"));
+  var s=el("select"); s.id="f-sort";
+  [["featured","Mixed shelf"],["newest","Newest listed"],["price-asc","Price, low to high"],["price-desc","Price, high to low"],["name","A to Z"]].forEach(function(o){ var op=el("option",null,o[1]); op.value=o[0]; s.appendChild(op); });
+  s.addEventListener("change",function(){ sort=s.value; renderGrid(); });
+  lab.appendChild(s); f.appendChild(lab);
 }
-function shade(hex,amt){
-  var n=parseInt(hex.slice(1),16), r=n>>16, g=(n>>8)&255, b=n&255;
-  function f(c){ return Math.max(0,Math.min(255,Math.round(amt<0?c*(1+amt):c+(255-c)*amt))); }
-  return "rgb("+f(r)+","+f(g)+","+f(b)+")";
+function filtered(){
+  var list=WINES.filter(function(w){
+    return Object.keys(sel).every(function(k){ if(!sel[k]) return true; var v=w[k]; return Array.isArray(v)?v.indexOf(sel[k])>=0:v===sel[k]; });
+  });
+  var by={
+    "newest":function(a,b){ return (b.available-a.available)||(b.published<a.published?-1:1); },
+    "price-asc":function(a,b){ return a.price-b.price; },
+    "price-desc":function(a,b){ return b.price-a.price; },
+    "name":function(a,b){ return a.title.localeCompare(b.title); }
+  };
+  if(sort==="featured") return shelf(list);
+  return list.sort(by[sort]);
+}
+/* One bottle per producer in turn, in stock first, so the shelf shows the range. */
+function shelf(list){
+  var groups={}, order=[];
+  list.slice().sort(function(a,b){ return (b.available-a.available)||a.title.localeCompare(b.title); }).forEach(function(w){
+    var k=producerKey(w.title); if(!groups[k]){ groups[k]=[]; order.push(k); } groups[k].push(w);
+  });
+  var out=[], more=true;
+  for(var i=0; more; i++){ more=false; order.forEach(function(k){ if(groups[k][i]){ out.push(groups[k][i]); more=true; } }); }
+  return out;
 }
 
-/* ---------- Shop grid ---------- */
-var STYLES=["All","Red","White","Sparkling"], current="All";
-var filtersEl=document.getElementById("filters"), gridEl=document.getElementById("grid");
-STYLES.forEach(function(s){
-  var b=document.createElement("button");
-  b.className="chip"; b.type="button"; b.textContent=s; b.setAttribute("aria-pressed", s===current);
-  b.addEventListener("click",function(){ current=s; filtersEl.querySelectorAll(".chip").forEach(function(c){ c.setAttribute("aria-pressed", c.textContent===s); }); renderGrid(); });
-  filtersEl.appendChild(b);
-});
+/* ---------- Shop ---------- */
 function card(w, onClick){
-  var el=document.createElement("button");
-  el.type="button"; el.className="card";
-  el.innerHTML='<div class="tile"><canvas></canvas>'+(w.badge?'<span class="badge"></span>':'')+'</div>'+
-    '<div class="name"></div><div class="meta"></div><div class="row"><span class="meta grape"></span><span class="price"></span></div>';
-  if(w.badge) el.querySelector(".badge").textContent=w.badge;
-  el.querySelector(".name").textContent=w.name;
-  el.querySelector(".meta").textContent=w.style+" · "+w.region;
-  el.querySelector(".grape").textContent=w.grape;
-  el.querySelector(".price").textContent="€"+w.price.toFixed(2);
-  el.addEventListener("click", onClick);
-  return el;
+  var b=el("button","card"); b.type="button";
+  var t=tile(w, photos);
+  if(!w.available) t.appendChild(el("span","badge sold","Sold out"));
+  else if(w.styles.length) t.appendChild(el("span","badge",w.styles[0]));
+  if(photos==="studio" && !w.studio) t.appendChild(el("span","flagdot","Needs AI studio shot"));
+  b.appendChild(t);
+  b.appendChild(el("div","name",w.title));
+  b.appendChild(el("div","meta",metaLine(w)));
+  var r=el("div","row");
+  r.appendChild(el("span","meta",[w.grapes.slice(0,2).join(", "), w.vintage].filter(Boolean).join(" · ")));
+  r.appendChild(el("span","price num",eur(w.price)));
+  b.appendChild(r);
+  b.addEventListener("click", onClick);
+  return b;
 }
 function renderGrid(){
-  gridEl.innerHTML="";
-  var list=WINES.filter(function(w){ return current==="All"||w.style===current; });
-  list.forEach(function(w){ gridEl.appendChild(card(w, function(){ show("wine"); })); });
-  requestAnimationFrame(function(){ gridEl.querySelectorAll("canvas").forEach(function(c,i){ drawBottle(c,list[i].b,"studio"); }); });
+  var list=filtered(), g=$("grid"); g.innerHTML="";
+  var shown=showAll?list:list.slice(0,PAGE);
+  shown.forEach(function(w){ g.appendChild(card(w,function(){ openWine(w); })); });
+  $("count").textContent=list.length+" wines";
+  $("moreBtn").hidden = showAll || list.length<=PAGE;
+  $("moreBtn").textContent="Show all "+list.length+" wines";
 }
+$("moreBtn").addEventListener("click",function(){ showAll=true; renderGrid(); });
+
+document.querySelectorAll("[data-photos]").forEach(function(b){
+  b.addEventListener("click",function(){
+    photos=b.dataset.photos;
+    document.querySelectorAll("[data-photos]").forEach(function(x){ x.setAttribute("aria-pressed", x.dataset.photos===photos); });
+    renderGrid(); if(current) renderWine();
+  });
+});
 
 /* ---------- Wine page ---------- */
-var heroMode="studio";
-var heroCanvas=document.getElementById("heroCanvas"), heroTile=document.getElementById("heroTile");
-function drawHero(){
-  heroTile.style.background = heroMode==="phone" ? "#8C8D8B" : "";
-  drawBottle(heroCanvas, WINES[0].b, heroMode);
+function openWine(w){ current=w; show("wine"); }
+function fact(dl, k, v){
+  dl.appendChild(el("dt",null,k));
+  var d=el("dd"); if(v){ d.textContent=v; } else { d.className="gap"; d.textContent="Add in Shopify"; }
+  dl.appendChild(d);
 }
-["shotStudio","shotPhone"].forEach(function(id){
-  document.getElementById(id).addEventListener("click",function(){
-    heroMode = id==="shotPhone" ? "phone" : "studio";
-    document.getElementById("shotStudio").setAttribute("aria-pressed", heroMode==="studio");
-    document.getElementById("shotPhone").setAttribute("aria-pressed", heroMode==="phone");
-    drawHero();
-  });
-});
-var SCALE=[["Body",4],["Tannin",4],["Acidity",4],["Fruit",3],["Oak",2]];
-var scaleEl=document.getElementById("scale");
-SCALE.forEach(function(r){
-  var lab=document.createElement("span"); lab.textContent=r[0];
-  var dots=document.createElement("div"); dots.className="dots"; dots.setAttribute("aria-label", r[0]+" "+r[1]+" of 5");
-  for(var i=1;i<=5;i++){ var d=document.createElement("i"); if(i<=r[1]) d.className="on"; dots.appendChild(d); }
-  scaleEl.appendChild(lab); scaleEl.appendChild(dots);
-});
-(function(){
-  var from=2020,to=2040, el=document.getElementById("window");
-  function pct(y){ return ((y-from)/(to-from)*100)+"%"; }
-  var band=document.createElement("div"); band.className="band"; band.style.left=pct(2024); band.style.width="calc("+pct(2038)+" - "+pct(2024)+")";
-  var peak=document.createElement("div"); peak.className="peak"; peak.style.left=pct(2027); peak.style.width="calc("+pct(2034)+" - "+pct(2027)+")";
-  var now=document.createElement("div"); now.className="now"; now.style.left=pct(2026.75); now.title="Today";
-  var ticks=document.createElement("div"); ticks.className="ticks";
-  [2020,2025,2030,2035,2040].forEach(function(y){ var s=document.createElement("span"); s.textContent=y; ticks.appendChild(s); });
-  el.appendChild(band); el.appendChild(peak); el.appendChild(now); el.appendChild(ticks);
-})();
-var moreEl=document.getElementById("more");
-function renderMore(){
-  moreEl.innerHTML="";
-  MORE.forEach(function(w){ moreEl.appendChild(card(w,function(){})); });
-  requestAnimationFrame(function(){ moreEl.querySelectorAll("canvas").forEach(function(c,i){ drawBottle(c,MORE[i].b,"studio"); }); });
+function issueRow(i){
+  var r=el("div","issue"); r.appendChild(el("span","lvl "+i.level,i.level)); r.appendChild(el("span",null,i.text)); return r;
+}
+function renderWine(){
+  var w=current;
+  var t=$("pdpTile"); t.className="tile "+(photos==="studio"&&w.studio?"studio":"now");
+  $("pdpImg").src=imgFor(w,photos); $("pdpImg").alt=w.title;
+  $("pdpImgNote").textContent = w.studio ? (photos==="studio"?"Same source photo, placed on the studio standard. No AI.":"As the live shop shows it.") : "This photo needs a reshoot or an AI studio shot.";
+  $("pdpEyebrow").textContent=metaLine(w);
+  $("pdpTitle").textContent=w.title;
+  $("pdpPrice").textContent=eur(w.price);
+  var buy=$("pdpBuy"); buy.disabled=!w.available; buy.textContent=w.available?"Add to basket":"Sold out";
+  var dl=$("pdpFacts"); dl.innerHTML="";
+  fact(dl,"Region",place(w)); fact(dl,"Grapes",w.grapes.join(", ")); fact(dl,"Vintage",w.vintage);
+  fact(dl,"Farming",w.styles.join(", ")); fact(dl,"Alcohol",null); fact(dl,"Size",w.magnum?"Magnum, 1.5 l":null);
+  fact(dl,"Drink",null); fact(dl,"Serve",null);
+  var d=$("pdpDesc"); d.innerHTML="";
+  if(w.description.length){ d.appendChild(el("h3",null,"About this wine")); w.description.slice(0,3).forEach(function(p){ d.appendChild(el("p",null,p)); }); }
+  var pr=$("pdpPair"); pr.innerHTML="";
+  if(w.pairing){ pr.appendChild(el("h3",null,"With food")); pr.appendChild(el("p",null,w.pairing)); }
+  var q=$("pdpQuote"); q.innerHTML="";
+  if(w.quote&&w.quote.text){ var bq=el("blockquote",null,"“"+w.quote.text+"”"); if(w.quote.by) bq.appendChild(el("cite",null,w.quote.by)); q.appendChild(bq); }
+  var c=$("pdpCheck"); c.innerHTML="";
+  var box=el("div","check"); box.appendChild(el("b",null,"Listing check"));
+  if(w.issues.length) w.issues.forEach(function(i){ box.appendChild(issueRow(i)); });
+  else box.appendChild(issueRow({level:"ok",text:"No problems found."}));
+  c.appendChild(box);
+  var key=producerKey(w.title);
+  var rel=WINES.filter(function(o){ return o!==w && producerKey(o.title)===key; }).slice(0,3);
+  if(rel.length<2) rel=WINES.filter(function(o){ return o!==w && o.country===w.country && o.type===w.type; }).slice(0,3);
+  $("pdpRelatedH").textContent = producerKey(rel[0]?rel[0].title:"")===key ? "More from this producer" : "You might also like";
+  var r=$("pdpRelated"); r.innerHTML="";
+  rel.forEach(function(o){ r.appendChild(card(o,function(){ openWine(o); })); });
+  $("pdpRelatedWrap").hidden=!rel.length;
 }
 
+/* ---------- Catalogue check ---------- */
+function renderCheck(){
+  var s=DATA.shop, flagged=WINES.filter(function(w){ return w.issues.length; });
+  var shared=WINES.filter(function(w){ return w.issues.some(function(i){ return /^Same image|^Image file says/.test(i.text); }); }).length;
+  var st=$("stats"); st.innerHTML="";
+  [[s.wines,"wines listed"],[flagged.length,"listings with at least one issue"],[shared,"show another wine's photo or vintage"],[s.empty_filter_links.length+" / "+s.filter_links,"filter links go to an empty page"]].forEach(function(x){
+    var d=el("div","stat"); d.appendChild(el("b","num",String(x[0]))); d.appendChild(el("span",null,x[1])); st.appendChild(d);
+  });
+  var list=WINES.filter(function(w){ return w.issues.some(function(i){ return kind==="all"||i.kind===kind; }); })
+    .sort(function(a,b){ return worst(b)-worst(a) || a.title.localeCompare(b.title); });
+  $("checkCount").textContent=list.length+" listings";
+  var L=$("issueList"); L.innerHTML="";
+  list.forEach(function(w){
+    var b=el("button","li"); b.type="button";
+    b.appendChild(tile(w,"now"));
+    var right=el("div"); right.appendChild(el("div","t",w.title));
+    var is=el("div","issues");
+    w.issues.filter(function(i){ return kind==="all"||i.kind===kind; }).forEach(function(i){ is.appendChild(issueRow(i)); });
+    right.appendChild(is); b.appendChild(right);
+    b.addEventListener("click",function(){ openWine(w); });
+    L.appendChild(b);
+  });
+  var e=$("empties"); e.innerHTML="";
+  e.appendChild(el("h3",null,"Filter links with no wines behind them"));
+  e.appendChild(el("p","note","Each filter is a collection kept by hand. Metafield filters in Shopify's Search & Discovery app only show values that have stock."));
+  var tags=el("div","tags"); s.empty_filter_links.forEach(function(c){ tags.appendChild(el("span",null,c)); }); e.appendChild(tags);
+}
+$("kindSeg").addEventListener("click",function(ev){
+  var b=ev.target.closest("button"); if(!b) return; kind=b.dataset.kind;
+  this.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", x===b); });
+  renderCheck();
+});
+
 /* ---------- Add a bottle ---------- */
-var EX=WINES[1];
-var FIELDS=[
-  ["Producer","Arpepe","hi"],["Wine","Rocce Rosse","hi"],["Sub-zone","Sassella","hi"],
-  ["Vintage","2018","hi"],["Grade","Riserva","hi"],["Grape","Nebbiolo","hi"],
-  ["Alcohol","13.5%","lo"],["Size","750 ml","hi"]
-];
-var CHECKS=[
-  ["tick","Vintage on image is 2018. Listing says 2018."],
-  ["tick","Producer and wine name match."],
-  ["tick","Capsule and glass colour match the photo."],
-  ["flag","Alcohol unclear in photo. Confirm by hand."]
-];
-var DRAFT=[
-  ["Title","Arpepe 'Rocce Rosse' Riserva 2018"],["Type","Red"],["Country","Italy"],
-  ["Region","Valtellina · Sassella"],["Grape","Nebbiolo"],["Vintage","2018"],
-  ["Price","Type price"],["Status","Draft"]
-];
-var stepsEls=[].slice.call(document.querySelectorAll(".step"));
-var timers=[];
-function fill(el, rows, withConf){
-  el.innerHTML="";
-  rows.forEach(function(r){
-    var row=document.createElement("div");
-    var k=document.createElement("span"); k.className="k"; k.textContent=r[0];
-    var v=document.createElement("span"); v.textContent=r[1];
-    row.appendChild(k); row.appendChild(v);
-    var c=document.createElement("span");
-    if(withConf){ c.className="conf "+r[2]; c.textContent= r[2]==="hi"?"sure":"check"; }
-    row.appendChild(c);
-    el.appendChild(row);
+var EXAMPLE="le-piane-boca-2018";
+var FIELDS=[["Producer","Le Piane","hi"],["Wine","Boca","hi"],["Appellation","Boca DOC","hi"],["Vintage","2018","hi"],["Country","Italy","hi"],["Alcohol","14.0%","lo"],["Size","750 ml","hi"]];
+var CHECKS=[["ok","Vintage on the new image is 2018. Listing says 2018."],["ok","Producer and wine name match the label."],["ok","No other listing uses this image."],["medium","Alcohol hard to read. Confirm by hand."]];
+var DRAFT=[["Title","Le Piane Boca 2018"],["Type","Red"],["Region","Piedmont, Italy"],["Grapes","Nebbiolo, Vespolina"],["Vintage","2018"],["Price","Staff enter"],["Status","Draft"]];
+var steps=[].slice.call(document.querySelectorAll(".step")), timers=[];
+function rows(target, data, conf){
+  var t=$(target); t.innerHTML="";
+  data.forEach(function(r){
+    var d=el("div"); d.appendChild(el("span","k",r[0])); d.appendChild(el("span",null,r[1]));
+    var c=el("span"); if(conf){ c.className="conf "+r[2]; c.textContent=r[2]==="hi"?"sure":"check"; } d.appendChild(c);
+    t.appendChild(d);
   });
 }
+function activate(n){ steps.forEach(function(s,i){ s.classList.toggle("dim",i>n); s.classList.toggle("active",i===n); }); }
 function resetFlow(){
-  timers.forEach(clearTimeout); timers=[];
-  stepsEls.forEach(function(s,i){ s.classList.toggle("dim", i>0); s.classList.toggle("active", i===0); });
-  document.getElementById("fields").innerHTML='<span class="note">Waiting for photo.</span>';
-  document.getElementById("checks").innerHTML="";
-  document.getElementById("draft").innerHTML='<span class="note">Waiting for studio shot.</span>';
-  var ap=document.getElementById("approve"); ap.disabled=true; ap.textContent="Approve and publish";
-  document.getElementById("approveNote").textContent="Runs after steps 1–3.";
-  var st=document.getElementById("c-studio");
-  var ctx=st.getContext("2d"); ctx.clearRect(0,0,st.width,st.height);
-  drawBottle(document.getElementById("c-phone"), EX.b, "phone");
+  timers.forEach(clearTimeout); timers=[]; activate(0);
+  $("addFields").innerHTML='<span class="note">Waiting for the photo.</span>';
+  $("addChecks").innerHTML=""; $("addDraft").innerHTML='<span class="note">Waiting for the studio shot.</span>';
+  var a=$("approve"); a.disabled=true; a.textContent="Approve and publish"; $("approveNote").textContent="Runs after steps 1–3.";
 }
-function activate(i){ stepsEls.forEach(function(s,j){ s.classList.toggle("dim", j>i); s.classList.toggle("active", j===i); }); }
 function runFlow(){
   resetFlow();
-  var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches, t=reduce?0:900;
-  timers.push(setTimeout(function(){ activate(1); fill(document.getElementById("fields"),FIELDS,true); }, t));
-  timers.push(setTimeout(function(){ activate(2); drawBottle(document.getElementById("c-studio"),EX.b,"studio");
-    var ch=document.getElementById("checks"); ch.innerHTML="";
-    CHECKS.forEach(function(c){ var d=document.createElement("div"); var m=document.createElement("span"); m.className=c[0]; m.textContent=c[0]==="tick"?"✓":"!"; var s=document.createElement("span"); s.textContent=c[1]; d.appendChild(m); d.appendChild(s); ch.appendChild(d); });
-  }, t*2));
-  timers.push(setTimeout(function(){ activate(3); fill(document.getElementById("draft"),DRAFT,false);
-    document.getElementById("approve").disabled=false; document.getElementById("approveNote").textContent="Nothing goes live until a person approves.";
-  }, t*3));
+  var t=window.matchMedia("(prefers-reduced-motion: reduce)").matches?0:900;
+  timers.push(setTimeout(function(){ activate(1); rows("addFields",FIELDS,true); },t));
+  timers.push(setTimeout(function(){ activate(2); var c=$("addChecks"); c.innerHTML=""; CHECKS.forEach(function(x){ c.appendChild(issueRow({level:x[0],text:x[1]})); }); },t*2));
+  timers.push(setTimeout(function(){ activate(3); rows("addDraft",DRAFT,false); $("approve").disabled=false; $("approveNote").textContent="Nothing goes live until a person approves."; },t*3));
 }
-document.getElementById("run").addEventListener("click", runFlow);
-document.getElementById("reset").addEventListener("click", resetFlow);
-document.getElementById("approve").addEventListener("click", function(){
-  this.textContent="Published (example)"; this.disabled=true;
-  document.getElementById("approveNote").textContent="In the real tool this sets the Shopify product to Active.";
-});
+$("run").addEventListener("click",runFlow);
+$("reset").addEventListener("click",resetFlow);
+$("approve").addEventListener("click",function(){ this.disabled=true; this.textContent="Published (example)"; $("approveNote").textContent="In the real tool this sets the Shopify product to Active."; });
 
 /* ---------- Tabs ---------- */
 var tabs=[].slice.call(document.querySelectorAll("nav.tabs button"));
 function show(view){
+  if(!WINES.length) return;
   tabs.forEach(function(t){ t.setAttribute("aria-selected", t.dataset.view===view); });
-  ["shop","wine","add"].forEach(function(v){ document.getElementById("view-"+v).hidden = v!==view; });
-  try{ localStorage.setItem("ely-view", view); }catch(e){}
-  requestAnimationFrame(function(){ drawAll(view); });
+  ["shop","wine","check","add"].forEach(function(v){ $("view-"+v).hidden = v!==view; });
+  try{ localStorage.setItem("ely-view2", view); }catch(e){}
+  if(view==="shop") renderGrid();
+  if(view==="wine"){ if(!current) current=WINES.filter(function(w){ return w.handle==="adega-algueira-escalada"; })[0]||WINES[0]; renderWine(); }
+  if(view==="check") renderCheck();
   window.scrollTo({top:0});
 }
-tabs.forEach(function(t){ t.addEventListener("click", function(){ show(t.dataset.view); }); });
-function drawAll(view){
-  if(view==="shop") renderGrid();
-  if(view==="wine"){ drawHero(); renderMore(); }
-  if(view==="add"){ drawBottle(document.getElementById("c-phone"),EX.b,"phone"); var st=document.getElementById("c-studio"); if(stepsEls[2].classList.contains("active")||!stepsEls[2].classList.contains("dim")) drawBottle(st,EX.b,"studio"); }
-}
-var rt; window.addEventListener("resize", function(){ clearTimeout(rt); rt=setTimeout(function(){ var v=tabs.filter(function(t){return t.getAttribute("aria-selected")==="true";})[0].dataset.view; drawAll(v); },150); });
+tabs.forEach(function(t){ t.addEventListener("click",function(){ show(t.dataset.view); }); });
+window.addEventListener("hashchange",function(){ var h=location.hash.slice(1); if(WINES.length&&["shop","wine","check","add"].indexOf(h)>=0) show(h); });
 
-var start="shop";
-var hash=(location.hash||"").slice(1);
-if(["shop","wine","add"].indexOf(hash)>=0) start=hash;
-else { try{ var s=localStorage.getItem("ely-view"); if(s) start=s; }catch(e){} }
-resetFlow();
-function boot(){ show(start); }
-if(document.fonts && document.fonts.ready){ document.fonts.ready.then(boot); } else boot();
+fetch("data/wines.json").then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); }).then(function(d){
+  DATA=d; WINES=d.wines;
+  $("loading").hidden=true;
+  $("scrapeNote").textContent="Real wines, prices and photos from shop.elywinebar.ie, read "+d.shop.scraped+".";
+  $("addPhone").src="img/now/"+EXAMPLE+".jpg";
+  buildFacets(); resetFlow();
+  var start="shop", h=(location.hash||"").slice(1);
+  if(["shop","wine","check","add"].indexOf(h)>=0) start=h;
+  else { try{ var s=localStorage.getItem("ely-view2"); if(s) start=s; }catch(e){} }
+  show(start);
+}).catch(function(){
+  $("loading").textContent="The wine list did not load. Reload the page to try again.";
+});
 })();
 </script>
