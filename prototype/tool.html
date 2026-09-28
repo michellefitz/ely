@@ -1,0 +1,311 @@
+<meta charset="utf-8">
+<title>ELY Listing Tool</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --ground:#F2F1EF;
+  --paper:#FFFFFF;
+  --ink:#1E1A1C;
+  --muted:#6B6468;
+  --line:#DDD9D6;
+  --oxblood:#6A1F31;
+  --studio-a:#EAE7E3; --studio-b:#D6D1CC;
+  --ok:#2F6B4A; --ok-soft:#E3EFE8;
+  --warn:#9A5B12; --warn-soft:#F6EBDC;
+  --bad:#A3321F; --bad-soft:#F7E4DF;
+  --serif:"Newsreader", Georgia, serif;
+  --sans:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--ground);color:var(--ink);font:15px/1.5 var(--sans);padding-inline:16px;padding-block:0 64px;-webkit-text-size-adjust:100%}
+.wrap{max-width:1100px;margin:0 auto}
+button{font:inherit;color:inherit}
+button:focus-visible{outline:2px solid var(--oxblood);outline-offset:2px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;text-wrap:balance;margin:0}
+p{margin:0}
+.note{font-size:12.5px;color:var(--muted)}
+.num{font-variant-numeric:tabular-nums}
+
+header{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding-block:16px;border-bottom:1px solid var(--line);margin-bottom:22px}
+.brand{display:flex;align-items:baseline;gap:10px}
+.brand b{font-family:var(--serif);font-weight:500;font-size:24px;letter-spacing:.12em}
+.brand span{font:500 11px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;max-width:100%}
+nav::-webkit-scrollbar{display:none}
+nav button{flex:none;border:1px solid var(--line);background:var(--paper);padding:8px 14px;border-radius:3px;font-weight:500;font-size:13.5px;cursor:pointer}
+nav button[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.head{display:grid;gap:8px;margin-bottom:20px;max-width:720px}
+.head h1{font-size:clamp(26px,4vw,38px);line-height:1.08}
+.head p{color:var(--muted)}
+
+.tile{position:relative;aspect-ratio:4/5;border-radius:3px;overflow:hidden;background:#fff;max-width:100%}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.tile.studio{background:linear-gradient(180deg,var(--studio-a),var(--studio-b))}
+.tile.studio img{object-fit:cover}
+.pending{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:14px;font-size:13px;color:var(--muted);border:1px dashed var(--muted);border-radius:3px}
+
+.lvl{flex:none;font:600 9.5px var(--sans);letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:2px}
+.lvl.high{color:var(--bad);background:var(--bad-soft)}
+.lvl.medium{color:var(--warn);background:var(--warn-soft)}
+.lvl.low{color:var(--muted);background:var(--line)}
+.lvl.ok{color:var(--ok);background:var(--ok-soft)}
+.issue{display:flex;gap:8px;align-items:baseline;font-size:13.5px}
+
+/* Add a bottle */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.step{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:14px;display:flex;flex-direction:column;gap:10px;transition:opacity .3s,border-color .3s}
+.step.dim{opacity:.45}
+.step.active{border-color:var(--ink)}
+.step .n{font:500 11px var(--mono);color:var(--muted)}
+.step h3{font-size:19px}
+.fields{display:grid;gap:5px;font-size:13.5px}
+.fields div{display:grid;grid-template-columns:82px 1fr auto;gap:6px;align-items:baseline;border-bottom:1px dashed var(--line);padding-bottom:4px}
+.fields .k{color:var(--muted);font-size:12px}
+.conf{font:500 10.5px var(--mono);padding:1px 5px;border-radius:2px}
+.conf.hi{color:var(--ok);background:var(--ok-soft)}
+.conf.lo{color:var(--warn);background:var(--warn-soft)}
+.btn{font-weight:600;font-size:14px;border:0;background:var(--oxblood);color:#fff;padding:12px 18px;border-radius:3px;cursor:pointer}
+.btn[disabled]{background:var(--line);color:var(--muted);cursor:default}
+.btn.ghost{background:none;color:var(--ink);border:1px solid var(--ink)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:18px}
+.compare{margin-top:28px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.compare .box{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:16px}
+.compare h3{font-size:19px;margin-bottom:8px}
+.compare ol{margin:0;padding-left:20px;display:grid;gap:4px;font-size:14px}
+
+/* Photo standard */
+.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:3px;overflow:hidden;background:var(--paper)}
+.seg button{border:0;background:none;padding:8px 14px;font-size:13.5px;font-weight:500;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.wall{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:8px}
+.wall .tile{border-radius:2px}
+.wall .flag{position:absolute;left:4px;top:4px;font:600 9px var(--sans);background:var(--bad-soft);color:var(--bad);padding:2px 5px;border-radius:2px;letter-spacing:.04em}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:22px}
+.stat{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:14px 16px;display:grid;gap:2px}
+.stat b{font:400 30px/1.1 var(--serif)}
+.stat span{font-size:13px;color:var(--muted)}
+
+/* Catalogue check */
+.list{display:grid;border-top:1px solid var(--line)}
+.li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:14px;padding-block:12px;border-bottom:1px solid var(--line)}
+.li .tile{width:52px}
+.li .t{font-family:var(--serif);font-size:16.5px;line-height:1.25}
+.li .issues{display:grid;gap:4px;margin-top:5px}
+.empties{margin-top:26px;display:grid;gap:8px}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tags span{font:12px var(--mono);background:var(--paper);border:1px solid var(--line);padding:2px 6px;border-radius:2px;color:var(--muted)}
+.loading{padding:60px 0;color:var(--muted)}
+
+@media (max-width:900px){
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .wall{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:560px){
+  .steps{grid-template-columns:1fr}
+  .step .tile{max-width:260px}
+  .wall{grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+  .compare{grid-template-columns:1fr}
+  header{flex-direction:column;align-items:flex-start}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="brand"><b>ELY</b><span>Listing tool · for staff · concept</span></div>
+    <nav role="tablist" aria-label="Tool">
+      <button role="tab" id="tab-add" aria-selected="true" data-view="add">Add a bottle</button>
+      <button role="tab" id="tab-photos" aria-selected="false" data-view="photos">Photo standard</button>
+      <button role="tab" id="tab-check" aria-selected="false" data-view="check">Catalogue check</button>
+    </nav>
+  </header>
+
+  <div id="loading" class="loading">Loading the catalogue…</div>
+
+  <section id="view-add" hidden>
+    <div class="head">
+      <h1>Add a bottle from one phone photo.</h1>
+      <p>Opens inside the Shopify admin and the Shopify phone app. Staff photograph the bottle. The tool reads the label, makes the studio shot, runs the checks and saves a draft. A person approves it before it goes live.</p>
+    </div>
+    <div class="steps">
+      <div class="step" data-step="0">
+        <span class="n">1 · PHOTO</span>
+        <h3>Photograph the bottle</h3>
+        <div class="tile"><img id="addPhone" alt="Phone photo of Le Piane Boca 2018, from the live shop"></div>
+        <span class="note">The real phone photo on the live listing.</span>
+      </div>
+      <div class="step" data-step="1">
+        <span class="n">2 · READ</span>
+        <h3>Read the label</h3>
+        <div class="fields" id="addFields"><span class="note">Waiting for the photo.</span></div>
+        <span class="note">Amber fields need a person to confirm.</span>
+      </div>
+      <div class="step" data-step="2">
+        <span class="n">3 · STUDIO SHOT</span>
+        <h3>Make the studio shot</h3>
+        <div class="tile studio" id="addStudio"><div class="pending">The Nano Banana studio shot goes here once the API key is set up.</div></div>
+        <div class="fields" id="addChecks"></div>
+      </div>
+      <div class="step" data-step="3">
+        <span class="n">4 · SHOPIFY</span>
+        <h3>Save as draft</h3>
+        <div class="fields" id="addDraft"><span class="note">Waiting for the studio shot.</span></div>
+        <button class="btn" type="button" id="approve" disabled>Approve and publish</button>
+        <span class="note" id="approveNote">Runs after steps 1–3.</span>
+      </div>
+    </div>
+    <div class="actions">
+      <button class="btn" type="button" id="run">Run the example</button>
+      <button class="btn ghost" type="button" id="reset">Reset</button>
+    </div>
+    <div class="compare">
+      <div class="box"><h3>Adding a bottle today</h3><ol>
+        <li>Find a photo. Crop it by hand.</li>
+        <li>Type title, price and description.</li>
+        <li>Add the product to each filter collection by hand: type, country, region, grape, vintage, style.</li>
+        <li>Hope the photo and the vintage match.</li></ol></div>
+      <div class="box"><h3>Adding a bottle with the tool</h3><ol>
+        <li>Take one photo.</li>
+        <li>Confirm the amber fields. Type the price.</li>
+        <li>Check the studio shot. Approve.</li>
+        <li>Filters fill from the wine data. Nothing to add by hand.</li></ol></div>
+    </div>
+  </section>
+
+  <section id="view-photos" hidden>
+    <div class="head">
+      <h1>One photo standard for the whole shop.</h1>
+      <p>The same source photos, cut out and placed at one size on one backdrop. No AI, so the labels do not change. Photos on a busy background go to Nano Banana.</p>
+    </div>
+    <div class="stats" id="photoStats"></div>
+    <div class="bar">
+      <div class="seg" role="group" aria-label="Photos">
+        <button type="button" data-mode="now" aria-pressed="false">Today</button>
+        <button type="button" data-mode="studio" aria-pressed="true">Studio standard</button>
+      </div>
+      <span class="note">Tap to switch. Red tags need a reshoot or Nano Banana.</span>
+    </div>
+    <div class="wall" id="wall"></div>
+  </section>
+
+  <section id="view-check" hidden>
+    <div class="head">
+      <h1>Every listing, checked the same way.</h1>
+      <p>These checks ran on the live catalogue. The tool runs the same checks on each new bottle before it can be published.</p>
+    </div>
+    <div class="stats" id="checkStats"></div>
+    <div class="bar">
+      <div class="seg" role="group" aria-label="Issue type" id="kindSeg">
+        <button type="button" data-kind="all" aria-pressed="true">All</button>
+        <button type="button" data-kind="image" aria-pressed="false">Photos</button>
+        <button type="button" data-kind="data" aria-pressed="false">Details</button>
+        <button type="button" data-kind="filter" aria-pressed="false">Filters</button>
+      </div>
+      <span class="note num" id="checkCount"></span>
+    </div>
+    <div class="list" id="issueList"></div>
+    <div class="empties" id="empties"></div>
+  </section>
+</div>
+
+<script>
+(function(){
+"use strict";
+var DATA=null, WINES=[], mode="studio", kind="all";
+var $=function(id){ return document.getElementById(id); };
+function el(tag, cls, text){ var e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; }
+function issueRow(i){ var r=el("div","issue"); r.appendChild(el("span","lvl "+i.level,i.level)); r.appendChild(el("span",null,i.text)); return r; }
+function worst(w){ var o={high:3,medium:2,low:1}, m=0; w.issues.forEach(function(i){ m=Math.max(m,o[i.level]); }); return m; }
+function stat(target, rows){ var s=$(target); s.innerHTML=""; rows.forEach(function(x){ var d=el("div","stat"); d.appendChild(el("b","num",String(x[0]))); d.appendChild(el("span",null,x[1])); s.appendChild(d); }); }
+function thumb(w, m){
+  var studio=m==="studio"&&w.studio;
+  var t=el("div","tile"+(studio?" studio":"")); var i=el("img"); i.loading="lazy"; i.alt=w.title;
+  i.src=(studio?"img/studio/":"img/now/")+w.handle+".jpg"; t.appendChild(i); return t;
+}
+
+/* Add a bottle */
+var FIELDS=[["Producer","Le Piane","hi"],["Wine","Boca","hi"],["Appellation","Boca DOC","hi"],["Vintage","2018","hi"],["Country","Italy","hi"],["Alcohol","14.0%","lo"],["Size","75 cl","hi"]];
+var CHECKS=[["ok","Vintage on the new image is 2018. Listing says 2018."],["ok","Producer and wine name match the label."],["ok","No other listing uses this image."],["medium","Alcohol hard to read. Confirm by hand."]];
+var DRAFT=[["Title","Le Piane Boca 2018"],["Type","Red"],["Region","Piedmont, Italy"],["Grapes","Nebbiolo, Vespolina"],["Vintage","2018"],["Price","Staff enter"],["Status","Draft"]];
+var steps=[].slice.call(document.querySelectorAll(".step")), timers=[];
+function rows(target, data, conf){
+  var t=$(target); t.innerHTML="";
+  data.forEach(function(r){ var d=el("div"); d.appendChild(el("span","k",r[0])); d.appendChild(el("span",null,r[1])); var c=el("span"); if(conf){ c.className="conf "+r[2]; c.textContent=r[2]==="hi"?"sure":"check"; } d.appendChild(c); t.appendChild(d); });
+}
+function activate(n){ steps.forEach(function(s,i){ s.classList.toggle("dim",i>n); s.classList.toggle("active",i===n); }); }
+function resetFlow(){
+  timers.forEach(clearTimeout); timers=[]; activate(0);
+  $("addFields").innerHTML='<span class="note">Waiting for the photo.</span>';
+  $("addChecks").innerHTML=""; $("addDraft").innerHTML='<span class="note">Waiting for the studio shot.</span>';
+  var a=$("approve"); a.disabled=true; a.textContent="Approve and publish"; $("approveNote").textContent="Runs after steps 1–3.";
+}
+function runFlow(){
+  resetFlow();
+  var t=window.matchMedia("(prefers-reduced-motion: reduce)").matches?0:900;
+  timers.push(setTimeout(function(){ activate(1); rows("addFields",FIELDS,true); },t));
+  timers.push(setTimeout(function(){ activate(2); var c=$("addChecks"); c.innerHTML=""; CHECKS.forEach(function(x){ c.appendChild(issueRow({level:x[0],text:x[1]})); }); },t*2));
+  timers.push(setTimeout(function(){ activate(3); rows("addDraft",DRAFT,false); $("approve").disabled=false; $("approveNote").textContent="Nothing goes live until a person approves."; },t*3));
+}
+$("run").addEventListener("click",runFlow);
+$("reset").addEventListener("click",resetFlow);
+$("approve").addEventListener("click",function(){ this.disabled=true; this.textContent="Published (example)"; $("approveNote").textContent="In the real tool this sets the Shopify product to Active."; });
+
+/* Photo standard */
+function renderPhotos(){
+  var ok=WINES.filter(function(w){ return w.studio; }).length;
+  var low=WINES.filter(function(w){ return w.issues.some(function(i){ return /^Low resolution/.test(i.text); }); }).length;
+  stat("photoStats",[[WINES.length,"wine photos"],[ok,"on the studio standard, no AI"],[WINES.length-ok,"need Nano Banana or a reshoot"],[low,"too small for sharp phone screens"]]);
+  var w=$("wall"); w.innerHTML="";
+  WINES.slice().sort(function(a,b){ return (a.studio-b.studio)||a.title.localeCompare(b.title); }).reverse().forEach(function(x){
+    var t=thumb(x,mode); if(!x.studio) t.appendChild(el("span","flag","AI")); t.title=x.title; w.appendChild(t);
+  });
+}
+document.querySelectorAll("[data-mode]").forEach(function(b){ b.addEventListener("click",function(){ mode=b.dataset.mode; document.querySelectorAll("[data-mode]").forEach(function(x){ x.setAttribute("aria-pressed",x===b); }); renderPhotos(); }); });
+
+/* Catalogue check */
+function renderCheck(){
+  var s=DATA.shop, flagged=WINES.filter(function(w){ return w.issues.length; }).length;
+  var wrong=WINES.filter(function(w){ return w.issues.some(function(i){ return /^Same image|^Image file says/.test(i.text); }); }).length;
+  stat("checkStats",[[s.wines,"wines listed"],[flagged,"listings with an issue"],[wrong,"show another wine's photo or vintage"],[s.empty_filter_links.length+" / "+s.filter_links,"filter links open an empty page"]]);
+  var list=WINES.filter(function(w){ return w.issues.some(function(i){ return kind==="all"||i.kind===kind; }); }).sort(function(a,b){ return worst(b)-worst(a)||a.title.localeCompare(b.title); });
+  $("checkCount").textContent=list.length+" listings";
+  var L=$("issueList"); L.innerHTML="";
+  list.forEach(function(w){
+    var r=el("div","li"); r.appendChild(thumb(w,"now"));
+    var right=el("div"); right.appendChild(el("div","t",w.title));
+    var is=el("div","issues"); w.issues.filter(function(i){ return kind==="all"||i.kind===kind; }).forEach(function(i){ is.appendChild(issueRow(i)); });
+    right.appendChild(is); r.appendChild(right); L.appendChild(r);
+  });
+  var e=$("empties"); e.innerHTML="";
+  e.appendChild(el("h3",null,"Filter links with no wines behind them"));
+  e.appendChild(el("p","note","Each filter is a collection kept by hand. Filters built from wine data in Shopify's Search & Discovery app only show values that have stock."));
+  var tags=el("div","tags"); s.empty_filter_links.forEach(function(c){ tags.appendChild(el("span",null,c)); }); e.appendChild(tags);
+}
+$("kindSeg").addEventListener("click",function(ev){ var b=ev.target.closest("button"); if(!b) return; kind=b.dataset.kind; this.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed",x===b); }); renderCheck(); });
+
+/* Tabs */
+var tabs=[].slice.call(document.querySelectorAll("nav button"));
+function show(view){
+  if(!WINES.length) return;
+  tabs.forEach(function(t){ t.setAttribute("aria-selected",t.dataset.view===view); });
+  ["add","photos","check"].forEach(function(v){ $("view-"+v).hidden=v!==view; });
+  if(view==="photos") renderPhotos();
+  if(view==="check") renderCheck();
+}
+tabs.forEach(function(t){ t.addEventListener("click",function(){ show(t.dataset.view); }); });
+
+fetch("data/wines.json").then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); }).then(function(d){
+  DATA=d; WINES=d.wines; $("loading").hidden=true;
+  $("addPhone").src="img/now/le-piane-boca-2018-copy.jpg";
+  resetFlow();
+  var h=location.hash.slice(1); show(["add","photos","check"].indexOf(h)>=0?h:"add");
+}).catch(function(){ $("loading").textContent="The catalogue did not load. Reload the page to try again."; });
+})();
+</script>

@@ -127,6 +127,13 @@ def find_issues(wines):
             issues.append({"kind": "image", "level": "low", "text": f"Not square ({iw}×{ih} px), crops differently in the grid"})
         if f and f.startswith("https___"):
             issues.append({"kind": "image", "level": "low", "text": "Image saved from another website"})
+        url_years = set(YEAR.findall(w["handle"]))
+        if w["vintage"] and w["vintage"] != "NV" and url_years and w["vintage"] not in url_years:
+            issues.append({"kind": "data", "level": "medium",
+                           "text": f"Web address says {', '.join(sorted(url_years))}, listing says {w['vintage']}"})
+        if "copy" in w["handle"].split("-"):
+            issues.append({"kind": "data", "level": "low",
+                           "text": "Web address still says “copy”, from a duplicated listing"})
         if not w["vintage"]:
             issues.append({"kind": "data", "level": "medium", "text": "No vintage in title or description"})
         if re.search(r"\b20\d{3}\b", w["header"]):

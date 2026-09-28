@@ -435,6 +435,11 @@
      "kind": "image",
      "level": "high",
      "text": "Same image as Arpepe 'Fiamme Antiche' Inferno 2022 Valtellina Superiore Inferno, Arpepe 'Stella Retica' Sassella 2017 Valtellina Superiore Sassella, Arpepe 'Stella Retica' Sassella 2019 Valtellina Superiore Sassella"
+    },
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
     }
    ],
    "studio": true,
@@ -477,6 +482,11 @@
      "kind": "image",
      "level": "high",
      "text": "Same image as Arpepe 'Fiamme Antiche' Inferno 2019 Valtellina Superiore Inferno, Arpepe 'Stella Retica' Sassella 2017 Valtellina Superiore Sassella, Arpepe 'Stella Retica' Sassella 2019 Valtellina Superiore Sassella"
+    },
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
     }
    ],
    "studio": true,
@@ -563,6 +573,16 @@
      "text": "Image file says 2018, listing says 2017"
     },
     {
+     "kind": "data",
+     "level": "medium",
+     "text": "Web address says 2018, listing says 2017"
+    },
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
+    },
+    {
      "kind": "filter",
      "level": "medium",
      "text": "Not in any wine-type collection, so the Red / White filters miss it"
@@ -609,6 +629,11 @@
      "kind": "image",
      "level": "high",
      "text": "Same image as ArPePe 'Nuova Regina' 2016 Valtellina Superiore Sassella Riserva, ArPePe 'Nuova Regina' 2018 Valtellina Superiore Sassella Riserva"
+    },
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
     }
    ],
    "studio": true,
@@ -652,6 +677,16 @@
      "kind": "image",
      "level": "high",
      "text": "Same image as ArPePe 'Nuova Regina' 2013 Valtellina Superiore Sassella Riserva, ArPePe 'Nuova Regina' 2018 Valtellina Superiore Sassella Riserva"
+    },
+    {
+     "kind": "data",
+     "level": "medium",
+     "text": "Web address says 2013, listing says 2016"
+    },
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
     }
    ],
    "studio": true,
@@ -695,6 +730,11 @@
      "kind": "image",
      "level": "high",
      "text": "Same image as ArPePe 'Nuova Regina' 2013 Valtellina Superiore Sassella Riserva, ArPePe 'Nuova Regina' 2016 Valtellina Superiore Sassella Riserva"
+    },
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
     }
    ],
    "studio": true,
@@ -775,6 +815,11 @@
      "kind": "image",
      "level": "high",
      "text": "Same image as ArPePe 'Rocca de Piro' 2017 Valtellina Superiore Grumello"
+    },
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
     }
    ],
    "studio": true,
@@ -914,6 +959,11 @@
      "kind": "image",
      "level": "high",
      "text": "Same image as Arpepe 'Rocce Rosse' 2016 Sassella Valtellina Sassella Superiore Riserva, Arpepe 'Rocce Rosse' 2016 Sassella Valtellina Sassella Superiore Riserva, Arpepe 'Ultimi Raggi' 2016 Sassella Valtellina Sassella Superiore Riserva"
+    },
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
     }
    ],
    "studio": true,
@@ -954,6 +1004,11 @@
      "kind": "image",
      "level": "high",
      "text": "Same image as ArPePe 'Buon Consiglio' 2016 Grumello Valtellina Superiore Grumello Riserva, ArPePe 'Sant Antonio' 2016 Grumello Valtellina Superiore Grumello Riserva, ArPePe 'Sesto Canto' 2013 Inferno Valtellina Superiore Inferno Riserva"
+    },
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
     }
    ],
    "studio": true,
@@ -1116,6 +1171,11 @@
      "kind": "image",
      "level": "high",
      "text": "Same image as Arpepe 'Fiamme Antiche' Inferno 2019 Valtellina Superiore Inferno, Arpepe 'Fiamme Antiche' Inferno 2022 Valtellina Superiore Inferno, Arpepe 'Stella Retica' Sassella 2017 Valtellina Superiore Sassella"
+    },
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
     }
    ],
    "studio": true,
@@ -1241,7 +1301,13 @@
     "h": 800,
     "count": 1
    },
-   "issues": [],
+   "issues": [
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
+    }
+   ],
    "studio": true,
    "studio_note": "white"
   },
@@ -1282,7 +1348,13 @@
     "h": 800,
     "count": 1
    },
-   "issues": [],
+   "issues": [
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
+    }
+   ],
    "studio": true,
    "studio_note": "white"
   },
@@ -1483,6 +1555,11 @@
      "kind": "image",
      "level": "low",
      "text": "Not square (202×500 px), crops differently in the grid"
+    },
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
     }
    ],
    "studio": true,
@@ -1754,6 +1831,11 @@
      "kind": "image",
      "level": "high",
      "text": "Image file says 2022, listing says 2024"
+    },
+    {
+     "kind": "data",
+     "level": "medium",
+     "text": "Web address says 2022, listing says 2024"
     }
    ],
    "studio": true,
@@ -2057,6 +2139,11 @@
      "kind": "image",
      "level": "high",
      "text": "Image file says 2020, listing says 2021"
+    },
+    {
+     "kind": "data",
+     "level": "medium",
+     "text": "Web address says 2017, listing says 2021"
     }
    ],
    "studio": true,
@@ -2338,6 +2425,16 @@
      "kind": "image",
      "level": "low",
      "text": "Not square (202×500 px), crops differently in the grid"
+    },
+    {
+     "kind": "data",
+     "level": "medium",
+     "text": "Web address says 2021, listing says 2020"
+    },
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
     }
    ],
    "studio": true,
@@ -2744,6 +2841,11 @@
      "text": "Not square (4284×5712 px), crops differently in the grid"
     },
     {
+     "kind": "data",
+     "level": "medium",
+     "text": "Web address says 2018, listing says 2022"
+    },
+    {
      "kind": "filter",
      "level": "medium",
      "text": "Not in any wine-type collection, so the Red / White filters miss it"
@@ -2790,6 +2892,11 @@
      "kind": "image",
      "level": "low",
      "text": "Not square (4284×5712 px), crops differently in the grid"
+    },
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
     },
     {
      "kind": "data",
@@ -2840,6 +2947,11 @@
      "kind": "image",
      "level": "low",
      "text": "Not square (4284×5712 px), crops differently in the grid"
+    },
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
     },
     {
      "kind": "data",
@@ -3063,6 +3175,16 @@
      "text": "Not square (202×500 px), crops differently in the grid"
     },
     {
+     "kind": "data",
+     "level": "medium",
+     "text": "Web address says 2020, listing says 2019"
+    },
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
+    },
+    {
      "kind": "filter",
      "level": "medium",
      "text": "Not in any wine-type collection, so the Red / White filters miss it"
@@ -3189,6 +3311,11 @@
      "kind": "image",
      "level": "low",
      "text": "Not square (202×500 px), crops differently in the grid"
+    },
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
     }
    ],
    "studio": true,
@@ -3279,6 +3406,11 @@
      "kind": "image",
      "level": "low",
      "text": "Image saved from another website"
+    },
+    {
+     "kind": "data",
+     "level": "low",
+     "text": "Web address still says “copy”, from a duplicated listing"
     }
    ],
    "studio": true,

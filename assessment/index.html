@@ -70,7 +70,7 @@ a{color:var(--accent)}
     <span class="eyebrow">Sideforge · review for ELY Wine · 28 September 2026</span>
     <h1>ELY Shop Review</h1>
     <p class="lede">An audit of shop.elywinebar.ie on Shopify, a feasibility check for AI bottle images, and what a prototype can show the owner.</p>
-    <p><a href="https://claude.ai/artifact/Tgb6V3T9MHnAm4SCUP6xkk">Open the prototype</a></p>
+    <p><a href="https://claude.ai/artifact/Tgb6V3T9MHnAm4SCUP6xkk">Shop concept</a> · <a href="https://claude.ai/artifact/CioNLbh1QUuz54RjeBp9CU">Listing tool</a></p>
   </header>
 
   <div class="summary">
@@ -128,7 +128,7 @@ a{color:var(--accent)}
       </div></div>
       <div class="issue"><span class="sev low">Low</span><div class="body">
         <h3>Titles follow no pattern</h3>
-        <p>"ArPePe" and "Arpepe". Some titles have the vintage, some do not (Finca Sandoval La Rosa, Mas Alta Artigas). Some add the appellation, some do not. Rocce Rosse 2016 is listed twice. One Zarate listing gives its vintage as "20121". Two Le Piane descriptions open with "For multiorders please contact us here."</p>
+        <p>"ArPePe" and "Arpepe". Some titles have the vintage, some do not (Finca Sandoval La Rosa, Mas Alta Artigas). Some add the appellation, some do not. Rocce Rosse 2016 is listed twice. One Zarate listing gives its vintage as "20121". Two Le Piane descriptions open with "For multiorders please contact us here." The web address ending "le-piane-boca-2018" opens La Maggiorina 2022. Seven addresses name a different vintage, and 19 still contain "copy" from duplicated listings.</p>
       </div></div>
       <div class="issue"><span class="sev low">Low</span><div class="body">
         <h3>Wine is mixed with deli and gifts</h3>
@@ -201,8 +201,29 @@ a{color:var(--accent)}
     <p>About 1–2 weeks for a first version, plus theme work to show metafields. Running cost: a few euro a month plus hosting.</p>
   </section>
 
+  <section>
+    <h2>Marketing: Erik's Wine of the Week</h2>
+    <p>In the shop, Erik explains, recommends and helps people choose. Online, nobody does that. A short weekly series brings the shop conversation to the people who never come in. Farrow &amp; Ball does the same with Patrick O'Donnell: one expert, one voice, advice people come back for.</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Part</th><th>Format</th></tr></thead>
+      <tbody>
+        <tr><td>What</td><td>Two or three bottles a week. For each: what it is, what it tastes like, what to eat with it, who it suits, the price.</td></tr>
+        <tr><td>Slots</td><td>An everyday bottle, one to impress, and a seasonal or white pick. Now and then a "good value this week".</td></tr>
+        <tr><td>Video</td><td>2–3 minutes, filmed on a phone in the shop. Cut to three 30-second clips, one per bottle.</td></tr>
+        <tr><td>Where</td><td>Instagram and Facebook Reels, then the "This week" section on the shop home page, then a short weekly email.</td></tr>
+        <tr><td>Shopify</td><td>One collection, "Erik's picks". Staff swap three products each week. The home page and the email read from it.</td></tr>
+        <tr><td>Measure</td><td>Sales of the picks against the week before. Clicks from social to the shop. Email sign-ups.</td></tr>
+      </tbody>
+    </table></div>
+    <p class="src">The prototype's "This week" section shows how it looks on the shop. The words shown come from ELY's own tasting notes, not from Erik.</p>
+  </section>
+
   <section class="gaps">
     <h2>Gaps in the plan</h2>
+    <p><b>Erik's time.</b> The series needs about one hour a week from Erik, plus someone to film, cut and post. It stops the first week that has no owner. Decide who owns it before the first episode.</p>
+    <p><b>Stock depth.</b> A pick that sells out on day two frustrates people. Pick wines with at least a case in stock.</p>
+    <p><b>Alcohol advertising rules.</b> The ASAI code applies now: nothing aimed at under-18s, no link to social or sexual success, and Meta audiences set to 18+. Section 13 of the Public Health (Alcohol) Act has not yet commenced. If it does, it limits ads to factual content with health warnings. A factual tasting-note format fits that better than lifestyle content. Get advice before paid promotion.</p>
+    <p><b>Check the current social accounts first.</b> See what ELY posts now, how often, and what gets a response, before proposing the series.</p>
     <p><b>The problem may not be images.</b> The owner named images. Wrong labels and hand-kept filters cost more. Ask him to time one new listing today, including the collections. That number sets the value of the tool.</p>
     <p><b>Someone must own the tool.</b> A custom app needs API keys, hosting and fixes when models change. Decide who pays for and maintains it before you build.</p>
     <p><b>Staff must take the photo.</b> The tool needs a real photo of each bottle. For wines not yet in stock, supplier shots still arrive. Decide if those go through option B or wait for the bottle.</p>
@@ -212,10 +233,8 @@ a{color:var(--accent)}
   <section>
     <h2>What the prototype shows</h2>
     <ul class="plain">
-      <li><b>Shop:</b> all 92 real wines, prices and stock. A toggle switches between today's photos and the studio standard. Filters are built from the data, so none are empty.</li>
-      <li><b>Wine page:</b> the real description, pairing and press quote for each wine, plus dashed slots for the facts that are missing today.</li>
-      <li><b>Catalogue check:</b> every listing checked for shared photos, vintage mismatches, low resolution, missing vintage and missing filters.</li>
-      <li><b>Add a bottle:</b> the four-step flow, starting from the real Boca phone photo.</li>
+      <li><b><a href="https://claude.ai/artifact/Tgb6V3T9MHnAm4SCUP6xkk">Shop concept</a></b> (for customers): Erik's picks this week, all 92 real wines on one photo standard, and wine pages with the real notes. Built for phones first.</li>
+      <li><b><a href="https://claude.ai/artifact/CioNLbh1QUuz54RjeBp9CU">Listing tool</a></b> (for staff): add a bottle from one photo, the photo standard today against after, and a check of every listing.</li>
     </ul>
     <p class="src">Data and photos read from shop.elywinebar.ie on 28 September 2026. The studio shot in "Add a bottle" is a placeholder until the Nano Banana key is set up.</p>
   </section>

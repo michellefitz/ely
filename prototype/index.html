@@ -2,7 +2,7 @@
 <title>ELY Cellar Concept</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&display=swap">
 <style>
 :root{
   color-scheme: light;
@@ -15,16 +15,14 @@
   --oxblood-soft:#F1E4E6;
   --studio-a:#EAE7E3;
   --studio-b:#D6D1CC;
-  --ok:#2F6B4A; --ok-soft:#E3EFE8;
-  --warn:#9A5B12; --warn-soft:#F6EBDC;
-  --bad:#A3321F; --bad-soft:#F7E4DF;
   --serif:"Newsreader", Georgia, "Times New Roman", serif;
   --sans:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
 }
 *{box-sizing:border-box}
-body{background:var(--ground);color:var(--ink);font:15px/1.55 var(--sans);padding-inline:16px;padding-block:0 64px}
-.wrap{max-width:1180px;margin:0 auto}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{background:var(--ground);color:var(--ink);font:15px/1.55 var(--sans);padding-inline:16px;padding-block:0 72px;-webkit-text-size-adjust:100%}
+.wrap{max-width:1160px;margin:0 auto}
 button{font:inherit;color:inherit}
 button:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--oxblood);outline-offset:2px}
 h1,h2,h3{font-family:var(--serif);font-weight:400;text-wrap:balance;margin:0}
@@ -33,488 +31,387 @@ p{margin:0}
 .note{font-size:12px;color:var(--muted);font-style:italic}
 .num{font-variant-numeric:tabular-nums}
 
-.concept{display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:space-between;padding-block:10px;border-bottom:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+.concept{display:flex;flex-wrap:wrap;gap:4px 16px;justify-content:space-between;padding-block:9px;border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}
 .concept b{color:var(--ink);font-weight:600}
-header.shop{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding-block:20px 16px}
-.mark{font-family:var(--serif);font-size:30px;letter-spacing:.14em;font-weight:500}
-.mark small{font-family:var(--sans);font-size:11px;letter-spacing:.2em;color:var(--muted);margin-left:10px;text-transform:uppercase}
-nav.tabs{display:flex;flex-wrap:wrap;gap:4px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:4px}
-nav.tabs button{font-weight:500;font-size:13.5px;border:0;background:none;color:var(--muted);padding:8px 14px;border-radius:999px;cursor:pointer}
+header.shop{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--ground);display:flex;align-items:center;justify-content:space-between;gap:12px;padding-block:14px;border-bottom:1px solid transparent}
+header.shop.scrolled{border-bottom-color:var(--line)}
+.mark{font-family:var(--serif);font-size:28px;letter-spacing:.14em;font-weight:500;background:none;border:0;padding:0;cursor:pointer}
+.mark small{font-family:var(--sans);font-size:10.5px;letter-spacing:.2em;color:var(--muted);margin-left:10px;text-transform:uppercase}
+nav.tabs{display:flex;gap:4px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:4px}
+nav.tabs button{font-weight:500;font-size:13.5px;border:0;background:none;color:var(--muted);padding:8px 16px;border-radius:999px;cursor:pointer;white-space:nowrap}
 nav.tabs button[aria-selected="true"]{background:var(--ink);color:var(--paper)}
 
-.seg{display:inline-flex;border:1px solid var(--line);border-radius:3px;overflow:hidden;background:var(--paper)}
-.seg button{border:0;background:none;padding:6px 12px;font-size:12.5px;font-weight:500;cursor:pointer}
-.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
-
-/* Shop */
-.bar{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;justify-content:space-between;padding-block:4px 16px}
-.facets{display:flex;flex-wrap:wrap;gap:8px}
-.facets label{display:flex;flex-direction:column;gap:2px;font:500 10.5px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
-.facets select{font:14px var(--sans);color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:6px 8px;max-width:190px}
-.count{font-size:13px;color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px 16px}
-.card{display:flex;flex-direction:column;gap:8px;cursor:pointer;background:none;border:0;padding:0;text-align:left}
-.tile{position:relative;aspect-ratio:4/5;border-radius:3px;overflow:hidden;background:#fff;max-width:100%}
+/* Tiles */
+.tile{position:relative;aspect-ratio:4/5;border-radius:4px;overflow:hidden;background:radial-gradient(120% 90% at 50% 18%,var(--studio-a),var(--studio-b));max-width:100%}
 .tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.tile.now img{object-fit:contain;padding:0}
-.tile.now.square img{object-fit:contain}
-.tile.studio{background:linear-gradient(180deg,var(--studio-a),var(--studio-b))}
-.badge{position:absolute;left:8px;top:8px;font:600 10px var(--sans);letter-spacing:.08em;text-transform:uppercase;background:var(--paper);color:var(--oxblood);padding:3px 7px;border-radius:2px}
+.tile.plain{background:#fff}
+.tile.plain img{object-fit:contain;padding:8%}
+.badge{position:absolute;left:10px;top:10px;font:600 10px var(--sans);letter-spacing:.08em;text-transform:uppercase;background:var(--paper);color:var(--oxblood);padding:4px 8px;border-radius:2px}
 .badge.sold{color:var(--muted)}
-.flagdot{position:absolute;right:8px;top:8px;font:600 10px var(--sans);background:var(--bad-soft);color:var(--bad);padding:3px 7px;border-radius:2px}
-.card .name{font-family:var(--serif);font-size:17px;line-height:1.2}
+
+/* Cards */
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px 16px}
+.card{display:flex;flex-direction:column;gap:9px;cursor:pointer;background:none;border:0;padding:0;text-align:left}
+.card .name{font-family:var(--serif);font-size:18px;line-height:1.2}
 .card .meta{font-size:12.5px;color:var(--muted)}
-.card .row{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.card .row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
 .card .price{font-weight:600}
 .card:hover .tile{outline:1px solid var(--ink);outline-offset:-1px}
-.more-btn{margin:26px auto 0;display:block;border:1px solid var(--ink);background:none;padding:10px 18px;border-radius:3px;cursor:pointer;font-weight:600}
+
+/* Home */
+.picks{display:grid;grid-template-columns:1.15fr 1fr;gap:32px;align-items:start;padding-block:10px 40px}
+.picks-head{display:grid;gap:10px;margin-bottom:18px}
+.picks-head h1{font-size:clamp(32px,5vw,52px);line-height:1.02}
+.picks-head p{color:var(--muted);max-width:48ch}
+.video{position:relative;aspect-ratio:5/4;border-radius:4px;overflow:hidden;background:radial-gradient(120% 90% at 50% 25%,#E6E2DD,#C9C3BD);border:0;padding:0;cursor:pointer;width:100%;display:block}
+.video .bottles{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr)}
+.video .bottles img{width:100%;height:100%;object-fit:cover;object-position:50% 70%;transform:scale(1.25);transform-origin:50% 80%}
+.video .play{position:absolute;left:18px;bottom:18px;display:flex;align-items:center;gap:12px;background:var(--paper);border-radius:999px;padding:8px 16px 8px 8px;font-weight:600;font-size:14px;z-index:3}
+.video .play i{width:34px;height:34px;border-radius:50%;background:var(--oxblood);display:grid;place-items:center}
+.video .play i::after{content:"";border-left:11px solid #fff;border-top:7px solid transparent;border-bottom:7px solid transparent;margin-left:3px}
+.video .who{position:absolute;left:14px;top:14px;z-index:3;display:grid;gap:0;text-align:left;background:var(--paper);padding:8px 12px;border-radius:3px}
+.video .who b{font-family:var(--serif);font-weight:400;font-size:22px}
+.video-note{margin-top:8px}
+.picklist{display:grid;gap:0;border-top:1px solid var(--line)}
+.pick{display:grid;grid-template-columns:92px minmax(0,1fr);gap:16px;padding-block:18px;border-bottom:1px solid var(--line);background:none;border-left:0;border-right:0;border-top:0;text-align:left;cursor:pointer;padding-inline:0}
+.pick .tile{aspect-ratio:4/5;width:92px}
+.pick .n{font:500 11px var(--sans);letter-spacing:.14em;color:var(--oxblood);text-transform:uppercase}
+.pick h3{font-size:21px;line-height:1.15;margin-top:2px}
+.pick .why{font-size:14px;margin-top:6px}
+.pick .foot{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-size:12.5px;color:var(--muted)}
+.pick .foot b{color:var(--ink)}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-block:10px 16px;border-top:1px solid var(--line)}
+.section-head h2{font-size:28px}
+.linkbtn{background:none;border:0;padding:0;font-weight:600;font-size:14px;color:var(--oxblood);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+
+/* Shop */
+.intro{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:end;padding-block:8px 18px}
+.intro h1{font-size:clamp(30px,4.4vw,46px);line-height:1.05}
+.intro p{color:var(--muted);max-width:52ch}
+.filters{display:flex;gap:8px;align-items:center;padding-block:4px 20px;overflow-x:auto;scrollbar-width:none;margin-inline:-16px;padding-inline:16px}
+.filters::-webkit-scrollbar{display:none}
+.chip{flex:none;font-weight:500;font-size:13px;border:1px solid var(--line);background:var(--paper);padding:7px 13px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:var(--paper)}
+.filters select{flex:none;font:500 13px var(--sans);color:var(--ink);border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:7px 12px}
+.filters .sep{flex:none;width:1px;height:22px;background:var(--line);margin-inline:4px}
+.more-btn{margin:30px auto 0;display:block;border:1px solid var(--ink);background:none;padding:11px 20px;border-radius:3px;cursor:pointer;font-weight:600}
 
 /* Wine page */
-.pdp{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;padding-block:6px}
-.pdp .tile{aspect-ratio:4/5}
-.imgctl{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:10px}
-.pdp h1{font-size:clamp(28px,3.8vw,42px);line-height:1.06;margin-top:6px}
-.buy{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-block:18px;padding-block:14px;border-block:1px solid var(--line)}
-.buy .p{font-size:26px;font-family:var(--serif)}
-.btn{font-weight:600;font-size:14px;border:0;background:var(--oxblood);color:#fff;padding:11px 18px;border-radius:3px;cursor:pointer}
+.back{background:none;border:0;padding:0;margin-bottom:14px;font-size:13.5px;color:var(--muted);cursor:pointer}
+.pdp{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:44px}
+.pdp-media{position:sticky;top:84px;align-self:start}
+.pdp h1{font-size:clamp(30px,4vw,44px);line-height:1.05;margin-top:6px}
+.pdp .sub{color:var(--muted);margin-top:8px;max-width:56ch}
+.buy{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-block:20px;padding-block:16px;border-block:1px solid var(--line)}
+.buy .p{font-size:28px;font-family:var(--serif)}
+.btn{font-weight:600;font-size:14px;border:0;background:var(--oxblood);color:#fff;padding:12px 20px;border-radius:3px;cursor:pointer}
 .btn[disabled]{background:var(--line);color:var(--muted);cursor:default}
 .btn.ghost{background:none;color:var(--ink);border:1px solid var(--ink)}
-.facts{display:grid;grid-template-columns:auto 1fr;gap:7px 18px;margin:0}
-.facts dt{font:500 10.5px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin:0}
+.facts dt{font:500 11px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding-top:3px}
 .facts dd{margin:0}
-.facts dd.gap{color:var(--muted);border:1px dashed var(--line);border-radius:2px;padding:0 8px;font-size:13px;width:fit-content}
-.block{margin-top:24px;display:grid;gap:8px}
-.block h3{font-size:19px}
+.block{margin-top:28px;display:grid;gap:10px}
+.block h3{font-size:21px}
 .block p{max-width:62ch}
-blockquote{margin:0;padding-left:14px;border-left:2px solid var(--oxblood);font-family:var(--serif);font-style:italic;font-size:17px}
-blockquote cite{display:block;font:500 12px var(--sans);font-style:normal;color:var(--muted);margin-top:6px}
-.check{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:12px 14px;display:grid;gap:6px;font-size:13.5px}
-.issue{display:flex;gap:8px;align-items:baseline}
-.lvl{flex:none;font:600 9.5px var(--sans);letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:2px}
-.lvl.high{color:var(--bad);background:var(--bad-soft)}
-.lvl.medium{color:var(--warn);background:var(--warn-soft)}
-.lvl.low{color:var(--muted);background:var(--line)}
-.lvl.ok{color:var(--ok);background:var(--ok-soft)}
-.related{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.related .name{font-size:15px}
-
-/* Catalogue check */
-.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-block:6px 22px}
-.stat{background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:14px 16px;display:grid;gap:2px}
-.stat b{font:400 32px/1.1 var(--serif)}
-.stat span{font-size:13px;color:var(--muted)}
-.list{display:grid;gap:0;border-top:1px solid var(--line)}
-.li{display:grid;grid-template-columns:56px minmax(0,1fr);gap:14px;padding-block:12px;border-bottom:1px solid var(--line);cursor:pointer;background:none;border-left:0;border-right:0;border-top:0;text-align:left;padding-inline:0}
-.li .tile{aspect-ratio:4/5;width:56px}
-.li .t{font-family:var(--serif);font-size:16px}
-.li .issues{display:grid;gap:3px;margin-top:4px;font-size:13px}
-.empties{margin-top:26px;display:grid;gap:8px}
-.empties .tags{display:flex;flex-wrap:wrap;gap:5px}
-.empties .tags span{font:12px var(--mono);background:var(--paper);border:1px solid var(--line);padding:2px 6px;border-radius:2px;color:var(--muted)}
-
-/* Add a bottle */
-.flow-head{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;align-items:end;padding-block:6px 20px}
-.flow-head h1{font-size:clamp(28px,4vw,42px);line-height:1.08}
-.flow-head p{color:var(--muted)}
-.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-.step{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:14px;display:flex;flex-direction:column;gap:10px;transition:opacity .3s,border-color .3s}
-.step.dim{opacity:.45}
-.step.active{border-color:var(--ink)}
-.step .n{font:500 11px var(--mono);color:var(--muted)}
-.step h3{font-size:18px}
-.step .tile{aspect-ratio:4/5}
-.pending{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:16px;font-size:13px;color:var(--muted);border:1px dashed var(--muted);border-radius:3px}
-.fields{display:grid;gap:5px;font-size:13px}
-.fields div{display:grid;grid-template-columns:74px 1fr auto;gap:6px;align-items:baseline;border-bottom:1px dashed var(--line);padding-bottom:4px}
-.fields .k{color:var(--muted);font-size:11.5px}
-.conf{font:500 10.5px var(--mono);padding:1px 5px;border-radius:2px}
-.conf.hi{color:var(--ok);background:var(--ok-soft)}
-.conf.lo{color:var(--warn);background:var(--warn-soft)}
-.flow-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding-block:18px 0}
-
+blockquote{margin:0;padding-left:16px;border-left:2px solid var(--oxblood);font-family:var(--serif);font-style:italic;font-size:18px;line-height:1.45}
+blockquote cite{display:block;font:500 12.5px var(--sans);font-style:normal;color:var(--muted);margin-top:8px}
+.bar-callout{display:flex;gap:14px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);padding:14px 16px;border-radius:3px}
+.bar-callout svg{flex:none;width:26px;height:34px}
+.related{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.related .card .name{font-size:15.5px}
+.buybar{display:none}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(84px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:3px;font-size:14px;z-index:20;opacity:0;transition:opacity .25s;pointer-events:none}
+.toast.on{opacity:1}
 .loading{padding:60px 0;color:var(--muted)}
 
-@media (max-width:980px){ .grid{grid-template-columns:repeat(3,minmax(0,1fr))} .stats{grid-template-columns:repeat(2,minmax(0,1fr))} }
-@media (max-width:760px){
-  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:980px){ .grid{grid-template-columns:repeat(3,minmax(0,1fr))} }
+@media (max-width:820px){
+  .picks{grid-template-columns:1fr;gap:22px}
+  .intro{grid-template-columns:1fr;gap:10px}
   .pdp{grid-template-columns:1fr;gap:22px}
-  .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .flow-head{grid-template-columns:1fr}
+  .pdp-media{position:static}
+  .pdp-media .tile{max-width:420px;margin-inline:auto}
 }
-@media (max-width:460px){
-  .steps{grid-template-columns:1fr}
-  .related{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:620px){
+  body{font-size:15.5px;padding-block:0 110px}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 12px}
+  .card .name{font-size:16px}
+  .card .row{flex-direction:column;gap:2px}
+  .mark{font-size:24px}
   .mark small{display:none}
-  .facets select{max-width:150px}
+  nav.tabs button{padding:7px 12px;font-size:13px}
+  .concept span:last-child{display:none}
+  .pick{grid-template-columns:76px minmax(0,1fr);gap:12px}
+  .pick .tile{width:76px}
+  .pick h3{font-size:19px}
+  .video{aspect-ratio:1/1}
+  .video .bottles img{transform:scale(1.35)}
+  .related{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .related .card:nth-child(3){display:none}
+  .buy{display:none}
+  .buybar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:10;align-items:center;justify-content:space-between;gap:12px;background:var(--paper);border-top:1px solid var(--line);padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px))}
+  .buybar .p{font-family:var(--serif);font-size:24px}
+  .buybar .btn{flex:1;max-width:240px;padding-block:14px}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
 
 <div class="wrap">
   <div class="concept">
-    <span><b>Concept prototype</b> for ELY Wine by Sideforge. Not the live shop. Nothing here is for sale.</span>
+    <span><b>Concept</b> for ELY Wine by Sideforge. Not the live shop. Nothing here is for sale.</span>
     <span id="scrapeNote">Real wines, prices and photos from shop.elywinebar.ie.</span>
   </div>
 
-  <header class="shop">
-    <div class="mark">ELY<small>Wine shop · concept</small></div>
-    <nav class="tabs" role="tablist" aria-label="Prototype views">
-      <button role="tab" id="tab-shop" aria-selected="true" data-view="shop">Shop</button>
-      <button role="tab" id="tab-wine" aria-selected="false" data-view="wine">Wine page</button>
-      <button role="tab" id="tab-check" aria-selected="false" data-view="check">Catalogue check</button>
-      <button role="tab" id="tab-add" aria-selected="false" data-view="add">Add a bottle</button>
+  <header class="shop" id="hdr">
+    <button class="mark" type="button" data-go="home" aria-label="ELY home">ELY<small>Wine shop</small></button>
+    <nav class="tabs" role="tablist" aria-label="Shop">
+      <button role="tab" id="tab-home" aria-selected="true" data-go="home">This week</button>
+      <button role="tab" id="tab-shop" aria-selected="false" data-go="shop">Shop wine</button>
     </nav>
   </header>
 
   <div id="loading" class="loading">Loading the wine list…</div>
 
-  <!-- SHOP -->
-  <section id="view-shop" role="tabpanel" aria-labelledby="tab-shop" hidden>
-    <div class="bar">
-      <div class="facets" id="facets"></div>
-      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
-        <span class="count num" id="count"></span>
-        <div class="seg" role="group" aria-label="Photos">
-          <button type="button" data-photos="now" aria-pressed="false">Photos today</button>
-          <button type="button" data-photos="studio" aria-pressed="true">Studio standard</button>
+  <!-- HOME -->
+  <section id="view-home" hidden>
+    <div class="picks">
+      <div>
+        <div class="picks-head">
+          <span class="eyebrow" id="weekLabel">Erik's picks · this week</span>
+          <h1>Three bottles Erik is opening this week, and why.</h1>
+          <p>Each week Erik picks two or three wines from the shelf and talks you through them: what they taste like, what to eat with them, and who they suit.</p>
         </div>
+        <button class="video" type="button" id="video" aria-label="Play Erik's picks video (example)">
+          <span class="who"><span class="eyebrow">Wine of the week</span><b>with Erik</b></span>
+          <span class="bottles" id="videoBottles"></span>
+          <span class="play"><i></i><span>Watch · 3 min</span></span>
+        </button>
+        <p class="note video-note" id="videoNote">Example layout. The video and Erik's words come from Erik.</p>
       </div>
+      <div class="picklist" id="picklist"></div>
     </div>
+
+    <div class="section-head"><h2>New on the shelf</h2><button class="linkbtn" type="button" data-go="shop">Shop all wine</button></div>
+    <div class="grid" id="newGrid"></div>
+  </section>
+
+  <!-- SHOP -->
+  <section id="view-shop" hidden>
+    <div class="intro">
+      <h1>Wines we open at the bar, to take home.</h1>
+      <p id="shopIntro">Small growers from Italy, Spain and France, chosen and tasted by the ELY team.</p>
+    </div>
+    <div class="filters" id="filters" aria-label="Filter wines"></div>
     <div class="grid" id="grid"></div>
-    <button type="button" class="more-btn" id="moreBtn" hidden>Show all wines</button>
+    <button type="button" class="more-btn" id="moreBtn" hidden>Show more</button>
   </section>
 
   <!-- WINE PAGE -->
-  <section id="view-wine" role="tabpanel" aria-labelledby="tab-wine" hidden>
+  <section id="view-wine" hidden>
+    <button class="back" type="button" id="back">← Back</button>
     <div class="pdp">
-      <div>
-        <div class="tile" id="pdpTile"><img id="pdpImg" alt=""></div>
-        <div class="imgctl">
-          <div class="seg" role="group" aria-label="Photo version">
-            <button type="button" data-photos="now" aria-pressed="false">Today</button>
-            <button type="button" data-photos="studio" aria-pressed="true">Studio standard</button>
-          </div>
-          <span class="note" id="pdpImgNote"></span>
-        </div>
-        <div class="block" id="pdpCheck"></div>
-      </div>
+      <div class="pdp-media"><div class="tile" id="pdpTile"><img id="pdpImg" alt=""></div></div>
       <div>
         <div class="eyebrow" id="pdpEyebrow"></div>
         <h1 id="pdpTitle"></h1>
+        <p class="sub" id="pdpSub"></p>
         <div class="buy">
           <span class="p num" id="pdpPrice"></span>
-          <button class="btn" type="button" id="pdpBuy">Add to basket</button>
+          <button class="btn" type="button" data-add>Add to basket</button>
           <button class="btn ghost" type="button">Send as a gift</button>
         </div>
-        <dl class="facts" id="pdpFacts"></dl>
-        <p class="note" style="margin-top:8px">Dashed fields are empty today. They become Shopify metafields that staff fill once per wine.</p>
+        <dl class="facts" id="pdpFacts" style="margin-top:20px"></dl>
         <div class="block" id="pdpDesc"></div>
         <div class="block" id="pdpPair"></div>
         <div class="block" id="pdpQuote"></div>
-        <div class="block" id="pdpRelatedWrap"><h3 id="pdpRelatedH"></h3><div class="related" id="pdpRelated"></div></div>
+        <div class="block">
+          <div class="bar-callout">
+            <svg viewBox="0 0 26 34" aria-hidden="true"><path d="M4 2h18c0 9-3 15-9 15S4 11 4 2Z" fill="#6A1F31"/><path d="M13 17v12M7 31h12" stroke="#1E1A1C" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+            <div><b>Not sure? Ask Erik.</b><div style="font-size:13.5px;color:var(--muted)">Taste before you buy at ELY Wine Bar in Dublin 2, or book a tasting in Maynooth.</div></div>
+          </div>
+        </div>
+        <div class="block" id="relWrap"><h3 id="relH"></h3><div class="related" id="related"></div></div>
       </div>
-    </div>
-  </section>
-
-  <!-- CATALOGUE CHECK -->
-  <section id="view-check" role="tabpanel" aria-labelledby="tab-check" hidden>
-    <div class="flow-head">
-      <h1>Every listing, checked the same way.</h1>
-      <p>These checks run on the live catalogue data. The same checks run on each new bottle before it goes live.</p>
-    </div>
-    <div class="stats" id="stats"></div>
-    <div class="bar">
-      <div class="seg" role="group" aria-label="Issue type" id="kindSeg">
-        <button type="button" data-kind="all" aria-pressed="true">All</button>
-        <button type="button" data-kind="image" aria-pressed="false">Images</button>
-        <button type="button" data-kind="data" aria-pressed="false">Details</button>
-        <button type="button" data-kind="filter" aria-pressed="false">Filters</button>
-      </div>
-      <span class="count num" id="checkCount"></span>
-    </div>
-    <div class="list" id="issueList"></div>
-    <div class="empties" id="empties"></div>
-  </section>
-
-  <!-- ADD A BOTTLE -->
-  <section id="view-add" role="tabpanel" aria-labelledby="tab-add" hidden>
-    <div class="flow-head">
-      <h1>Add a bottle from one phone photo.</h1>
-      <p>Staff photograph the bottle. The tool reads the label, makes the studio shot, runs the catalogue checks, and saves a draft in Shopify. A person approves it before it goes live.</p>
-    </div>
-    <div class="steps">
-      <div class="step" data-step="0">
-        <span class="n">STEP 1 · PHONE</span>
-        <h3>Photograph the bottle</h3>
-        <div class="tile"><img id="addPhone" alt="Phone photo of Le Piane Boca 2018 from the live shop"></div>
-        <span class="note">The real phone photo from the live listing.</span>
-      </div>
-      <div class="step" data-step="1">
-        <span class="n">STEP 2 · READ</span>
-        <h3>Read the label</h3>
-        <div class="fields" id="addFields"><span class="note">Waiting for the photo.</span></div>
-        <span class="note">Amber fields need a person to confirm.</span>
-      </div>
-      <div class="step" data-step="2">
-        <span class="n">STEP 3 · STUDIO</span>
-        <h3>Make the studio shot</h3>
-        <div class="tile studio" id="addStudio"><div class="pending">The Nano Banana studio shot appears here once the API key is set up.</div></div>
-        <div class="fields" id="addChecks"></div>
-      </div>
-      <div class="step" data-step="3">
-        <span class="n">STEP 4 · SHOPIFY</span>
-        <h3>Save as draft</h3>
-        <div class="fields" id="addDraft"><span class="note">Waiting for the studio shot.</span></div>
-        <button class="btn" type="button" id="approve" disabled>Approve and publish</button>
-        <span class="note" id="approveNote">Runs after steps 1–3.</span>
-      </div>
-    </div>
-    <div class="flow-actions">
-      <button class="btn" type="button" id="run">Run the example</button>
-      <button class="btn ghost" type="button" id="reset">Reset</button>
     </div>
   </section>
 </div>
 
+<div class="buybar" id="buybar" hidden>
+  <span class="p num" id="barPrice"></span>
+  <button class="btn" type="button" data-add>Add to basket</button>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
 <script>
 (function(){
 "use strict";
-var DATA=null, WINES=[], photos="studio", current=null, kind="all", showAll=false;
-var PAGE=24;
+var WINES=[], BY={}, current=null, typeSel="All", countrySel="", sort="shelf", shown=24;
+var PICKS=["mas-alta-artigas","la-creu-alta-priorat","adega-algueira-escalada"];
+var SERVE={Red:"16–18 °C",White:"8–11 °C",Sparkling:"6–8 °C","Rosé":"8–10 °C",Vermouth:"Chilled, over ice"};
 var $=function(id){ return document.getElementById(id); };
 function el(tag, cls, text){ var e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; }
 function eur(n){ return "€"+n.toFixed(2); }
-function imgFor(w, mode){ return (mode==="studio" && w.studio) ? "img/studio/"+w.handle+".jpg" : "img/now/"+w.handle+".jpg"; }
 function place(w){ return [w.region, w.country].filter(Boolean).join(", "); }
-function metaLine(w){ return [w.type, place(w)].filter(Boolean).join(" · ") || "Wine"; }
-function worst(w){ var o={high:3,medium:2,low:1}, m=0; w.issues.forEach(function(i){ m=Math.max(m,o[i.level]); }); return m; }
-function producerKey(t){ return t.toLowerCase().replace(/[’'‘]/g,"").split(/[ ,]/).filter(Boolean).slice(0,1).join(" "); }
+function meta(w){ return [w.type, place(w)].filter(Boolean).join(" · ") || "Wine"; }
+function key(t){ return t.toLowerCase().replace(/[’'‘]/g,"").split(/[ ,]/).filter(Boolean)[0]; }
+function firstSentence(s){ var m=(s||"").match(/^.{40,220}?[.!?](\s|$)/); return m?m[0].trim():(s||"").slice(0,180); }
 
-function tile(w, mode, cls){
-  var t=el("div","tile "+(mode==="studio"&&w.studio?"studio":"now")+(cls?" "+cls:""));
-  var i=el("img"); i.loading="lazy"; i.alt=w.title; i.src=imgFor(w,mode);
+function tile(w){
+  var t=el("div","tile"+(w.studio?"":" plain"));
+  var i=el("img"); i.loading="lazy"; i.alt=w.title; i.src=(w.studio?"img/studio/":"img/now/")+w.handle+".jpg";
   t.appendChild(i);
   return t;
 }
-
-/* ---------- Facets ---------- */
-var FACETS=[["type","Type"],["country","Country"],["grapes","Grape"],["styles","Style"]];
-var sel={type:"",country:"",grapes:"",styles:""}, sort="featured";
-function values(key){
-  var c={};
-  WINES.forEach(function(w){ var v=w[key]; (Array.isArray(v)?v:[v]).forEach(function(x){ if(x) c[x]=(c[x]||0)+1; }); });
-  return Object.keys(c).sort().map(function(k){ return [k,c[k]]; });
-}
-function buildFacets(){
-  var f=$("facets"); f.innerHTML="";
-  FACETS.forEach(function(fc){
-    var lab=el("label"); lab.appendChild(document.createTextNode(fc[1]));
-    var s=el("select"); s.id="f-"+fc[0];
-    var all=el("option",null,"All"); all.value=""; s.appendChild(all);
-    values(fc[0]).forEach(function(v){ var o=el("option",null,v[0]+" ("+v[1]+")"); o.value=v[0]; s.appendChild(o); });
-    s.addEventListener("change",function(){ sel[fc[0]]=s.value; showAll=false; renderGrid(); });
-    lab.appendChild(s); f.appendChild(lab);
-  });
-  var lab=el("label"); lab.appendChild(document.createTextNode("Sort"));
-  var s=el("select"); s.id="f-sort";
-  [["featured","Mixed shelf"],["newest","Newest listed"],["price-asc","Price, low to high"],["price-desc","Price, high to low"],["name","A to Z"]].forEach(function(o){ var op=el("option",null,o[1]); op.value=o[0]; s.appendChild(op); });
-  s.addEventListener("change",function(){ sort=s.value; renderGrid(); });
-  lab.appendChild(s); f.appendChild(lab);
-}
-function filtered(){
-  var list=WINES.filter(function(w){
-    return Object.keys(sel).every(function(k){ if(!sel[k]) return true; var v=w[k]; return Array.isArray(v)?v.indexOf(sel[k])>=0:v===sel[k]; });
-  });
-  var by={
-    "newest":function(a,b){ return (b.available-a.available)||(b.published<a.published?-1:1); },
-    "price-asc":function(a,b){ return a.price-b.price; },
-    "price-desc":function(a,b){ return b.price-a.price; },
-    "name":function(a,b){ return a.title.localeCompare(b.title); }
-  };
-  if(sort==="featured") return shelf(list);
-  return list.sort(by[sort]);
-}
-/* One bottle per producer in turn, in stock first, so the shelf shows the range. */
-function shelf(list){
-  var groups={}, order=[];
-  list.slice().sort(function(a,b){ return (b.available-a.available)||a.title.localeCompare(b.title); }).forEach(function(w){
-    var k=producerKey(w.title); if(!groups[k]){ groups[k]=[]; order.push(k); } groups[k].push(w);
-  });
-  var out=[], more=true;
-  for(var i=0; more; i++){ more=false; order.forEach(function(k){ if(groups[k][i]){ out.push(groups[k][i]); more=true; } }); }
-  return out;
-}
-
-/* ---------- Shop ---------- */
-function card(w, onClick){
+function card(w){
   var b=el("button","card"); b.type="button";
-  var t=tile(w, photos);
+  var t=tile(w);
   if(!w.available) t.appendChild(el("span","badge sold","Sold out"));
-  else if(w.styles.length) t.appendChild(el("span","badge",w.styles[0]));
-  if(photos==="studio" && !w.studio) t.appendChild(el("span","flagdot","Needs AI studio shot"));
+  else if(PICKS.indexOf(w.handle)>=0) t.appendChild(el("span","badge","Erik's pick"));
   b.appendChild(t);
   b.appendChild(el("div","name",w.title));
-  b.appendChild(el("div","meta",metaLine(w)));
+  b.appendChild(el("div","meta",meta(w)));
   var r=el("div","row");
   r.appendChild(el("span","meta",[w.grapes.slice(0,2).join(", "), w.vintage].filter(Boolean).join(" · ")));
   r.appendChild(el("span","price num",eur(w.price)));
   b.appendChild(r);
-  b.addEventListener("click", onClick);
+  b.addEventListener("click",function(){ openWine(w); });
   return b;
 }
-function renderGrid(){
-  var list=filtered(), g=$("grid"); g.innerHTML="";
-  var shown=showAll?list:list.slice(0,PAGE);
-  shown.forEach(function(w){ g.appendChild(card(w,function(){ openWine(w); })); });
-  $("count").textContent=list.length+" wines";
-  $("moreBtn").hidden = showAll || list.length<=PAGE;
-  $("moreBtn").textContent="Show all "+list.length+" wines";
-}
-$("moreBtn").addEventListener("click",function(){ showAll=true; renderGrid(); });
 
-document.querySelectorAll("[data-photos]").forEach(function(b){
-  b.addEventListener("click",function(){
-    photos=b.dataset.photos;
-    document.querySelectorAll("[data-photos]").forEach(function(x){ x.setAttribute("aria-pressed", x.dataset.photos===photos); });
-    renderGrid(); if(current) renderWine();
-  });
-});
-
-/* ---------- Wine page ---------- */
-function openWine(w){ current=w; show("wine"); }
-function fact(dl, k, v){
-  dl.appendChild(el("dt",null,k));
-  var d=el("dd"); if(v){ d.textContent=v; } else { d.className="gap"; d.textContent="Add in Shopify"; }
-  dl.appendChild(d);
-}
-function issueRow(i){
-  var r=el("div","issue"); r.appendChild(el("span","lvl "+i.level,i.level)); r.appendChild(el("span",null,i.text)); return r;
-}
-function renderWine(){
-  var w=current;
-  var t=$("pdpTile"); t.className="tile "+(photos==="studio"&&w.studio?"studio":"now");
-  $("pdpImg").src=imgFor(w,photos); $("pdpImg").alt=w.title;
-  $("pdpImgNote").textContent = w.studio ? (photos==="studio"?"Same source photo, placed on the studio standard. No AI.":"As the live shop shows it.") : "This photo needs a reshoot or an AI studio shot.";
-  $("pdpEyebrow").textContent=metaLine(w);
-  $("pdpTitle").textContent=w.title;
-  $("pdpPrice").textContent=eur(w.price);
-  var buy=$("pdpBuy"); buy.disabled=!w.available; buy.textContent=w.available?"Add to basket":"Sold out";
-  var dl=$("pdpFacts"); dl.innerHTML="";
-  fact(dl,"Region",place(w)); fact(dl,"Grapes",w.grapes.join(", ")); fact(dl,"Vintage",w.vintage);
-  fact(dl,"Farming",w.styles.join(", ")); fact(dl,"Alcohol",null); fact(dl,"Size",w.magnum?"Magnum, 1.5 l":null);
-  fact(dl,"Drink",null); fact(dl,"Serve",null);
-  var d=$("pdpDesc"); d.innerHTML="";
-  if(w.description.length){ d.appendChild(el("h3",null,"About this wine")); w.description.slice(0,3).forEach(function(p){ d.appendChild(el("p",null,p)); }); }
-  var pr=$("pdpPair"); pr.innerHTML="";
-  if(w.pairing){ pr.appendChild(el("h3",null,"With food")); pr.appendChild(el("p",null,w.pairing)); }
-  var q=$("pdpQuote"); q.innerHTML="";
-  if(w.quote&&w.quote.text){ var bq=el("blockquote",null,"“"+w.quote.text+"”"); if(w.quote.by) bq.appendChild(el("cite",null,w.quote.by)); q.appendChild(bq); }
-  var c=$("pdpCheck"); c.innerHTML="";
-  var box=el("div","check"); box.appendChild(el("b",null,"Listing check"));
-  if(w.issues.length) w.issues.forEach(function(i){ box.appendChild(issueRow(i)); });
-  else box.appendChild(issueRow({level:"ok",text:"No problems found."}));
-  c.appendChild(box);
-  var key=producerKey(w.title);
-  var rel=WINES.filter(function(o){ return o!==w && producerKey(o.title)===key; }).slice(0,3);
-  if(rel.length<2) rel=WINES.filter(function(o){ return o!==w && o.country===w.country && o.type===w.type; }).slice(0,3);
-  $("pdpRelatedH").textContent = producerKey(rel[0]?rel[0].title:"")===key ? "More from this producer" : "You might also like";
-  var r=$("pdpRelated"); r.innerHTML="";
-  rel.forEach(function(o){ r.appendChild(card(o,function(){ openWine(o); })); });
-  $("pdpRelatedWrap").hidden=!rel.length;
-}
-
-/* ---------- Catalogue check ---------- */
-function renderCheck(){
-  var s=DATA.shop, flagged=WINES.filter(function(w){ return w.issues.length; });
-  var shared=WINES.filter(function(w){ return w.issues.some(function(i){ return /^Same image|^Image file says/.test(i.text); }); }).length;
-  var st=$("stats"); st.innerHTML="";
-  [[s.wines,"wines listed"],[flagged.length,"listings with at least one issue"],[shared,"show another wine's photo or vintage"],[s.empty_filter_links.length+" / "+s.filter_links,"filter links go to an empty page"]].forEach(function(x){
-    var d=el("div","stat"); d.appendChild(el("b","num",String(x[0]))); d.appendChild(el("span",null,x[1])); st.appendChild(d);
-  });
-  var list=WINES.filter(function(w){ return w.issues.some(function(i){ return kind==="all"||i.kind===kind; }); })
-    .sort(function(a,b){ return worst(b)-worst(a) || a.title.localeCompare(b.title); });
-  $("checkCount").textContent=list.length+" listings";
-  var L=$("issueList"); L.innerHTML="";
-  list.forEach(function(w){
-    var b=el("button","li"); b.type="button";
-    b.appendChild(tile(w,"now"));
-    var right=el("div"); right.appendChild(el("div","t",w.title));
-    var is=el("div","issues");
-    w.issues.filter(function(i){ return kind==="all"||i.kind===kind; }).forEach(function(i){ is.appendChild(issueRow(i)); });
-    right.appendChild(is); b.appendChild(right);
+/* Home */
+function renderHome(){
+  var picks=PICKS.map(function(h){ return BY[h]; }).filter(Boolean);
+  var vb=$("videoBottles"); vb.innerHTML="";
+  picks.forEach(function(w){ var i=el("img"); i.alt=""; i.src="img/studio/"+w.handle+".jpg"; vb.appendChild(i); });
+  var L=$("picklist"); L.innerHTML="";
+  picks.forEach(function(w,n){
+    var b=el("button","pick"); b.type="button";
+    b.appendChild(tile(w));
+    var r=el("div");
+    r.appendChild(el("span","n",["The everyday bottle","The one to impress","The white"][n] || "Pick "+(n+1)));
+    r.appendChild(el("h3",null,w.title));
+    r.appendChild(el("p","why",firstSentence(w.description[0]||w.header)));
+    var f=el("div","foot");
+    var p=el("span"); p.appendChild(el("b","num",eur(w.price))); f.appendChild(p);
+    f.appendChild(el("span",null,meta(w)));
+    if(w.pairing) f.appendChild(el("span",null,"With "+w.pairing.split(",").slice(0,2).join(",").trim()));
+    r.appendChild(f);
+    b.appendChild(r);
     b.addEventListener("click",function(){ openWine(w); });
     L.appendChild(b);
   });
-  var e=$("empties"); e.innerHTML="";
-  e.appendChild(el("h3",null,"Filter links with no wines behind them"));
-  e.appendChild(el("p","note","Each filter is a collection kept by hand. Metafield filters in Shopify's Search & Discovery app only show values that have stock."));
-  var tags=el("div","tags"); s.empty_filter_links.forEach(function(c){ tags.appendChild(el("span",null,c)); }); e.appendChild(tags);
+  var fresh=WINES.filter(function(w){ return w.available && w.studio && PICKS.indexOf(w.handle)<0; })
+    .sort(function(a,b){ return a.published<b.published?1:-1; });
+  fresh=shelf(fresh.slice(0,24)).slice(0,8);
+  var g=$("newGrid"); g.innerHTML=""; fresh.forEach(function(w){ g.appendChild(card(w)); });
 }
-$("kindSeg").addEventListener("click",function(ev){
-  var b=ev.target.closest("button"); if(!b) return; kind=b.dataset.kind;
-  this.querySelectorAll("button").forEach(function(x){ x.setAttribute("aria-pressed", x===b); });
-  renderCheck();
-});
+$("video").addEventListener("click",function(){ $("videoNote").textContent="This is where Erik's short video plays. Filmed on a phone in the shop, 2–3 minutes."; });
 
-/* ---------- Add a bottle ---------- */
-var EXAMPLE="le-piane-boca-2018";
-var FIELDS=[["Producer","Le Piane","hi"],["Wine","Boca","hi"],["Appellation","Boca DOC","hi"],["Vintage","2018","hi"],["Country","Italy","hi"],["Alcohol","14.0%","lo"],["Size","750 ml","hi"]];
-var CHECKS=[["ok","Vintage on the new image is 2018. Listing says 2018."],["ok","Producer and wine name match the label."],["ok","No other listing uses this image."],["medium","Alcohol hard to read. Confirm by hand."]];
-var DRAFT=[["Title","Le Piane Boca 2018"],["Type","Red"],["Region","Piedmont, Italy"],["Grapes","Nebbiolo, Vespolina"],["Vintage","2018"],["Price","Staff enter"],["Status","Draft"]];
-var steps=[].slice.call(document.querySelectorAll(".step")), timers=[];
-function rows(target, data, conf){
-  var t=$(target); t.innerHTML="";
-  data.forEach(function(r){
-    var d=el("div"); d.appendChild(el("span","k",r[0])); d.appendChild(el("span",null,r[1]));
-    var c=el("span"); if(conf){ c.className="conf "+r[2]; c.textContent=r[2]==="hi"?"sure":"check"; } d.appendChild(c);
-    t.appendChild(d);
+/* Shop */
+function buildFilters(){
+  var f=$("filters"); f.innerHTML="";
+  var types=["All"]; WINES.forEach(function(w){ if(w.type&&types.indexOf(w.type)<0) types.push(w.type); });
+  types.forEach(function(t){
+    var b=el("button","chip",t); b.type="button"; b.setAttribute("aria-pressed",t===typeSel);
+    b.addEventListener("click",function(){ typeSel=t; shown=24; f.querySelectorAll(".chip").forEach(function(c){ c.setAttribute("aria-pressed",c.textContent===t); }); renderShop(); });
+    f.appendChild(b);
   });
+  f.appendChild(el("span","sep"));
+  var c=el("select"); c.id="country"; c.setAttribute("aria-label","Country");
+  var counts={}; WINES.forEach(function(w){ if(w.country) counts[w.country]=(counts[w.country]||0)+1; });
+  var o=el("option",null,"All countries"); o.value=""; c.appendChild(o);
+  Object.keys(counts).sort().forEach(function(k){ var op=el("option",null,k+" ("+counts[k]+")"); op.value=k; c.appendChild(op); });
+  c.addEventListener("change",function(){ countrySel=c.value; shown=24; renderShop(); });
+  f.appendChild(c);
+  var s=el("select"); s.id="sort"; s.setAttribute("aria-label","Sort");
+  [["shelf","Mixed shelf"],["price-asc","Price, low to high"],["price-desc","Price, high to low"],["newest","Newest"]].forEach(function(x){ var op=el("option",null,x[1]); op.value=x[0]; s.appendChild(op); });
+  s.addEventListener("change",function(){ sort=s.value; renderShop(); });
+  f.appendChild(s);
 }
-function activate(n){ steps.forEach(function(s,i){ s.classList.toggle("dim",i>n); s.classList.toggle("active",i===n); }); }
-function resetFlow(){
-  timers.forEach(clearTimeout); timers=[]; activate(0);
-  $("addFields").innerHTML='<span class="note">Waiting for the photo.</span>';
-  $("addChecks").innerHTML=""; $("addDraft").innerHTML='<span class="note">Waiting for the studio shot.</span>';
-  var a=$("approve"); a.disabled=true; a.textContent="Approve and publish"; $("approveNote").textContent="Runs after steps 1–3.";
+function shelf(list){
+  var groups={}, order=[];
+  list.forEach(function(w){ var k=key(w.title); if(!groups[k]){ groups[k]=[]; order.push(k); } groups[k].push(w); });
+  var out=[], more=true;
+  for(var i=0; more; i++){ more=false; order.forEach(function(k){ if(groups[k][i]){ out.push(groups[k][i]); more=true; } }); }
+  return out;
 }
-function runFlow(){
-  resetFlow();
-  var t=window.matchMedia("(prefers-reduced-motion: reduce)").matches?0:900;
-  timers.push(setTimeout(function(){ activate(1); rows("addFields",FIELDS,true); },t));
-  timers.push(setTimeout(function(){ activate(2); var c=$("addChecks"); c.innerHTML=""; CHECKS.forEach(function(x){ c.appendChild(issueRow({level:x[0],text:x[1]})); }); },t*2));
-  timers.push(setTimeout(function(){ activate(3); rows("addDraft",DRAFT,false); $("approve").disabled=false; $("approveNote").textContent="Nothing goes live until a person approves."; },t*3));
+function listFor(){
+  var list=WINES.filter(function(w){ return (typeSel==="All"||w.type===typeSel) && (!countrySel||w.country===countrySel); });
+  list.sort(function(a,b){ return (b.available-a.available) || (b.studio-a.studio) || a.title.localeCompare(b.title); });
+  if(sort==="shelf") return shelf(list);
+  if(sort==="price-asc") return list.sort(function(a,b){ return a.price-b.price; });
+  if(sort==="price-desc") return list.sort(function(a,b){ return b.price-a.price; });
+  return list.sort(function(a,b){ return a.published<b.published?1:-1; });
 }
-$("run").addEventListener("click",runFlow);
-$("reset").addEventListener("click",resetFlow);
-$("approve").addEventListener("click",function(){ this.disabled=true; this.textContent="Published (example)"; $("approveNote").textContent="In the real tool this sets the Shopify product to Active."; });
+function renderShop(){
+  var list=listFor(), g=$("grid"); g.innerHTML="";
+  list.slice(0,shown).forEach(function(w){ g.appendChild(card(w)); });
+  var m=$("moreBtn"); m.hidden=list.length<=shown; m.textContent="Show "+Math.min(24,list.length-shown)+" more of "+list.length;
+}
+$("moreBtn").addEventListener("click",function(){ shown+=24; renderShop(); });
 
-/* ---------- Tabs ---------- */
-var tabs=[].slice.call(document.querySelectorAll("nav.tabs button"));
-function show(view){
-  if(!WINES.length) return;
-  tabs.forEach(function(t){ t.setAttribute("aria-selected", t.dataset.view===view); });
-  ["shop","wine","check","add"].forEach(function(v){ $("view-"+v).hidden = v!==view; });
-  try{ localStorage.setItem("ely-view2", view); }catch(e){}
-  if(view==="shop") renderGrid();
-  if(view==="wine"){ if(!current) current=WINES.filter(function(w){ return w.handle==="adega-algueira-escalada"; })[0]||WINES[0]; renderWine(); }
-  if(view==="check") renderCheck();
-  window.scrollTo({top:0});
+/* Wine page */
+function fact(dl,k,v){ if(!v) return; dl.appendChild(el("dt",null,k)); dl.appendChild(el("dd",null,v)); }
+function openWine(w){ current=w; go("w-"+w.handle); }
+function renderWine(){
+  var w=current;
+  var t=$("pdpTile"); t.className="tile"+(w.studio?"":" plain");
+  $("pdpImg").src=(w.studio?"img/studio/":"img/now/")+w.handle+".jpg"; $("pdpImg").alt=w.title;
+  $("pdpEyebrow").textContent=meta(w);
+  $("pdpTitle").textContent=w.title;
+  $("pdpSub").textContent=firstSentence(w.description[0]||"");
+  $("pdpPrice").textContent=eur(w.price); $("barPrice").textContent=eur(w.price);
+  document.querySelectorAll("[data-add]").forEach(function(b){ b.disabled=!w.available; b.textContent=w.available?"Add to basket":"Sold out"; });
+  var dl=$("pdpFacts"); dl.innerHTML="";
+  fact(dl,"Region",place(w)); fact(dl,"Grapes",w.grapes.join(", ")); fact(dl,"Vintage",w.vintage);
+  fact(dl,"Farming",w.styles.join(", ")); fact(dl,"Size",/JEROBOAM/i.test(w.title)?"Jeroboam, 3 l":(w.magnum?"Magnum, 1.5 l":"75 cl")); fact(dl,"Serve",SERVE[w.type]);
+  var d=$("pdpDesc"); d.innerHTML="";
+  var paras=w.description.slice(); if(paras.length) paras[0]=paras[0].replace(firstSentence(paras[0]),"").trim();
+  paras=paras.filter(Boolean).slice(0,3);
+  if(paras.length){ d.appendChild(el("h3",null,"About this wine")); paras.forEach(function(p){ d.appendChild(el("p",null,p)); }); }
+  d.hidden=!paras.length;
+  var pr=$("pdpPair"); pr.innerHTML=""; pr.hidden=!w.pairing;
+  if(w.pairing){ pr.appendChild(el("h3",null,"With food")); pr.appendChild(el("p",null,w.pairing.charAt(0).toUpperCase()+w.pairing.slice(1)+".")); }
+  var q=$("pdpQuote"); q.innerHTML=""; q.hidden=!(w.quote&&w.quote.text);
+  if(w.quote&&w.quote.text){ var bq=el("blockquote",null,"“"+w.quote.text+"”"); if(w.quote.by) bq.appendChild(el("cite",null,w.quote.by)); q.appendChild(bq); }
+  var k=key(w.title), rel=WINES.filter(function(o){ return o!==w && o.available && key(o.title)===k; });
+  var same=rel.length>=2;
+  if(!same) rel=WINES.filter(function(o){ return o!==w && o.available && o.type===w.type && o.country===w.country; });
+  rel=rel.filter(function(o){ return o.studio; }).slice(0,3);
+  $("relH").textContent=same?"More from this producer":"You might also like";
+  var r=$("related"); r.innerHTML=""; rel.forEach(function(o){ r.appendChild(card(o)); });
+  $("relWrap").hidden=!rel.length;
 }
-tabs.forEach(function(t){ t.addEventListener("click",function(){ show(t.dataset.view); }); });
-window.addEventListener("hashchange",function(){ var h=location.hash.slice(1); if(WINES.length&&["shop","wine","check","add"].indexOf(h)>=0) show(h); });
+document.querySelectorAll("[data-add]").forEach(function(b){ b.addEventListener("click",function(){ toast("Added to basket (example)"); }); });
+$("back").addEventListener("click",function(){ history.length>1?history.back():go("shop"); });
+var tt; function toast(msg){ var t=$("toast"); t.textContent=msg; t.classList.add("on"); clearTimeout(tt); tt=setTimeout(function(){ t.classList.remove("on"); },1800); }
+
+/* Routing: #home, #shop, #w-<handle> */
+function go(route){ if(location.hash.slice(1)===route) render(route); else location.hash=route; }
+function render(route){
+  if(!WINES.length) return;
+  var view="home";
+  if(route==="shop") view="shop";
+  else if(route.indexOf("w-")===0 && BY[route.slice(2)]){ view="wine"; current=BY[route.slice(2)]; }
+  ["home","shop","wine"].forEach(function(v){ $("view-"+v).hidden=v!==view; });
+  $("tab-home").setAttribute("aria-selected",view==="home");
+  $("tab-shop").setAttribute("aria-selected",view!=="home");
+  $("buybar").hidden=view!=="wine";
+  if(view==="home") renderHome();
+  if(view==="shop") renderShop();
+  if(view==="wine") renderWine();
+  window.scrollTo(0,0);
+}
+document.querySelectorAll("[data-go]").forEach(function(b){ b.addEventListener("click",function(){ go(b.dataset.go); }); });
+window.addEventListener("hashchange",function(){ render(location.hash.slice(1)); });
+window.addEventListener("scroll",function(){ $("hdr").classList.toggle("scrolled",window.scrollY>8); },{passive:true});
 
 fetch("data/wines.json").then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); }).then(function(d){
-  DATA=d; WINES=d.wines;
+  WINES=d.wines; WINES.forEach(function(w){ BY[w.handle]=w; });
   $("loading").hidden=true;
   $("scrapeNote").textContent="Real wines, prices and photos from shop.elywinebar.ie, read "+d.shop.scraped+".";
-  $("addPhone").src="img/now/"+EXAMPLE+".jpg";
-  buildFacets(); resetFlow();
-  var start="shop", h=(location.hash||"").slice(1);
-  if(["shop","wine","check","add"].indexOf(h)>=0) start=h;
-  else { try{ var s=localStorage.getItem("ely-view2"); if(s) start=s; }catch(e){} }
-  show(start);
-}).catch(function(){
-  $("loading").textContent="The wine list did not load. Reload the page to try again.";
-});
+  buildFilters();
+  render(location.hash.slice(1));
+}).catch(function(){ $("loading").textContent="The wine list did not load. Reload the page to try again."; });
 })();
 </script>
